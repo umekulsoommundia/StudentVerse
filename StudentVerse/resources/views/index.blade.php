@@ -63,12 +63,12 @@
 						<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
 							<ul class="navbar-nav m-auto">
 								<li class="nav-item">
-									<a href="index.html" class="nav-link active">
+									<a href="" class="nav-link active">
 										Home 
 									</a>
 								</li>
 								<li class="nav-item">
-									<a href="about.html" class="nav-link">
+									<a href="about" class="nav-link">
 										About Us
 									</a>
 								</li>
@@ -80,16 +80,16 @@
 
 									<ul class="dropdown-menu">
 										<li class="nav-item">
-											<a href="blog.html" class="nav-link">Blog</a>
+											<a href="blog" class="nav-link">Blog</a>
 										</li>
 										<li class="nav-item">
-											<a href="blog-details.html" class="nav-link">Blog Details</a>
+											<a href="blog-details" class="nav-link">Blog Details</a>
 										</li>
 									</ul>
 								</li>
 
 								<li class="nav-item">
-									<a href="contact-us.html" class="nav-link">Contact Us</a>
+									<a href="contact-us" class="nav-link">Contact Us</a>
 								</li>
 
 								<li class="nav-item">
