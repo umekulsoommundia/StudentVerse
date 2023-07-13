@@ -45,25 +45,25 @@
 				<div class="container">
 					<div class="mobile-responsive-menu">
 						<div class="logo">
-							<a href="index.html">
+							<a href="/">
 								<img src="assets/images/logo.png" alt="logo">
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-
+	
 			<div class="desktop-nav">
 				<div class="container">
 					<nav class="navbar navbar-expand-md navbar-light">
-						<a class="navbar-brand" href="index.html">
+						<a class="navbar-brand" href="/">
 							<img src="assets/images/logo.png" alt="logo">
 						</a>
 
 						<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
 							<ul class="navbar-nav m-auto">
 								<li class="nav-item">
-									<a href="" class="nav-link active">
+									<a href="/" class="nav-link active">
 										Home 
 									</a>
 								</li>
@@ -147,14 +147,10 @@
 					</nav>
 				</div>
 			</div>
+		</div>
 
-
-			
             @yield('main')
 		
-
-
-
 		<!-- Start Footer Area -->
 		<div class="footer-area pt-100 pb-70">
 			<div class="container">
