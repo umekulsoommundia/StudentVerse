@@ -45,8 +45,8 @@
 <!-- Start Mail Content Area -->
 <div class="main-content-area pt-5">
 	<div class="container">
-		<div class="row p">
-			<div class="col-lg-3">
+		<div class="row pt-0">
+			<div class="col-lg-2">
 				
             <div class="sidebar-menu-wrap sidebar">
     <div class="sidemenu-wrap d-flex justify-content-between align-items-center">
