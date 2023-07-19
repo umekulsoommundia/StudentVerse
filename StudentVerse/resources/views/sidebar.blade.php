@@ -46,7 +46,7 @@
 <div class="main-content-area pt-5">
 	<div class="container">
 		<div class="row pt-0">
-			<div class="col-lg-2">
+			<div class="col-lg-3">
 				
             <div class="sidebar-menu-wrap sidebar">
     <div class="sidemenu-wrap d-flex justify-content-between align-items-center">
@@ -3702,6 +3702,26 @@
 							</ul>
 						</div>
 					</div>
+					<div class="">
+						<div class="container">
+							<div class="pt-0" >
+								<div class="row">
+									<div class="col-lg-6 col-md-8 pt-0" >
+
+										<p style="font-size:12px;"> <a href="https://envytheme.com/" target="_blank">Terms of Service </a> </p>
+										<p style="font-size:12px;"> <a href="https://envytheme.com/" target="_blank">  Privacy Policy </a> </p>
+										<p style="font-size:12px;"> <a href="https://envytheme.com/" target="_blank">Cookie Policy </a> </p>
+										<p style="font-size:12px;">  <a href="https://envytheme.com/" target="_blank">@2023 StudentVerse</a> </p>
+									
+
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+
+
 				</div>
 			</div>
 		</div>
@@ -3710,419 +3730,6 @@
 <!-- End Mail Content Area -->
 
 		
-		<!-- Start Footer Area -->
-		<div class="footer-area pt-100 pb-70">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-footer-widget style-two">
-							<a href="index.html">
-								<img src="assets/images/logo.png" alt="Image">
-							</a>
-
-							<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus.</p>
-						</div>
-					</div>
-
-					<div class="col-lg-2 col-sm-6">
-						<div class="single-footer-widget style-two ml-15">
-							<h3>Company</h3>
-
-							<ul class="import-link">
-								<li>
-									<a href="about.html">About us</a>
-								</li>
-								<li>
-									<a href="contact-us.html">Contact us</a>
-								</li>
-								<li>
-									<a href="blog.html">Blog</a>
-								</li>
-								<li>
-									<a href="user.html">User</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-lg-2 col-sm-6">
-						<div class="single-footer-widget style-two">
-							<h3>Explore</h3>
-
-							<ul class="import-link">
-								<li>
-									<a href="ask-questions.html">Ask question</a>
-								</li>
-								<li>
-									<a href="faq.html">FAQs</a>
-								</li>
-								<li>
-									<a href="privacy-policy.html">Privacy policy</a>
-								</li>
-								<li>
-									<a href="terms-conditions.html">Terms & Conditions</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-lg-2 col-sm-6">
-						<div class="single-footer-widget style-two">
-							<h3>Follow us</h3>
-
-							<ul class="import-link">
-								<li>
-									<a href="https://www.facebook.com/" target="_blank">Facebook</a>
-								</li>
-								<li>
-									<a href="https://www.instagram.com/" target="_blank">Instagram</a>
-								</li>
-								<li>
-									<a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-								</li>
-								<li>
-									<a href="https://www.twitter.com/" target="_blank">Twitter</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-sm-6">
-						<div class="single-footer-widget style-two">
-							<h3>Contact Us</h3>
-
-							<ul class="address-link">
-								<li>
-									<span>Call:</span>
-									<a href="tel:+1-719-504-1984">+1 719-504-1984</a>
-								</li>
-								<li>
-									<span>Email:</span>
-									<a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#5929303f20193e34383035773a3634"><span class="__cf_email__" data-cfemail="04746d627d446369656d682a676b69">[email&#160;protected]</span></a>
-								</li>
-								<li>
-									<span>Address:</span>
-									7200 E Dry Creek Rd C104, Centennial, CO 80112, United States
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-shape">
-				<img src="assets/images/footer-shape.png" alt="Image">
-			</div>
-		</div>
-		<!-- End Footer Area -->
-
-		<!-- End Copyright Area -->
-		<div class="copy-right-area">
-			<div class="container">
-				<div class="copy-right-content">
-					<div class="row">
-						<div class="col-lg-6 col-md-8">
-							<p>© Pify is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme.com</a></p>
-						</div>
-						<div class="col-lg-6 col-md-4">
-							<div class="language">
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Language</option>
-									<option value="1">English</option>
-									<option value="2">Arabic</option>
-									<option value="3">Germany</option>
-								</select>
-								<i class="ri-global-line"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Copyright Area -->
-
-		<!-- Start Log In Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Log In</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form class="user-form">
-							<div class="row">
-								<div class="col-lg-6 col-sm-6">
-									<a href="https://www.google.com/" target="_blank" class="or-login google">
-										Google
-									</a>
-								</div>
-		
-								<div class="col-lg-6 col-sm-6">
-									<a href="https://www.facebook.com/" target="_blank" class="or-login facebook">
-										Facebook
-									</a>
-								</div>
-		
-								<div class="col-12">
-									<span class="or">Or</span>
-								</div>
-		
-								<div class="col-12">
-									<div class="form-group">
-										<label>User name or email</label>
-										<input class="form-control" type="text" name="name">
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<div class="form-group">
-										<label>Password</label>
-										<input class="form-control" type="password" name="password">
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<div class="login-action">
-										<span class="forgot-login">
-											<a href="register.html">Forgot Password?</a>
-										</span>
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<button class="default-btn" type="submit">
-										Log In
-									</button>
-								</div>
-		
-								<div class="col-12">
-									<p class="create">Don't have an account? <a href="user-profile.html">Join us </a></p>  
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Enad Log In Modal -->
-
-		<!-- Start Sign Up Modal -->
-		<div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Sign up</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form class="user-form">
-							<div class="row">
-								<div class="col-lg-6 col-sm-6">
-									<a href="https://www.google.com/" target="_blank" class="or-login google">
-										Google
-									</a>
-								</div>
-		
-								<div class="col-lg-6 col-sm-6">
-									<a href="https://www.facebook.com/" target="_blank" class="or-login facebook">
-										Facebook
-									</a>
-								</div>
-		
-								<div class="col-12">
-									<span class="or">Or</span>
-								</div>
-		
-								<div class="col-12">
-									<div class="form-group">
-										<label>User name</label>
-										<input class="form-control" type="text" name="name">
-									</div>
-								</div>
-
-								<div class="col-12">
-									<div class="form-group">
-										<label>Email</label>
-										<input class="form-control" type="email" name="name">
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<div class="form-group">
-										<label>Password</label>
-										<input class="form-control" type="password" name="password">
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<div class="login-action">
-										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-											<label class="form-check-label" for="flexCheckDefault">
-												I agree to the <a href="terms-conditions.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy Policy</a>
-											</label>
-										</div>
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<button class="default-btn" type="submit">
-										Sign up
-									</button>
-								</div>
-		
-								<div class="col-12">
-									<p class="create">Already on disilab?  <a href="login.html">Login</a></p>  
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Enad Sign Up Modal -->
-
-		<!-- Start Log In Modal -->
-		<div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Log In</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form class="user-form">
-							<div class="row">
-								<div class="col-lg-6 col-sm-6">
-									<a href="https://www.google.com/" target="_blank" class="or-login google">
-										Google
-									</a>
-								</div>
-		
-								<div class="col-lg-6 col-sm-6">
-									<a href="https://www.facebook.com/" target="_blank" class="or-login facebook">
-										Facebook
-									</a>
-								</div>
-		
-								<div class="col-12">
-									<span class="or">Or</span>
-								</div>
-		
-								<div class="col-12">
-									<div class="form-group">
-										<label>User name or email</label>
-										<input class="form-control" type="text" name="name">
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<div class="form-group">
-										<label>Password</label>
-										<input class="form-control" type="password" name="password">
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<div class="login-action">
-										<span class="forgot-login">
-											<a href="register.html">Forgot Password?</a>
-										</span>
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<button class="default-btn" type="submit">
-										Log In
-									</button>
-								</div>
-		
-								<div class="col-12">
-									<p class="create">Don't have an account? <a href="sign-up.html">Sign Up</a></p>  
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Enad Log In Modal -->
-
-		<!-- Start Sign Up Modal -->
-		<div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Sign up</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form class="user-form">
-							<div class="row">
-								<div class="col-lg-6 col-sm-6">
-									<a href="https://www.google.com/" target="_blank" class="or-login google">
-										Google
-									</a>
-								</div>
-		
-								<div class="col-lg-6 col-sm-6">
-									<a href="https://www.facebook.com/" target="_blank" class="or-login facebook">
-										Facebook
-									</a>
-								</div>
-		
-								<div class="col-12">
-									<span class="or">Or</span>
-								</div>
-		
-								<div class="col-12">
-									<div class="form-group">
-										<label>User name</label>
-										<input class="form-control" type="text" name="name">
-									</div>
-								</div>
-
-								<div class="col-12">
-									<div class="form-group">
-										<label>Email</label>
-										<input class="form-control" type="email" name="name">
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<div class="form-group">
-										<label>Password</label>
-										<input class="form-control" type="password" name="password">
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<div class="login-action">
-										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2">
-											<label class="form-check-label" for="flexCheckDefault-2">
-												I agree to the <a href="terms-conditions.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy Policy</a>
-											</label>
-										</div>
-									</div>
-								</div>
-		
-								<div class="col-12">
-									<button class="default-btn" type="submit">
-										Sign up
-									</button>
-								</div>
-		
-								<div class="col-12">
-									<p class="create">Already on disilab?  <a href="login.html">Login</a></p>  
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Enad Sign Up Modal -->
 
 		<!-- Start Go Top Area -->
 		<div class="go-top">
@@ -4131,6 +3738,9 @@
 		</div>
 		<!-- End Go Top Area -->
 
+
+
+			
         <!-- Links of JS File -->
         <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
