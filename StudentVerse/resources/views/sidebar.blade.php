@@ -28,6 +28,7 @@
     </head>
 
     <body>
+
 		{{-- <!-- Start Preloader Area -->
 		<div class="preloader" id="loader-style">
 			<div class="preloader-wrap">
@@ -40,7 +41,62 @@
 		<!-- End Preloader Area -->
 	 --}}
        
+	
+		<!-- Start Navbar Area --> 
+		<div class="navbar-area">
+			<div class="mobile-responsive-nav">
+				<div class="container">
+					<div class="mobile-responsive-menu">
+						<div class="logo">
+							<a href="/">
+								<img src="assets/images/logo.png" alt="logo">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="desktop-nav">
+				<div class="container">
+					<nav class="navbar navbar-expand-md navbar-light">
+						<a class="navbar-brand" href="/">
+							<img src="assets/images/logo.png" alt="logo">
+						</a>
 
+						<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item">
+									<a href="/" class="nav-link active">
+										Home 
+									</a>
+								</li>
+							
+
+								
+									</ul>
+								</li>
+							</ul>
+
+							<div class="others-options">
+								<ul>
+									<li>
+										<form class="search-box">
+											<input type="text" name="Search" placeholder="Search for..." class="form-control">
+									
+											<button type="submit" class="search-btn">
+												<i class="ri-search-line"></i>
+											</button>
+										</form>
+									</li>
+									<li>
+									
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
 
 <!-- Start Mail Content Area -->
 <div class="main-content-area pt-5">
