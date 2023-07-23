@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user-boxes', function (Blueprint $table) {
+        Schema::create('badge__boxes', function (Blueprint $table) {
             $table->id();
-            $table->string('First_Name');
-            $table->string('Last_Name');
-            $table->string('Email');
-            $table->string('Password');
-            $table->string('User_Type');
+            $table->string('Title');
+            $table->string('Image');
+            $table->string('Description');
+       
+
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user-boxes');
+        Schema::dropIfExists('badge__boxes');
     }
 };

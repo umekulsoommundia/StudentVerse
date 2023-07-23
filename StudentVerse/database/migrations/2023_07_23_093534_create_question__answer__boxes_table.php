@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user-boxes', function (Blueprint $table) {
+        Schema::create('question__answer__boxes', function (Blueprint $table) {
             $table->id();
-            $table->string('First_Name');
-            $table->string('Last_Name');
-            $table->string('Email');
-            $table->string('Password');
-            $table->string('User_Type');
+            $table->integer('Question_Id');
+            $table->foreign("Question_Id")->on("id")->references("question__boxes");
+            $table->integer('Answer_Id');
+            $table->foreign("Answer_Id")->on("id")->references("answer__boxes");
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user-boxes');
+        Schema::dropIfExists('question__answer__boxes');
     }
 };
