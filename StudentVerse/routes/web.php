@@ -462,3 +462,9 @@ Route::get('about-university', function () {
 Route::get('404', function () {
     return view('User_Dashboard.404');
 });
+
+
+
+Route::get('home', function () {
+    return view('StudentVerse.index');
+});
