@@ -354,11 +354,11 @@ if ($.isFunction($.fn.dropzone)) {
 // auto typer typed	
 if ($.isFunction($.fn.typed)) {
 	$(".feature-meta > h3 span").typed({
-		strings: ["Engineering", "Mathamatics", "Computer", "Science", "Climate"],
+		strings: ["Learn", "Share", "Grow"],
 		loop: true,
 		startDelay: 1e3,
-		backDelay: 3e3,
-		typeSpeed: 30
+		backDelay: 2e3,
+		typeSpeed: 70
 	});
 }
 	

@@ -1,43 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
-
-<!-- Mirrored from demos.codexcoder.com/themeforest/html/ollya-dark/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 16:54:01 GMT -->
-<head>
-	<meta charset="utf-8">
-	<title>Ollya</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- site favicon -->
-	<link rel="icon" type="image/png" href="assets/images/favicon.png">
-	<!-- Place favicon.ico in the root directory -->
-
-	<!-- All stylesheet and icons css  -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/css/all.min.css">
-	<link rel="stylesheet" href="assets/css/swiper.min.css">
-	<link rel="stylesheet" href="assets/css/lightcase.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-	<!-- preloader start here -->
-    <div class="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-icon">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-	<!-- preloader ending here -->
-
-	<!-- scrollToTop start here -->
-    <a href="#" class="scrollToTop"><i class="fa-solid fa-angle-up"></i></a>
-    <!-- scrollToTop ending here -->
-
+@extends("StudentVerse.layout2")
+@section('main')
 
     <!-- ================> login section start here <================== -->
     <section class="log-reg">
@@ -141,38 +103,4 @@
     <!-- ================> login section end here <================== -->
 
 	
-	
-
-	<!-- All Needed JS -->
-	<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-	<script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-	<script src="assets/js/isotope.pkgd.min.js"></script>
-	<script src="assets/js/swiper.min.js"></script>
-	<!-- <script src="assets/js/all.min.js"></script> -->
-	<script src="assets/js/wow.js"></script>
-	<script src="assets/js/counterup.js"></script>
-	<script src="assets/js/jquery.countdown.min.js"></script>
-	<script src="assets/js/lightcase.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
-	<script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/main.js"></script>
-
-
-	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-	<script>
-		window.ga = function () {
-			ga.q.push(arguments)
-		};
-		ga.q = [];
-		ga.l = +new Date;
-		ga('create', 'UA-XXXXX-Y', 'auto');
-		ga('set', 'anonymizeIp', true);
-		ga('set', 'transport', 'beacon');
-		ga('send', 'pageview')
-	</script>
-	<script src="../../../../www.google-analytics.com/analytics.js" async></script>
-</body>
-
-<!-- Mirrored from demos.codexcoder.com/themeforest/html/ollya-dark/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 16:54:01 GMT -->
-</html>
+	@endsection

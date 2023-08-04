@@ -14,130 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// main website routes
-Route::get('/', function () {
-    return view('index.index');
-});
-
-Route::get('about', function () {
-    return view('index.about');
-});
-
-Route::get('blog', function () {
-    return view('index.blog');
-});
-Route::get('blog-details', function () {
-    return view('index.blog-details');
-});
-
-Route::get('contact-us', function () {
-    return view('index.contact-us');
-});
-
-Route::get('activity', function () {
-    return view('index.activity');
-});
-
-Route::get('referrals', function () {
-    return view('index.referrals');
-});
-
-
-Route::get('privacy-policy', function () {
-    return view('index.privacy-policy');
-});
-
-Route::get('terms-conditions', function () {
-    return view('index.terms-conditions');
-});
-
-
-Route::get('coming-soon', function () {
-    return view('index.coming-soon');
-});
-
-Route::get('404', function () {
-    return view('index.404');
-});
-
-Route::get('all-questions', function () {
-    return view('user.all-queations');
-});
-
-Route::get('questions-details', function () {
-    return view('user.questions-details');
-});
-
-Route::get('questions-details', function () {
-    return view('user.questions-details');
-});
-
-Route::get('communities', function () {
-    return view('user.communities');
-});
-
-Route::get('most-answered', function () {
-    return view('user.most-answered');
-});
-
-Route::get('most-answered-details', function () {
-    return view('user.most-answered-details');
-});
-
-Route::get('unanswered', function () {
-    return view('user.unanswered');
-});
-
-Route::get('most-visited', function () {
-    return view('user.most-visited');
-});
-
-Route::get('polls', function () {
-    return view('user.polls');
-});
-
-Route::get('faq', function () {
-    return view('user.faq');
-});
-
-Route::get('groups', function () {
-    return view('user.groups');
-});
-
-Route::get('education', function () {
-    return view('user.education');
-});
-
-Route::get('technology', function () {
-    return view('user.technology');
-});
-
-Route::get('tags', function () {
-    return view('user.tags');
-});
-
-Route::get('badges', function () {
-    return view('user.badges');
-});
-
-
-Route::get('user', function () {
-    return view('user.user');
-});
-
-Route::get('user-profile', function () {
-    return view('user.user-profile');
-});
-
-Route::get('ask-questions', function () {
-    return view('user.ask-questions');
-});
-Route::get('sidebar', function () {
-    return view('sidebar');
-});
-
-
-// website routes end
 
 
 //user register routes
@@ -379,6 +255,10 @@ Route::get('event-page', function () {
     return view('User_Dashboard.event-page');
 });
 
+Route::get('event-detail', function () {
+    return view('User_Dashboard.event-detail');
+});
+
 Route::get('elements-grid', function () {
     return view('User_Dashboard.elements-grid');
 });
@@ -396,7 +276,6 @@ Route::get('development-component', function () {
 });
 
 
-
 Route::get('cover', function () {
     return view('User_Dashboard.cover');
 });
@@ -409,10 +288,12 @@ Route::get('course-detail', function () {
     return view('User_Dashboard.course-detail');
 });
 
-Route::get('company-home', function () {
-    return view('User_Dashboard.company-home');
-});
 
+
+
+Route::get('home2', function () {
+    return view('index.home2');
+});
 Route::get('coming-soon', function () {
     return view('User_Dashboard.coming-soon');
 });
@@ -430,7 +311,7 @@ Route::get('book-detail', function () {
     return view('User_Dashboard.book-detail');
 });
 
-Route::get('blog', function () {
+Route::get('blogs', function () {
     return view('User_Dashboard.blog');
 });
 
@@ -462,9 +343,165 @@ Route::get('about-university', function () {
 Route::get('404', function () {
     return view('User_Dashboard.404');
 });
+// user dashboard routing ends here 
 
 
 
+// main website routing
 Route::get('home', function () {
     return view('StudentVerse.index');
 });
+
+
+Route::get('contact', function () {
+    return view('StudentVerse.contact');
+});
+
+Route::get('community', function () {
+    return view('StudentVerse.community');
+});
+
+
+Route::get('about', function () {
+    return view('StudentVerse.about');
+});
+
+
+Route::get('blog', function () {
+    return view('StudentVerse.blog');
+});
+
+Route::get('login', function () {
+    return view('StudentVerse.login');
+});
+
+Route::get('register', function () {
+    return view('StudentVerse.register');
+});
+
+Route::get('activity', function () {
+    return view('StudentVerse.activity');
+});
+
+Route::get('blog-2', function () {
+    return view('StudentVerse.blog-2');
+});
+
+Route::get('blog-single', function () {
+    return view('StudentVerse.blog-single');
+});
+
+Route::get('group-single', function () {
+    return view('StudentVerse.group-single');
+});
+
+Route::get('group', function () {
+    return view('StudentVerse.group');
+});
+
+Route::get('index-2', function () {
+    return view('StudentVerse.index-2');
+});
+
+
+Route::get('login', function () {
+    return view('StudentVerse.login');
+});
+
+
+Route::get('members', function () {
+    return view('StudentVerse.members');
+});
+
+
+Route::get('member-single', function () {
+    return view('StudentVerse.member-single');
+});
+
+
+Route::get('membership', function () {
+    return view('StudentVerse.membership');
+});
+
+Route::get('policy', function () {
+    return view('StudentVerse.policy');
+});
+
+
+
+
+
+
+//end main website routing
+
+// main
+Route::get('/', function () {
+    return view('index.home');
+});
+
+
+Route::get('blog-main', function () {
+    return view('index.blog');
+});
+
+
+Route::get('blog-detail-main', function () {
+    return view('index.blog-detail');
+});
+
+
+Route::get('community-main', function () {
+    return view('index.community');
+});
+
+
+Route::get('contact-main', function () {
+    return view('index.contact');
+});
+
+
+Route::get('pricing-main', function () {
+    return view('index.pricing');
+});
+
+
+Route::get('login-main', function () {
+    return view('index.login');
+});
+
+
+Route::get('signup-main', function () {
+    return view('index.signup');
+});
+
+
+//end main
+
+
+//start admin routes
+
+Route::get('admin', function () {
+    return view('admin.index');
+});
+
+
+Route::get('admin-signin', function () {
+    return view('admin.sign-in');
+});
+
+Route::get('admin-signup', function () {
+    return view('admin.sign-up');
+});
+
+
+Route::get('admin-otp', function () {
+    return view('admin.two-factor');
+});
+
+
+Route::get('admin-otp', function () {
+    return view('admin.two-factor');
+});
+
+
+//end admin routex

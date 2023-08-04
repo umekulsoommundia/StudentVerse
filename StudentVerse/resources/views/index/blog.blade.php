@@ -1,236 +1,222 @@
-@extends("navbar")
+@extends("index.nav_foot")
 @section('main')
 
 
-
-		<!-- Start Page title Area -->
-		<div class="page-title-area ptb-100">
+	<section>
+		<div class="gap">
 			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-md-4">
-						<div class="page-title-content">
-							<h2>Blog</h2>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-8">
-						<div class="page-title-list">
-							<ul>
-								<li>
-									<a href="index.html">Home</a>
-								</li>
-								<li class="active">
-									Blog
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Page title Area -->
-
-		<!-- Start Blog Area -->
-		<div class="blog-area ptb-100">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-single-item">
-							<a href="blog-details.html">
-								<img src="assets/images/blog/blog-1.jpg" alt="Image">
-							</a>
-
-							<div class="blog-content">
-								<ul>
-									<li>
-										<a href="blog.html">
-											<img src="assets/images/blog/user-1.jpg" alt="Image">
-											<span>Marissa Cress</span>
-										</a>
-									</li>
-									<li>
-										November 24, 2021
-									</li>
-								</ul>
-	
-								<h3>
-									<a href="blog-details.html">
-										Top 7 server hosting platforms for everyone
-									</a>
-								</h3>
-	
-								<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-single-item">
-							<a href="blog-details.html">
-								<img src="assets/images/blog/blog-2.jpg" alt="Image">
-							</a>
-
-							<div class="blog-content">
-								<ul>
-									<li>
-										<a href="blog.html">
-											<img src="assets/images/blog/user-2.jpg" alt="Image">
-											<span>Marissa Cress</span>
-										</a>
-									</li>
-									<li>
-										November 23, 2021
-									</li>
-								</ul>
-	
-								<h3>
-									<a href="blog-details.html">
-										Mapping the path from the new journey 
-									</a>
-								</h3>
-	
-								<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-single-item">
-							<a href="blog-details.html">
-								<img src="assets/images/blog/blog-3.jpg" alt="Image">
-							</a>
-
-							<div class="blog-content">
-								<ul>
-									<li>
-										<a href="blog.html">
-											<img src="assets/images/blog/user-3.jpg" alt="Image">
-											<span>Marissa Cress</span>
-										</a>
-									</li>
-									<li>
-										November 22, 2021
-									</li>
-								</ul>
-	
-								<h3>
-									<a href="blog-details.html">
-										How you can write social questions and answers
-									</a>
-								</h3>
-	
-								<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-single-item">
-							<a href="blog-details.html">
-								<img src="assets/images/blog/blog-4.jpg" alt="Image">
-							</a>
-
-							<div class="blog-content">
-								<ul>
-									<li>
-										<a href="blog.html">
-											<img src="assets/images/blog/user-4.jpg" alt="Image">
-											<span>Marissa Cress</span>
-										</a>
-									</li>
-									<li>
-										November 21, 2021
-									</li>
-								</ul>
-	
-								<h3>
-									<a href="blog-details.html">
-										This is the important thing when I write social questions and answers
-									</a>
-								</h3>
-	
-								<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-single-item">
-							<a href="blog-details.html">
-								<img src="assets/images/blog/blog-5.jpg" alt="Image">
-							</a>
-
-							<div class="blog-content">
-								<ul>
-									<li>
-										<a href="blog.html">
-											<img src="assets/images/blog/user-5.jpg" alt="Image">
-											<span>Marissa Cress</span>
-										</a>
-									</li>
-									<li>
-										November 20, 2021
-									</li>
-								</ul>
-	
-								<h3>
-									<a href="blog-details.html">
-										How do we fix WordPress security issues without any hassle
-									</a>
-								</h3>
-	
-								<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="blog-single-item">
-							<a href="blog-details.html">
-								<img src="assets/images/blog/blog-6.jpg" alt="Image">
-							</a>
-
-							<div class="blog-content">
-								<ul>
-									<li>
-										<a href="blog.html">
-											<img src="assets/images/blog/user-6.jpg" alt="Image">
-											<span>Marissa Cress</span>
-										</a>
-									</li>
-									<li>
-										November 19, 2021
-									</li>
-								</ul>
-	
-								<h3>
-									<a href="blog-details.html">
-										Adding over a million subscribers across Daily Social Questions and Answers
-									</a>
-								</h3>
-	
-								<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit.</p>
-							</div>
-						</div>
-					</div>
-
+				<div class="row">
 					<div class="col-lg-12">
-						<div class="pagination-area mt-0 mb-0">
-							<a href="blog.html" class="next page-numbers">
-								<i class="ri-arrow-left-line"></i>
-							</a>
-							<span class="page-numbers current" aria-current="page">1</span>
-							<a href="blog.html" class="page-numbers">2</a>
-							<a href="blog.html" class="page-numbers">3</a>
-							
-							<a href="blog.html" class="next page-numbers">
-								<i class="ri-arrow-right-line"></i>
-							</a>
+						<div id="page-contents" class="row merged20">
+							<div class="col-lg-9">
+								<div class="main-wraper">
+									<div class="main-title">Blog Posts</div>
+									<div class="blog-posts">
+										<figure><img src="images/resources/blog-list-1.jpg" alt=""></figure>
+										<div class="blog-post-meta">
+											<ul>
+												<li><i class="icofont-read-book"></i><a title="Reads" href="#">93k</a></li>
+												<li><i class="icofont-comment"></i><a title="comments" href="#">33</a></li>
+											</ul>
+											
+											<h4>Love is always the happiness of a heart.</h4>
+											<p>
+												Our online class is an affordable alternative to private therapy and coaching, and teaches day Lorem ipsum dolor sit amet.
+											</p>
+											<span><i class="icofont-clock-time"></i> january 23, 2021</span>
+											<a href="blog-detail.html" title="" class="button primary circle">read more</a>
+										</div>
+									</div>
+									<div class="blog-posts">
+										<figure><img src="images/resources/blog-list-2.jpg" alt=""></figure>
+										<div class="blog-post-meta">
+											<ul>
+												<li><i class="icofont-read-book"></i><a title="Reads" href="#">93k</a></li>
+												<li><i class="icofont-comment"></i><a title="comments" href="#">33</a></li>
+											</ul>
+											
+											<h4>Love is always the happiness of a heart.</h4>
+											<p>
+												Our online class is an affordable alternative to private therapy and coaching, and teaches day Lorem ipsum dolor sit amet.
+											</p>
+											<span><i class="icofont-clock-time"></i> january 23, 2021</span>
+											<a href="blog-detail.html" title="" class="button primary circle">read more</a>
+										</div>
+									</div>
+									<div class="blog-posts">
+										<figure><img src="images/resources/blog-list-3.jpg" alt=""></figure>
+										<div class="blog-post-meta">
+											<ul>
+												<li><i class="icofont-read-book"></i><a title="Reads" href="#">93k</a></li>
+												<li><i class="icofont-comment"></i><a title="comments" href="#">33</a></li>
+											</ul>
+											
+											<h4>Compare Prices Find The Best Computer Accessory</h4>
+											<p>
+												Our online class is an affordable alternative to private therapy and coaching, and teaches day Lorem ipsum dolor sit amet.
+											</p>
+											<span><i class="icofont-clock-time"></i> january 23, 2021</span>
+											<a href="blog-detail.html" title="" class="button primary circle">read more</a>
+										</div>
+									</div>
+									<div class="blog-posts">
+										<figure><img src="images/resources/blog-list-4.jpg" alt=""></figure>
+										<div class="blog-post-meta">
+											<ul>
+												<li><i class="icofont-read-book"></i><a title="Reads" href="#">93k</a></li>
+												<li><i class="icofont-comment"></i><a title="comments" href="#">33</a></li>
+											</ul>
+											
+											<h4>Will The Democrats Be Able To Reverse The Online Gambling Ban</h4>
+											<p>
+												Our online class is an affordable alternative to private therapy and coaching, and teaches day Lorem ipsum dolor sit amet.
+											</p>
+											<span><i class="icofont-clock-time"></i> january 23, 2021</span>
+											<a href="blog-detail.html" title="" class="button primary circle">read more</a>
+										</div>
+									</div>
+									<div class="blog-posts">
+										<figure><img src="images/resources/blog-list-5.jpg" alt=""></figure>
+										<div class="blog-post-meta">
+											<ul>
+												<li><i class="icofont-read-book"></i><a title="Reads" href="#">93k</a></li>
+												<li><i class="icofont-comment"></i><a title="comments" href="#">33</a></li>
+											</ul>
+											
+											<h4>Love is always the happiness of a heart.</h4>
+											<p>
+												Our online class is an affordable alternative to private therapy and coaching, and teaches day Lorem ipsum dolor sit amet.
+											</p>
+											<span><i class="icofont-clock-time"></i> january 23, 2021</span>
+											<a href="blog-detail.html" title="" class="button primary circle">read more</a>
+										</div>
+									</div>
+									<div class="load mt-5 mb-4">
+										<ul class="pagination">
+											<li><a href="#" title=""><i class="icofont-arrow-left"></i></a></li>
+											<li><a class="active" href="#" title="">1</a></li>
+											<li><a href="#" title="">2</a></li>
+											<li><a href="#" title="">3</a></li>
+											<li><a href="#" title="">4</a></li>
+											<li><a href="#" title="">5</a></li>
+											<li>....</li>
+											<li><a href="#" title="">10</a></li>
+											<li><a href="#" title=""><i class="icofont-arrow-right"></i></a></li>
+										</ul>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3">
+								<aside class="sidebar static right">
+									<div class="widget">
+										<h4 class="widget-title">Popular Books</h4>
+										<div class="popular-book">
+											<figure><img src="images/resources/book10.jpg" alt=""></figure>
+											<div class="book-about">
+												<h6><a href="#" title="">Vu.js 2 Basics</a></h6>
+												<span>Richard Ali</span>
+												<a href="#" title=""><i class="icofont-book-mark"></i></a>
+											</div>
+										</div>
+										<div class="popular-book">
+											<figure><img src="images/resources/book9.jpg" alt=""></figure>
+											<div class="book-about">
+												<h6><a href="#" title="">Css3 for Bigners</a></h6>
+												<span>Richard Ali</span>
+												<a href="#" title=""><i class="icofont-book-mark"></i></a>
+											</div>
+										</div>
+										<div class="popular-book">
+											<figure><img src="images/resources/book5.jpg" alt=""></figure>
+											<div class="book-about">
+												<h6><a href="#" title="">Technology Wants 2020</a></h6>
+												<span>Richard Ali</span>
+												<a href="#" title=""><i class="icofont-book-mark"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="widget">
+										<h4 class="widget-title">Ask Research Question?</h4>
+										<div class="ask-question">
+											<i class="icofont-question-circle"></i>
+											<h6>Ask questions in Q&A to get help from experts in your field.</h6>
+											<a class="ask-qst" href="#" title="">Ask a question</a>
+										</div>
+									</div>
+									<div class="widget">
+										<h4 class="widget-title">Explor Events <a class="see-all" href="#" title="">See All</a></h4>
+										<div class="rec-events bg-purple">
+											<i class="icofont-gift"></i>
+											<h6><a title="" href="#">BZ University good night event in columbia</a></h6>
+											<img alt="" src="images/clock.png">
+										</div>
+										<div class="rec-events bg-blue">
+											<i class="icofont-microphone"></i>
+											<h6><a title="" href="#">The 3rd International Conference 2020</a></h6>
+											<img alt="" src="images/clock.png">
+										</div>
+									</div>
+									<div class="widget stick-widget">
+										<h4 class="widget-title">Who's follownig</h4>
+										<ul class="followers" >
+											<li>
+												<figure><img alt="" src="images/resources/friend-avatar.jpg"></figure>
+												<div class="friend-meta">
+													<h4>
+														<a title="" href="time-line.html">Kelly Bill</a>
+														<span>Dept colleague</span>
+													</h4>
+													<a class="underline" title="" href="#">Follow</a>
+												</div>
+											</li>
+											<li>
+												<figure><img alt="" src="images/resources/friend-avatar2.jpg"></figure>
+												<div class="friend-meta">
+													<h4>
+														<a title="" href="time-line.html">Issabel</a>
+														<span>Dept colleague</span>
+													</h4>
+													<a class="underline" title="" href="#">Follow</a>
+												</div>
+											</li>
+											<li>
+												<figure><img alt="" src="images/resources/friend-avatar3.jpg"></figure>
+												<div class="friend-meta">
+													<h4>
+														<a title="" href="time-line.html">Andrew</a>
+														<span>Dept colleague</span>
+													</h4>
+													<a class="underline" title="" href="#">Follow</a>
+												</div>
+											</li>
+											<li>
+												<figure><img alt="" src="images/resources/friend-avatar4.jpg"></figure>
+												<div class="friend-meta">
+													<h4>
+														<a title="" href="time-line.html">Sophia</a>
+														<span>Dept colleague</span>
+													</h4>
+													<a class="underline" title="" href="#">Follow</a>
+												</div>
+											</li>
+											<li>
+												<figure><img alt="" src="images/resources/friend-avatar5.jpg"></figure>
+												<div class="friend-meta">
+													<h4>
+														<a title="" href="time-line.html">Allen</a>
+														<span>Dept colleague</span>
+													</h4>
+													<a class="underline" title="" href="#">Follow</a>
+												</div>
+											</li>
+										</ul>	
+									</div>
+								</aside>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- End Blog Area -->
-
+	</section>
 	@endsection

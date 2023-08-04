@@ -70,6 +70,32 @@
 
 /*--- tablet landscape ---*/
 @media screen and (min-width: 991px) and (max-width: 1024px)  {
+	.white-bg, header{display: none;}
+	.responsive-header{display: block;}
+	nav.sidebar {
+		padding-top: 85px;
+	}
+	.blog-post-meta {
+		max-width: 46.6%;
+	}
+	.gap{padding: 60px 0;}
+	.next-prev-posts > div {
+		width: 50%;
+	}
+	.sidebar > .widget,
+	.sidebar > .advertisment-box {
+		display: inline-block;
+		margin-right: 15px;
+		width: 48.5%;
+		vertical-align: top;
+	}
+	.sidebar > .widget:nth-child(2n) {
+		margin-right: 0;
+	}
+	.nav.nav-tabs.about-btn{
+		width: 66%;
+	}
+	
 	.user-avatar.timeline .name{width: 70%;}
 	.user-avatar.timeline .name > h4{font-size: 15px;}
 	.user-avatar.timeline .name > span{font-size: 11px;}
