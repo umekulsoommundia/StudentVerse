@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('userboxes', function (Blueprint $table) {
             $table->id();
+            $table->string('First_Name');
+            $table->string('Last_Name');
+            $table->string('Email');
+            $table->string('Password');
+            $table->integer('Phone_Number');
+            $table->string('User_Type');
             $table->timestamps();
         });
     }

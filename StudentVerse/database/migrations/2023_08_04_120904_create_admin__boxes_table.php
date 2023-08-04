@@ -11,14 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comment__boxes', function (Blueprint $table) {
+        Schema::create('admin__boxes', function (Blueprint $table) {
             $table->id();
-            $table->string('Description');
-            $table->string('Vote');
-            $table->integer('User_Id');
-            $table->foreign("User_Id")->references("id")->on("userboxes");
-
-           
+            $table->string("Username");
+            $table->string("email");
+            $table->string("Password");
             $table->timestamps();
         });
     }
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('comment__boxes');
+        Schema::dropIfExists('admin__boxes');
     }
 };

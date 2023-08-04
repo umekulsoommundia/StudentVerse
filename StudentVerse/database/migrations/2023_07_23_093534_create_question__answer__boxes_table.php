@@ -14,9 +14,13 @@ return new class extends Migration
         Schema::create('question__answer__boxes', function (Blueprint $table) {
             $table->id();
             $table->integer('Question_Id');
-            $table->foreign("Question_Id")->on("id")->references("question__boxes");
+            $table->foreign("Question_Id")->references("id")->on("question__boxes");
+
+
+
             $table->integer('Answer_Id');
-            $table->foreign("Answer_Id")->on("id")->references("answer__boxes");
+            $table->foreign("Answer_Id")->references("id")->on("answer__boxes");
+
             $table->timestamps();
         });
     }

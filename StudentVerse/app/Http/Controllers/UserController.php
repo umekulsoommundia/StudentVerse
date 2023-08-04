@@ -4,7 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Validator;
 use App\Models\user;
+use App\Models\userbox;
 use Illuminate\Http\Request;
+use App\Models\userboxes;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\facades\hash;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
+
 
 
 
@@ -27,35 +34,73 @@ class UserController extends Controller
    /**
     * Store a newly created resource in storage.
     */
+
+
+    function signin(){
+        return view ('User_Dashboard.sign-in');
+    }
+
+
+
+    function User_Post_login(request $request){
+  
+   
+     $email = $request->email;
+     $password = $request->password;
+
+     $login = DB::table("userboxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
+     
+     $loginPass = DB::table("userboxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
+
+     if($login && $loginPass){
+         session(['email'=>$login->email,'password'=>$loginPass->password]);
+         return view('User_Dashboard.index');
+
+     }
+
+     else
+     {
+        return redirect()->back()->with("message","Invalid Credentials");
+     }
+
+    }
+
+
+
+
+
+
+
    public function store(Request $r)
    {
 
-    
+
     $validate = Validator::make($r->all(),[
-        'firstName' => 'required',
-        'lastName' => 'required',
-        'email' => 'required|email|unique:Users,email',
-        'password' => 'required|min:8',
-        'qualification' => 'required|not_in:0',
-        'cityId' => 'required|not_in:0',
-        'address' => 'required',
-        'description' => 'required',
+        'First_Name' => 'required',
+        'Last_Name' => 'required',
+        'Email' => 'required|email|unique:userboxes,email',
+        'Password' => 'required|min:8',
+        'Phone_Number' => 'required',
+        'User_Type' => 'required',
     ]);
     if($validate->fails()){
         return back()->withInput()->withErrors($validate);
     }
-    else{
-        $User = new User();
+    else
+    {
+        $User = new userbox();
         $User->First_Name = $r->First_Name;
         $User->Last_Name = $r->Last_Name;
         $User->Email = $r->Email;
+        $User->Password = $r->Password;
+        $User->Phone_Number = $r->Phone_Number;
         $User->User_Type = $r->User_Type;
-        $User->password = $r->password;
 
         $User->save();
 
-        return redirect('login')->with("message","Successfully Registered! Please Enter Your Credenials To Login");
+        return redirect('/signin')->with("message","Successfully Registered! Please Enter Your Credenials To Login");
     }
+
    }
 
    /**
@@ -63,7 +108,7 @@ class UserController extends Controller
     */
    public function show(user $userbox)
    {
-        return view('Dashboard.register');
+        return view('User_dashboard.signup');
    }
 
    /**

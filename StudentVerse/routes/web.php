@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -505,3 +506,35 @@ Route::get('admin-otp', function () {
 
 
 //end admin routex
+
+// start adminControllerRoutes
+
+//Route::group(['middleware'=> 'adminGuard'],function(){
+  
+    Route::get('/register', [AdminController::class, "show"]);
+
+    Route::get('/login', [AdminController::class, "store"]);
+
+
+    //});
+    
+//end admin controller 
+
+
+
+// start adminControllerRoutes
+
+//Route::group(['middleware'=> 'adminGuard'],function(){
+  
+    Route::get('/register', [UserController::class, "show"]);
+
+    Route::post('/SignupPost', [UserController::class, "store"]);
+
+    Route::get('/signin', [UserController::class, "signin"]);
+
+    Route::post('/signinPost', [UserController::class, "User_Post_login"]);
+
+
+    //});
+    
+//end admin controller 

@@ -17,9 +17,12 @@ return new class extends Migration
             $table->string('Description');
             $table->integer('Status');
             $table->integer('User_Id');
-            $table->foreign("User_Id")->on("id")->references("user-boxes");
+            $table->foreign("User_Id")->references("id")->on("userboxes");
+
+
             $table->integer('Comment_Id');
-            $table->foreign("Comment_Id")->on("id")->references("comment__boxes");
+            $table->foreign("Comment_Id")->references("id")->on("comment__boxes");
+
             $table->timestamps();
         });
     }

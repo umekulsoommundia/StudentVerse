@@ -113,7 +113,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="w-lg-500px p-10">
                 
 <!--begin::Form-->
-<form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" data-kt-redirect-url="/metronic8/demo2/../demo2/authentication/layouts/corporate/sign-in.html" action="#">
+<form  method="POST" action="/SignupPost" enctype="multipart-formdata" class="form w-100">
+   @csrf
     <!--begin::Heading-->
     <div class="text-center mb-11">
         <!--begin::Title-->
@@ -123,43 +124,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!--end::Title-->
 
         <!--begin::Subtitle-->
-        <div class="text-gray-500 fw-semibold fs-6">
-            Your Social Campaigns
-        </div>
+      
         <!--end::Subtitle--->
     </div>
-    <!--begin::Heading-->
-
-    <!--begin::Login options-->
-    <div class="row g-3 mb-9">
-        <!--begin::Col-->
-        <div class="col-md-6">
-            <!--begin::Google link--->
-            <a href="#" class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
-                <img alt="Logo" src="../../../assets/media/svg/brand-logos/google-icon.svg" class="h-15px me-3"/>   
-                Sign in with Google
-            </a>
-            <!--end::Google link--->
-        </div>
-        <!--end::Col-->
-
-        <!--begin::Col-->
-        <div class="col-md-6">
-            <!--begin::Google link--->
-            <a href="#" class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
-                <img alt="Logo" src="../../../assets/media/svg/brand-logos/apple-black.svg" class="theme-light-show h-15px me-3"/>  
-                <img alt="Logo" src="../../../assets/media/svg/brand-logos/apple-black-dark.svg" class="theme-dark-show h-15px me-3"/>     
-                Sign in with Apple
-            </a>
-            <!--end::Google link--->
-        </div>
-        <!--end::Col-->
+ 
+    <div class="fv-row mb-8">
+        <!--begin::Email-->
+        <input type="text" placeholder="First Name" name="First_Name" autocomplete="off" class="form-control bg-transparent"/> 
+        <!--end::Email-->
     </div>
-    <!--end::Login options-->
-
-    <!--begin::Separator-->
-    <div class="separator separator-content my-14"><span class="w-125px text-gray-500 fw-semibold fs-7">Or with email</span></div>
-    <!--end::Separator-->
+    <div class="fv-row mb-8">
+        <!--begin::Email-->
+        <input type="text" placeholder="Last Name" name="Last_Name" autocomplete="off" class="form-control bg-transparent"/> 
+        <!--end::Email-->
+    </div>
 
     <!--begin::Input group--->
     <div class="fv-row mb-8">
@@ -181,6 +159,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
             <!--end::Input wrapper-->
 
+
+            <div class="fv-row mb-8">
+                <!--begin::Email-->
+                <input type="number" placeholder="Phone Number" name="Phone_Number" autocomplete="off" class="form-control bg-transparent"/> 
+                <!--end::Email-->
+            </div>
+            
+            <div class="fv-row mb-8">
+
+                 
+                    <select  autocomplete="off" class="form-control bg-transparent" name="User_Type"  id="sel1">
+                        <option  class="form-control disabled" >User Type</option>
+                      <option  class="form-control" value="Teacher">Teacher</option>
+                      <option  class="form-control" value="Student">Student</option>
+                
+                    </select>
+              
+                
+              
+            </div>
+
+
             <!--begin::Meter-->
             <div class="d-flex align-items-center mb-3" data-kt-password-meter-control="highlight">
                 <div class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"></div>
@@ -200,13 +200,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     <!--end::Input group--->
 
-    <!--end::Input group--->
-    <div class="fv-row mb-8">    
-        <!--begin::Repeat Password-->
-        <input type="text" placeholder="Repeat Password" name="confirm-password" type="password" autocomplete="off" class="form-control bg-transparent"/>
-        <!--end::Repeat Password-->
-    </div>
-    <!--end::Input group--->
+   
+  
 
     <!--begin::Accept-->
     <div class="fv-row mb-8">
@@ -223,10 +218,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="d-grid mb-10">
         <button type="submit" id="kt_sign_up_submit" class="btn btn-primary">
             
-<!--begin::Indicator label-->
 <span class="indicator-label">
     Sign up</span>
-<!--end::Indicator label-->
+
 
 <!--begin::Indicator progress-->
 <span class="indicator-progress">
@@ -240,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="text-gray-500 text-center fw-semibold fs-6">
         Already have an Account?
 
-        <a href="sign-in.html" class="link-primary fw-semibold">
+        <a href="signin" class="link-primary fw-semibold">
             Sign in
         </a>
     </div>

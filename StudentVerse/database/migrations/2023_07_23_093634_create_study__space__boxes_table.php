@@ -18,9 +18,11 @@ return new class extends Migration
             $table->string('Image');
             $table->integer('Status');
             $table->integer('User_Id');
-            $table->foreign("User_Id")->on("id")->references("user-boxes");
+            $table->foreign("User_Id")->references("id")->on("userboxes");
+
             $table->integer('Tagged_Id');
-            $table->foreign("Tagged_Id")->on("id")->references("tagged__boxes");
+
+            $table->foreign("Tagged_Id")->references("id")->on("tagged__boxes");
 
             $table->timestamps();
         });
