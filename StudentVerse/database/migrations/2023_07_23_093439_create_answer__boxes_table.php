@@ -16,11 +16,11 @@ return new class extends Migration
           
             $table->string('Description');
             $table->integer('Status');
-            $table->integer('User_Id');
+            $table->unsignedBigInteger('User_Id');
             $table->foreign("User_Id")->references("id")->on("userboxes");
 
 
-            $table->integer('Comment_Id');
+            $table->unsignedBigInteger('Comment_Id');
             $table->foreign("Comment_Id")->references("id")->on("comment__boxes");
 
             $table->timestamps();

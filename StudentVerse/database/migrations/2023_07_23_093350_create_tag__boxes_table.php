@@ -14,8 +14,6 @@ return new class extends Migration
         Schema::create('tag__boxes', function (Blueprint $table) {
             $table->id();
             $table->string('Name');
-
-
             $table->timestamps();
         });
     }

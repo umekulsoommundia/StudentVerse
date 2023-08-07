@@ -18,17 +18,12 @@ return new class extends Migration
             $table->string('Vote');
             $table->integer('User_Id');
             $table->foreign("User_Id")->references("id")->on("userboxes");
-
-
+            
             $table->integer('Tagged_Id');
             $table->foreign("Tagged_Id")->references("id")->on("tagged__boxes");
 
-
             $table->integer('Comment_Id');
             $table->foreign("Comment_Id")->references("id")->on("comment__boxes");
-
-         
-
             $table->timestamps();
         });
     }

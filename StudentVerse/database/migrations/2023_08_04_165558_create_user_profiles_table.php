@@ -17,16 +17,16 @@ return new class extends Migration
             
             $table->string('Image');
             
-            $table->integer('User_Id');
+            $table->unsignedBigInteger('User_Id');
             $table->foreign('User_Id')->references('id')->on('userboxes');
 
-            $table->integer('Badge_Id');
+            $table->unsignedBigInteger('Badge_Id');
             $table->foreign('Badge_Id')->references('id')->on('badge__boxes');
 
-            $table->integer('Mail_Id');
+            $table->unsignedBigInteger('Mail_Id');
             $table->foreign('Mail_Id')->references('id')->on('mail__boxes');
 
-            $table->integer('Interest_Id');
+            $table->unsignedBigInteger('Interest_Id');
             $table->foreign('Interest_Id')->references('id')->on('interest__boxes');
             $table->timestamps();
         });

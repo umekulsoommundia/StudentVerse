@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('Subject');
             $table->string('Description');
             $table->string('Vote');
-            $table->integer('Box_Id');
+            $table->unsignedBigInteger('Box_Id');
             $table->foreign("Box_Id")->references("id")->on("question__boxes");
 
             
-            $table->integer('Tags_Id');
+            $table->unsignedBigInteger('Tags_Id');
             $table->foreign("Tags_Id")->references("id")->on("tag__boxes");
 
 

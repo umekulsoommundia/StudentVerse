@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('Description');
             $table->string('Vote');
-            $table->integer('User_Id');
+            $table->unsignedBigInteger('User_Id');
             $table->foreign("User_Id")->references("id")->on("userboxes");
 
            

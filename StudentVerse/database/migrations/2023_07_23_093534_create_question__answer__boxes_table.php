@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('question__answer__boxes', function (Blueprint $table) {
             $table->id();
-            $table->integer('Question_Id');
+            $table->unsignedBigInteger('Question_Id');
             $table->foreign("Question_Id")->references("id")->on("question__boxes");
 
 
 
-            $table->integer('Answer_Id');
+            $table->unsignedBigInteger('Answer_Id');
             $table->foreign("Answer_Id")->references("id")->on("answer__boxes");
 
             $table->timestamps();

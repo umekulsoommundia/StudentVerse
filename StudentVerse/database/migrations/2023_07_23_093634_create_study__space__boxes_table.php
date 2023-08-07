@@ -17,10 +17,10 @@ return new class extends Migration
             $table->string('Description');
             $table->string('Image');
             $table->integer('Status');
-            $table->integer('User_Id');
+            $table->unsignedBigInteger('User_Id');
             $table->foreign("User_Id")->references("id")->on("userboxes");
 
-            $table->integer('Tagged_Id');
+            $table->unsignedBigInteger('Tagged_Id');
 
             $table->foreign("Tagged_Id")->references("id")->on("tagged__boxes");
 

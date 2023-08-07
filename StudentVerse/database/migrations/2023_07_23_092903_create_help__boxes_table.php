@@ -15,16 +15,16 @@ return new class extends Migration
             $table->id();
             $table->string('Subject');
             $table->string('Description');
+
+             $table->unsignedBigInteger('User_Id');
+             $table->primary("User_Id")->references("id")->on("userboxes");
             
-             $table->integer('User_Id');
-             $table->foreign("User_Id")->references("id")->on("userboxes");
-            
-             $table->integer('Tagged_Id');
-             $table->foreign("Tagged_Id")->references("id")->on("tagged__boxes");
+             $table->unsignedBigInteger('Tagged_Id');
+             $table->primary("Tagged_Id")->references("id")->on("tagged__boxes");
 
 
-             $table->integer('Comment_Id');
-             $table->foreign("Comment_Id")->references("id")->on("comment__boxes");
+             $table->unsignedBigInteger('Comment_Id');
+             $table->primary("Comment_Id")->references("id")->on("comment__boxes");
 
         
 

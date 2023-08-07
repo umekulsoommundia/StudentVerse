@@ -13,16 +13,16 @@ return new class extends Migration
     {
         Schema::create('student__space__boxes', function (Blueprint $table) {
             $table->id();
-            $table->integer('User_Id');
+            $table->unsignedBigInteger('User_Id');
 
             $table->foreign("User_Id")->references("id")->on("userboxes");
 
 
-            $table->integer('Tagged_Id');
+            $table->unsignedBigInteger('Tagged_Id');
             $table->foreign("Tagged_Id")->references("id")->on("tagged__boxes");
 
 
-            $table->integer('Space_Id');
+            $table->unsignedBigInteger('Space_Id');
             $table->foreign("Space_Id")->references("id")->on("study__space__boxes");
 
 
