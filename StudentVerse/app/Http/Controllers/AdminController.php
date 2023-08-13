@@ -9,7 +9,7 @@ use Illuminate\facades\hash;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
-use App\Models\Admin_Box;
+use App\Models\AdminBox;
 
 class AdminController extends Controller
 {
@@ -37,9 +37,9 @@ class AdminController extends Controller
      $email = $request->email;
      $password = $request->password;
 
-     $login = DB::table("admin__boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
+     $login = DB::table("admin_boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
      
-     $loginPass = DB::table("admin__boxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
+     $loginPass = DB::table("admin_boxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
 
      if($login && $loginPass){
          session(['email'=>$login->email,'password'=>$loginPass->password]);
@@ -70,9 +70,12 @@ class AdminController extends Controller
          
         $validate = Validator::make($request->all(),[
             'username' => 'required',
-            'email' => 'required|email|unique:Users,email',
+            'email' => 'required|email|unique:admin_boxes,email',
             'password' => 'required|min:8',
+        ], [
+            'email.unique' => 'The email address is already taken.',
         ]);
+
 
     
     if($validate->fails()){
@@ -81,20 +84,20 @@ class AdminController extends Controller
     else{
 
 
-        $admin = new Admin_Box();
+        $admin = new AdminBox();
         $admin->username = $request->username;
         $admin->email = $request->email;
         $admin->password = $request->password;
         $admin->save();
 
-        return redirect('admin.sign-in')->with("message","Successfully Registered! Please Enter Your Credenials To Login");
+        return redirect('login')->with("success","Successfully Registered! Please Enter Your Credenials To Login");
     }
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show()
     {
         return view('admin.sign-up');
     }

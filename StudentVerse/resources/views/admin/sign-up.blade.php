@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: Metronic 
-Product Version: 8.2.0
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
 <html lang="en" >
     <!--begin::Head-->
     
-<!-- Mirrored from preview.keenthemes.com/metronic8/demo2/authentication/layouts/corporate/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 17:26:28 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-        <title>Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes</title>
+        <title>StudentVerse</title>
         <meta charset="utf-8"/>
         <meta name="description" content="
             The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, 
@@ -37,67 +24,18 @@ License: For each use you must have a valid license purchased only from above li
             Metronic - Bootstrap Admin Template, HTML, VueJS, React, Angular. Laravel, Asp.Net Core, Ruby on Rails, 
             Spring Boot, Blazor, Django, Express.js, Node.js, Flask Admin Dashboard Theme & Template
         " />
-        <meta property="og:url" content="https://keenthemes.com/metronic"/>
-        <meta property="og:site_name" content="Keenthemes | Metronic" />
-        <link rel="canonical" href="https://preview.keenthemes.com/metronic8"/>
-        <link rel="shortcut icon" href="../../../assets/media/logos/favicon.ico"/>
+     
 
         <!--begin::Fonts(mandatory for all pages)-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"/>        <!--end::Fonts-->
 
         
         
-                    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
                             <link href="../../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
                             <link href="../../../assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
                         <!--end::Global Stylesheets Bundle-->
         
-                    <!--Begin::Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'../../../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5FS8GGP');</script>
-<!--End::Google Tag Manager -->
-        
-        <script>
-            // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking)
-            if (window.top != window.self) {
-                window.top.location.replace(window.self.location.href);
-            }
-        </script>
-    </head>
-    <!--end::Head-->
-
-    <!--begin::Body-->
-    <body  id="kt_body"  class="auth-bg" >
-        <!--begin::Theme mode setup on page load-->
-<script>
-	var defaultThemeMode = "light";
-	var themeMode;
-
-	if ( document.documentElement ) {
-		if ( document.documentElement.hasAttribute("data-bs-theme-mode")) {
-			themeMode = document.documentElement.getAttribute("data-bs-theme-mode");
-		} else {
-			if ( localStorage.getItem("data-bs-theme") !== null ) {
-				themeMode = localStorage.getItem("data-bs-theme");
-			} else {
-				themeMode = defaultThemeMode;
-			}			
-		}
-
-		if (themeMode === "system") {
-			themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-		}
-
-		document.documentElement.setAttribute("data-bs-theme", themeMode);
-	}            
-</script>
-<!--end::Theme mode setup on page load-->            
-                    <!--Begin::Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FS8GGP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!--End::Google Tag Manager (noscript) -->
+         
         
         <!--begin::Main-->
 	<!--begin::Root-->
@@ -113,12 +51,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="w-lg-500px p-10">
                 
 <!--begin::Form-->
-<form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" data-kt-redirect-url="/metronic8/demo2/../demo2/authentication/layouts/corporate/sign-in.html" action="#">
+<form  method="POST" action="/AdminSignupPost" enctype="multipart-formdata" class="form w-100"   id="">
+    @csrf
     <!--begin::Heading-->
     <div class="text-center mb-11">
         <!--begin::Title-->
         <h1 class="text-dark fw-bolder mb-3">
-            Sign Up
+Admin Register
         </h1>
         <!--end::Title-->
 
@@ -161,11 +100,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="separator separator-content my-14"><span class="w-125px text-gray-500 fw-semibold fs-7">Or with email</span></div>
     <!--end::Separator-->
 
+    <div class="fv-row mb-8">
+        <!--begin::Email-->
+        <input type="text" placeholder="User Name" required name="username" autocomplete="off" class="form-control bg-transparent"/> 
+        <!--end::Email-->
+    </div>
+
     <!--begin::Input group--->
     <div class="fv-row mb-8">
         <!--begin::Email-->
-        <input type="text" placeholder="Email" name="email" autocomplete="off" class="form-control bg-transparent"/> 
+        <input type="text" required placeholder="Email"  value="{{ old('email') }}" name="email" autocomplete="off" class="form-control bg-transparent"/> 
         <!--end::Email-->
+@if($errors->has('email'))
+    <span class="error" style="color: red">{{ $errors->first('email') }}</span>
+@endif
+
     </div>
 
     <!--begin::Input group-->
@@ -174,10 +123,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="mb-1">
             <!--begin::Input wrapper-->
             <div class="position-relative mb-3">    
-                <input class="form-control bg-transparent" type="password" placeholder="Password" name="password" autocomplete="off"/>
+                <input class="form-control bg-transparent" required type="password" placeholder="Password" name="password" autocomplete="off"/>
 
-                <span class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2" data-kt-password-meter-control="visibility">
-                    <i class="ki-duotone ki-eye-slash fs-2"></i>                    <i class="ki-duotone ki-eye fs-2 d-none"></i>                </span>
+             
             </div>
             <!--end::Input wrapper-->
 
@@ -200,24 +148,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     <!--end::Input group--->
 
-    <!--end::Input group--->
-    <div class="fv-row mb-8">    
-        <!--begin::Repeat Password-->
-        <input type="text" placeholder="Repeat Password" name="confirm-password" type="password" autocomplete="off" class="form-control bg-transparent"/>
-        <!--end::Repeat Password-->
-    </div>
-    <!--end::Input group--->
+   
 
-    <!--begin::Accept-->
-    <div class="fv-row mb-8">
-        <label class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="toc" value="1"/>
-            <span class="form-check-label fw-semibold text-gray-700 fs-base ms-1">
-                I Accept the <a href="#" class="ms-1 link-primary">Terms</a>
-            </span>
-        </label>
-    </div>
-    <!--end::Accept-->
+
+
 
     <!--begin::Submit button-->
     <div class="d-grid mb-10">
@@ -225,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
 <!--begin::Indicator label-->
 <span class="indicator-label">
-    Sign up</span>
+    Register</span>
 <!--end::Indicator label-->
 
 <!--begin::Indicator progress-->
@@ -240,7 +174,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="text-gray-500 text-center fw-semibold fs-6">
         Already have an Account?
 
-        <a href="sign-in.html" class="link-primary fw-semibold">
+        <a href="login" class="link-primary fw-semibold">
             Sign in
         </a>
     </div>
@@ -253,126 +187,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!--end::Form-->       
 
-        <!--begin::Footer-->  
-        <div class="w-lg-500px d-flex flex-stack px-10 mx-auto">
-            <!--begin::Languages-->
-            <div class="me-10">             
-                <!--begin::Toggle-->
-                <button class="btn btn-flex btn-link btn-color-gray-700 btn-active-color-primary rotate fs-base" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" data-kt-menu-offset="0px, 0px">
-                    <img  data-kt-element="current-lang-flag" class="w-20px h-20px rounded me-3" src="../../../assets/media/flags/united-states.svg" alt=""/>
-                    
-                    <span data-kt-element="current-lang-name" class="me-1">English</span>
-
-                    <span class="d-flex flex-center rotate-180">
-                        <i class="ki-duotone ki-down fs-5 text-muted m-0"></i>                    </span>
-                </button>
-                <!--end::Toggle-->
-
-                <!--begin::Menu-->
-                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-4 fs-7" data-kt-menu="true" id="kt_auth_lang_menu">
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="English">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/united-states.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">English</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="Spanish">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/spain.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">Spanish</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="German">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/germany.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">German</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="Japanese">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/japan.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">Japanese</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="French">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/france.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">French</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                    </div>
-                <!--end::Menu-->           
-            </div>
-            <!--end::Languages--> 
-
-            <!--begin::Links-->
-            <div class="d-flex fw-semibold text-primary fs-base gap-5">
-                <a href="../../../pages/team.html" target="_blank">Terms</a>
-
-                <a href="../../../pages/pricing/column.html" target="_blank">Plans</a>
-                
-                <a href="../../../pages/contact.html" target="_blank">Contact Us</a>
-            </div>
-            <!--end::Links-->
-        </div>
-        <!--end::Footer-->
+   
     </div>
     <!--end::Body-->
     
-    <!--begin::Aside-->
-    <div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2" style="background-image: url(../../../assets/media/misc/auth-bg.png)">
-        <!--begin::Content-->
-        <div class="d-flex flex-column flex-center py-7 py-lg-15 px-5 px-md-15 w-100">          
-            <!--begin::Logo-->
-            <a href="../../../index.html" class="mb-0 mb-lg-12">
-                <img alt="Logo" src="../../../assets/media/logos/custom-1.png" class="h-60px h-lg-75px"/>
-            </a>    
-            <!--end::Logo-->
 
-            <!--begin::Image-->                
-            <img class="d-none d-lg-block mx-auto w-275px w-md-50 w-xl-500px mb-10 mb-lg-20" src="../../../assets/media/misc/auth-screens.png" alt=""/>                 
-            <!--end::Image-->
-
-            <!--begin::Title-->
-            <h1 class="d-none d-lg-block text-white fs-2qx fw-bolder text-center mb-7"> 
-                Fast, Efficient and Productive
-            </h1>  
-            <!--end::Title-->
-
-            <!--begin::Text-->
-            <div class="d-none d-lg-block text-white fs-base text-center">
-                In this kind of post, <a href="#" class="opacity-75-hover text-warning fw-bold me-1">the blogger</a> 
-
-                introduces a person they’ve interviewed <br/> and provides some background information about 
-                
-                <a href="#" class="opacity-75-hover text-warning fw-bold me-1">the interviewee</a> 
-                and their <br/> work following this is a transcript of the interview.  
-            </div>
-            <!--end::Text-->
-        </div>
-        <!--end::Content-->
-    </div>
-    <!--end::Aside-->
 </div>
 <!--end::Authentication - Sign-up-->
                          
@@ -401,5 +220,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </body>
     <!--end::Body-->
 
-<!-- Mirrored from preview.keenthemes.com/metronic8/demo2/authentication/layouts/corporate/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 17:26:29 GMT -->
 </html>

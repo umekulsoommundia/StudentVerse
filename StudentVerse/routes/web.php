@@ -481,28 +481,28 @@ Route::get('signup-main', function () {
 
 //start admin routes
 
-Route::get('admin', function () {
-    return view('admin.index');
-});
+// Route::get('admin', function () {
+//     return view('admin.index');
+// });
 
 
-Route::get('admin-signin', function () {
-    return view('admin.sign-in');
-});
+// Route::get('admin-signin', function () {
+//     return view('admin.sign-in');
+// });
 
-Route::get('admin-signup', function () {
-    return view('admin.sign-up');
-});
-
-
-Route::get('admin-otp', function () {
-    return view('admin.two-factor');
-});
+// Route::get('admin-signup', function () {
+//     return view('admin.sign-up');
+// });
 
 
-Route::get('admin-otp', function () {
-    return view('admin.two-factor');
-});
+// Route::get('admin-otp', function () {
+//     return view('admin.two-factor');
+// });
+
+
+// Route::get('admin-otp', function () {
+//     return view('admin.two-factor');
+// });
 
 
 //end admin routex
@@ -512,8 +512,15 @@ Route::get('admin-otp', function () {
 //Route::group(['middleware'=> 'adminGuard'],function(){
   
     Route::get('/register', [AdminController::class, "show"]);
+    
+    Route::post('/AdminSignupPost', [AdminController::class, "store"]);
 
-    Route::get('/login', [AdminController::class, "store"]);
+    Route::get('/login', [AdminController::class, "signin"]);
+    
+    Route::post('/Admin_Post_login', [AdminController::class, "Admin_Post_login"]);
+
+
+   // Route::get('/login', [AdminController::class, "store"]);
 
 
     //});
@@ -526,13 +533,13 @@ Route::get('admin-otp', function () {
 
 //Route::group(['middleware'=> 'adminGuard'],function(){
   
-    Route::get('/register', [UserController::class, "show"]);
+    // Route::get('/register', [UserController::class, "show"]);
 
-    Route::post('/SignupPost', [UserController::class, "store"]);
+    // Route::post('/SignupPost', [UserController::class, "store"]);
 
-    Route::get('/signin', [UserController::class, "signin"]);
+    // Route::get('/signin', [UserController::class, "signin"]);
 
-    Route::post('/signinPost', [UserController::class, "User_Post_login"]);
+    // Route::post('/signinPost', [UserController::class, "User_Post_login"]);
 
 
     //});

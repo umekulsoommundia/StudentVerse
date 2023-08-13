@@ -1,23 +1,11 @@
 <!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: Metronic 
-Product Version: 8.2.0
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
+
 <html lang="en" >
     <!--begin::Head-->
     
-<!-- Mirrored from preview.keenthemes.com/metronic8/demo2/authentication/layouts/corporate/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 17:26:16 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-        <title>Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes</title>
+        <title>StudentVerse</title>
         <meta charset="utf-8"/>
         <meta name="description" content="
             The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, 
@@ -113,12 +101,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="w-lg-500px p-10">
                 
 <!--begin::Form-->
-<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="/metronic8/demo2/../demo2/index.html" action="#">
-    <!--begin::Heading-->
+<form class="form w-100" method="POST" action="Admin_Post_login">
+    @csrf
+  
+
     <div class="text-center mb-11">
         <!--begin::Title-->
         <h1 class="text-dark fw-bolder mb-3">
-            Sign In
+          Admin Log In
         </h1>
         <!--end::Title-->
 
@@ -189,7 +179,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!--end::Link-->
     </div>
     <!--end::Wrapper-->    
-
+  <!--begin::Heading-->
+  @if(session('success'))
+  <div class="alert alert-success">
+      {{ session('success') }}
+  </div>
+@endif
+@if(session('message'))
+<div class="alert alert-danger">
+    {{ session('message') }}
+</div>
+@endif
     <!--begin::Submit button-->
     <div class="d-grid mb-10">
         <button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
@@ -211,7 +211,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="text-gray-500 text-center fw-semibold fs-6">
         Not a Member yet?
 
-        <a href="sign-up.html" class="link-primary">
+        <a href="register" class="link-primary">
             Sign up
         </a>
     </div>
@@ -223,126 +223,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!--end::Form-->       
 
-        <!--begin::Footer-->  
-        <div class="w-lg-500px d-flex flex-stack px-10 mx-auto">
-            <!--begin::Languages-->
-            <div class="me-10">             
-                <!--begin::Toggle-->
-                <button class="btn btn-flex btn-link btn-color-gray-700 btn-active-color-primary rotate fs-base" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" data-kt-menu-offset="0px, 0px">
-                    <img  data-kt-element="current-lang-flag" class="w-20px h-20px rounded me-3" src="../../../assets/media/flags/united-states.svg" alt=""/>
-                    
-                    <span data-kt-element="current-lang-name" class="me-1">English</span>
 
-                    <span class="d-flex flex-center rotate-180">
-                        <i class="ki-duotone ki-down fs-5 text-muted m-0"></i>                    </span>
-                </button>
-                <!--end::Toggle-->
-
-                <!--begin::Menu-->
-                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-4 fs-7" data-kt-menu="true" id="kt_auth_lang_menu">
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="English">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/united-states.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">English</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="Spanish">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/spain.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">Spanish</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="German">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/germany.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">German</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="Japanese">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/japan.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">Japanese</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                        <div class="menu-item px-3">
-                            <a href="#" class="menu-link d-flex px-5" data-kt-lang="French">
-                                <span class="symbol symbol-20px me-4">
-                                    <img data-kt-element="lang-flag" class="rounded-1" src="../../../assets/media/flags/france.svg" alt=""/>
-                                </span>
-                                <span data-kt-element="lang-name">French</span>
-                            </a>
-                        </div>
-                        <!--end::Menu item-->
-                                    </div>
-                <!--end::Menu-->           
-            </div>
-            <!--end::Languages--> 
-
-            <!--begin::Links-->
-            <div class="d-flex fw-semibold text-primary fs-base gap-5">
-                <a href="../../../pages/team.html" target="_blank">Terms</a>
-
-                <a href="../../../pages/pricing/column.html" target="_blank">Plans</a>
-                
-                <a href="../../../pages/contact.html" target="_blank">Contact Us</a>
-            </div>
-            <!--end::Links-->
-        </div>
-        <!--end::Footer-->
     </div>
     <!--end::Body-->
     
-    <!--begin::Aside-->
-    <div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2" style="background-image: url(../../../assets/media/misc/auth-bg.png)">
-        <!--begin::Content-->
-        <div class="d-flex flex-column flex-center py-7 py-lg-15 px-5 px-md-15 w-100">          
-            <!--begin::Logo-->
-            <a href="../../../index.html" class="mb-0 mb-lg-12">
-                <img alt="Logo" src="../../../assets/media/logos/custom-1.png" class="h-60px h-lg-75px"/>
-            </a>    
-            <!--end::Logo-->
-
-            <!--begin::Image-->                
-            <img class="d-none d-lg-block mx-auto w-275px w-md-50 w-xl-500px mb-10 mb-lg-20" src="../../../assets/media/misc/auth-screens.png" alt=""/>                 
-            <!--end::Image-->
-
-            <!--begin::Title-->
-            <h1 class="d-none d-lg-block text-white fs-2qx fw-bolder text-center mb-7"> 
-                Fast, Efficient and Productive
-            </h1>  
-            <!--end::Title-->
-
-            <!--begin::Text-->
-            <div class="d-none d-lg-block text-white fs-base text-center">
-                In this kind of post, <a href="#" class="opacity-75-hover text-warning fw-bold me-1">the blogger</a> 
-
-                introduces a person they’ve interviewed <br/> and provides some background information about 
-                
-                <a href="#" class="opacity-75-hover text-warning fw-bold me-1">the interviewee</a> 
-                and their <br/> work following this is a transcript of the interview.  
-            </div>
-            <!--end::Text-->
-        </div>
-        <!--end::Content-->
-    </div>
-    <!--end::Aside-->
+  
 </div>
 <!--end::Authentication - Sign-in-->
                          

@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('interest__boxes', function (Blueprint $table) {
+        Schema::create('admin_boxes', function (Blueprint $table) {
             $table->id();
-            $table->string('Name');
+            $table->string("Username");
+            $table->string("email")->unique();
+            $table->string("Password");
             $table->timestamps();
         });
     }
@@ -23,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('interest__boxes');
+        Schema::dropIfExists('admin_boxes');
     }
 };
