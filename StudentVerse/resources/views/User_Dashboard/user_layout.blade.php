@@ -12,22 +12,35 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
 </head>
 
 
 
 
+<style>
+    .center-form {
+            margin: 0 auto;
+            max-width: 400px; /* Optional: Set a maximum width for the form */
+        }
 
+        .c-form {
+            text-align: center;
+            padding: 20px;
+        
+        }
+</style>
 
 
 
 <body class="nightview">
-    <div class="page-loader" id="page-loader">
+    {{-- <div class="page-loader" id="page-loader">
         <div class="loader"><span class="loader-item"></span><span class="loader-item"></span><span
                 class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
                 class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
                 class="loader-item"></span><span class="loader-item"></span></div>
-    </div>
+    </div> --}}
     <div class="theme-layout">
         <div class="responsive-header">
             <div class="logo res"><img src="images/logo.png" alt=""><span>Socimo</span></div>

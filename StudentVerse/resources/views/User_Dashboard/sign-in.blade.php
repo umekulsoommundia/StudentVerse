@@ -113,13 +113,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="w-lg-500px p-10">
                 
 <!--begin::Form-->
-<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="/metronic8/demo2/../demo2/index.html" action="#">
+<form class="form w-100"  method="POST" action="User_Post_login" >
+    @csrf
     <!--begin::Heading-->
     <div class="text-center mb-11">
         <!--begin::Title-->
         <h1 class="text-dark fw-bolder mb-3">
-            Sign In
-        </h1>
+
+Log in        </h1>
         <!--end::Title-->
 
         <!--begin::Subtitle-->
@@ -207,15 +208,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     <!--end::Submit button-->
 
-    <!--begin::Sign up-->
-    <div class="text-gray-500 text-center fw-semibold fs-6">
-        Not a Member yet?
 
-        <a href="sign-up.html" class="link-primary">
-            Sign up
-        </a>
-    </div>
-    <!--end::Sign up-->
 </form>
 <!--end::Form--> 
             </div>

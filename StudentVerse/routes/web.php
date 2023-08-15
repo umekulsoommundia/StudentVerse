@@ -19,11 +19,16 @@ use Illuminate\Support\Facades\Route;
 
 //user register routes
 
-Route::get('/register', [UserController::class, "show"]);
+Route::get('/userRegister', [UserController::class, "show"]);
 
-Route::get('/login', [UserController::class, "store"]);
+Route::get('/Userlogin', [UserController::class, "signin"]);
+
+Route::post('/User_Post_login', [UserController::class, "User_Post_login"]);
 
 
+Route::get('profile-setup', function () {
+    return view('User_Dashboard.profile-setup');
+});
 // user dashboard routes
 
 Route::get('widgets', function () {
@@ -376,7 +381,7 @@ Route::get('login', function () {
     return view('StudentVerse.login');
 });
 
-Route::get('register', function () {
+Route::get('registerr', function () {
     return view('StudentVerse.register');
 });
 

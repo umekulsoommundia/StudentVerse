@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Validator;
-use App\Models\user;
-use App\Models\userbox;
 use Illuminate\Http\Request;
-use App\Models\userboxes;
+use App\Models\UserBox;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\facades\hash;
 use Illuminate\Support\Facades\DB;
@@ -48,9 +46,9 @@ class UserController extends Controller
      $email = $request->email;
      $password = $request->password;
 
-     $login = DB::table("userboxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
+     $login = DB::table("user_boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
      
-     $loginPass = DB::table("userboxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
+     $loginPass = DB::table("user_boxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
 
      if($login && $loginPass){
          session(['email'=>$login->email,'password'=>$loginPass->password]);
@@ -78,7 +76,7 @@ class UserController extends Controller
     $validate = Validator::make($r->all(),[
         'First_Name' => 'required',
         'Last_Name' => 'required',
-        'Email' => 'required|email|unique:userboxes,email',
+        'Email' => 'required|email|unique:user_boxes,email',
         'Password' => 'required|min:8',
         'Phone_Number' => 'required',
         'User_Type' => 'required',
@@ -88,14 +86,13 @@ class UserController extends Controller
     }
     else
     {
-        $User = new userbox();
+        $User = new UserBox();
         $User->First_Name = $r->First_Name;
         $User->Last_Name = $r->Last_Name;
         $User->Email = $r->Email;
         $User->Password = $r->Password;
         $User->Phone_Number = $r->Phone_Number;
         $User->User_Type = $r->User_Type;
-
         $User->save();
 
         return redirect('/signin')->with("message","Successfully Registered! Please Enter Your Credenials To Login");
@@ -106,7 +103,7 @@ class UserController extends Controller
    /**
     * Display the specified resource.
     */
-   public function show(user $userbox)
+   public function show( $userbox)
    {
         return view('User_dashboard.signup');
    }
@@ -122,7 +119,7 @@ class UserController extends Controller
    /**
     * Update the specified resource in storage.
     */
-   public function update(Request $request, user $userbox)
+   public function update(Request $request,  $userbox)
    {
        //
    }
@@ -130,7 +127,7 @@ class UserController extends Controller
    /**
     * Remove the specified resource from storage.
     */
-   public function destroy(user $userbox)
+   public function destroy( $userbox)
    {
        //
    }
