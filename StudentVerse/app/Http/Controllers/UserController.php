@@ -9,9 +9,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\facades\hash;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
-
-
-
+use App\models\InterestBox;
+use App\Models\UserProfileBox;
 
 class UserController extends Controller
 {
@@ -39,6 +38,55 @@ class UserController extends Controller
     }
 
 
+    function showUserProfileForm() {
+        $interests = InterestBox::all();
+        $msg = session('msg'); // Set the session message here
+    
+        return view('User_Dashboard.profile-setup', compact('interests', 'msg'));
+    }
+
+
+    function profileSetupPost(Request $request) {
+        // Validate the form data
+        $request->validate([
+            // Other validation rules
+            'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Adjust allowed image types and size
+        ]);
+
+        // Handle file upload for profile image
+        $imagePath = $request->file('Image')->store('user_profile_images', 'public');
+
+        // Create and save the user profile
+        $userProfile = new UserProfileBox();
+        $userProfile->User_Id = auth()->user()->id;
+        $userProfile->User_Name = $request->User_Name;
+        $userProfile->Email = $request->Email;
+        $userProfile->Current_work = $request->Current_work;
+        $userProfile->Interest_Id = $request->Interest_Id;
+        $userProfile->Bio = $request->Bio;
+        $userProfile->Image = $imagePath; // Save the image path
+        $userProfile->status = 1; // Set status to 1
+        $userProfile->save();
+
+        // Redirect with a success message
+        return redirect('/user-home')->with("message", "Profile setup successfully!");
+    }
+
+
+
+    //profile home page 
+
+    function showUserProfile(Request $request) {
+        $userProfile = UserProfileBox::where('User_Id', auth()->user()->id)->first();
+
+        if ($userProfile && $userProfile->status == 1) {
+            return view('User_Dashboard.index'); // Redirect to user profile page
+        } else {
+            return view('user.profile-setup')->with("message", "Please complete profile setup first.");
+        }
+    }
+
+
 
     function User_Post_login(request $request){
   
@@ -52,7 +100,16 @@ class UserController extends Controller
 
      if($login && $loginPass){
          session(['email'=>$login->email,'password'=>$loginPass->password]);
-         return view('User_Dashboard.index');
+        
+
+         // check if profile is completed
+         $userProfile = UserProfileBox::where('email', $email)->first();
+         if ($userProfile && $userProfile->status == 1) {
+             return view('User_Dashboard.index');
+         } else {
+             return redirect('profile-setup')->with("msg", "Please complete profile setup.");
+         }
+
 
      }
 
@@ -71,9 +128,7 @@ class UserController extends Controller
 
    public function store(Request $r)
    {
-
-
-    $validate = Validator::make($r->all(),[
+   $validate = Validator::make($r->all(),[
         'First_Name' => 'required',
         'Last_Name' => 'required',
         'Email' => 'required|email|unique:user_boxes,email',
@@ -99,6 +154,9 @@ class UserController extends Controller
     }
 
    }
+
+
+
 
    /**
     * Display the specified resource.

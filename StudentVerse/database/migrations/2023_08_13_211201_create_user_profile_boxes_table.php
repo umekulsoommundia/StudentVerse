@@ -23,6 +23,8 @@ return new class extends Migration
             $table->unsignedBigInteger('Badge_Id')->default(0);
             $table->unsignedBigInteger('Mail_Id')->default(0);
             $table->unsignedBigInteger('Interest_Id');
+            $table->integer('status')->default(0);
+
             $table->timestamps();
 
             $table->foreign('User_Id')->references('id')->on('user_boxes');

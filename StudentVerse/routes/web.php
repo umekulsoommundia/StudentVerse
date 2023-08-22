@@ -26,9 +26,9 @@ Route::get('/Userlogin', [UserController::class, "signin"]);
 Route::post('/User_Post_login', [UserController::class, "User_Post_login"]);
 
 
-Route::get('profile-setup', function () {
-    return view('User_Dashboard.profile-setup');
-});
+// Route::get('profile-setup', function () {
+//     return view('User_Dashboard.profile-setup');
+// });
 // user dashboard routes
 
 Route::get('widgets', function () {
@@ -550,3 +550,15 @@ Route::get('signup-main', function () {
     //});
     
 //end admin controller 
+
+
+
+
+
+   
+       
+    // Your authenticated routes here
+    Route::get('/profile-setup', [UserController::class, "showUserProfileForm"]);
+    Route::get('/user-home', [UserController::class, 'showUserProfile']);
+    Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost']);
+  

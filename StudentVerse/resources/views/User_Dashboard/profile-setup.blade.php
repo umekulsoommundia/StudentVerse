@@ -15,10 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
 </head>
-
-
-
-
 <style>
     .center-form {
             margin: 0 auto;
@@ -63,52 +59,84 @@
               <div class="col-lg-6">
                 <div class="main-wraper" style="background-color: rgb(26, 12, 69)">
                   <div class="feedback-form">
+                  
+
+<!-- Your profile setup form goes here -->
+
                     <h4 class="text-center"><i class="icofont-comment"></i> Complete Profile Setup</h4>
-                    <form class="mt-4">
-                        <form class="mt-4" method="POST" action="/profileSetupPost" enctype="multipart-formdata">
-							<fieldset class="row">
-								<div class="mb-4 col-lg-12">
-									<input name="User_Name" class="uk-input" type="text" placeholder="User Name">
-								</div>
-							
-                                <div class="mb-4 col-lg-6">
-									<input name="Email" class="uk-input" type="text" placeholder="Email Address">
-								</div>
-								<div class="mb-4 col-lg-6">
-									<input name="Current_work" class="uk-input" type="text" placeholder="Current designation">
-								</div>
-								<div class="mb-4 uk-margin col-lg-12">
-									<select class="uk-select">
-										<option>Select Interest</option>
-										<option value="">Design</option>
-                                       
-									</select>
-								</div>
-							
-								
-								<div class="mb-4 col-lg-12">
-									<textarea name="Bio" class="uk-textarea" rows="2" placeholder="bio"></textarea>
-								</div>
-								<div class="mb-4 col-lg-12">
-									<div class="form-group1 mt-30">
-										<label for="file5">Add Profile Photo</label>
-										<div class="image-upload-wrap">
-											<input name="Image" type="file" accept="image/*" onchange="readURL(this);" id="file5" class="file-upload-input">
-											<div class="drag-text">
-											  <i class="icofont-cloud-upload"></i>
-											  <h4>Select Profile to upload</h4>
-											  <p>or drag and drop image</p>
-											</div>
-										</div>															
-									</div>
-								</div>
-							
-								<div class="mb-0 col-lg-12 text-center">
-									<button type="submit" class="main-btn">Complete </button>
-								</div>	
-							</fieldset>
-						</form>
+              
+                        
+
+
+                    <form class="mt-4" method="POST" action="/profileSetupPost" enctype="multipart/form-data">
+                        @csrf
+                        @if(isset($msg))
+                            <div class="alert alert-warning">
+                                {{ $msg }}
+                            </div>
+                        @endif
+                    
+                        @csrf
+                    
+                        <fieldset class="row">
+                            <!-- Other form fields -->
+                            <div class="mb-4 col-lg-12">
+                            <input name="User_Name" class="uk-input" type="text" placeholder="User Name">
+                        </div>
+                            <!-- Other fields -->
+                            <div class="mb-4 col-lg-6">
+                                <input name="Email" class="uk-input" type="text" placeholder="Email Address">
+                            </div>
+                            @error('Email')
+<span class="text-danger">{{ $message }}</span>
+@enderror
+
+                            <div class="mb-4 col-lg-6">
+                                <input name="Current_work" class="uk-input" type="text" placeholder="Current designation">
+                            </div>
+                            @error('Current_work')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                        
+                            <div class="mb-4 uk-margin col-lg-12">
+                                <select class="uk-select" name="interestId" required>
+                                    <option value="">Select Interest</option>
+                                    @foreach($interests as $interest)
+                                        <option value="{{ $interest->id }}">{{ $interest->Name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            
+                            @error('interestId')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                            
+                            <div class="mb-4 col-lg-12">
+                                <textarea name="Bio" class="uk-textarea" rows="2" placeholder="bio"></textarea>
+                            </div>
+                            @error('Bio')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                            <!-- Image upload field -->
+                            <div class="mb-4 col-lg-12">
+                                <label for="file5">Add Profile Photo</label>
+                                <div class="image-upload-wrap">
+                                    <input name="Image" type="file" id="file5" class="file-upload-input">
+                                    <div class="drag-text">
+                                        <i class="icofont-cloud-upload"></i>
+                                        <h4>Select Profile to upload</h4>
+                                        <p>or drag and drop image</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Submit button -->
+                            <div class="mb-0 col-lg-12 text-center">
+                                <button type="submit" class="main-btn">Complete</button>
+                            </div>
+                        </fieldset>
                     </form>
+                    
                   </div>
                 </div>
               </div>
@@ -413,7 +441,7 @@
                     <li><a title="" href="#" class="behance"><i class="icofont-behance-original"></i></a></li>
                 </ul>
             </div>
-            <div style="display: none;" class="friends-to">
+            <div style="display: none;" class="friends-to"> 
                 <div class="follow-men">
                     <figure><img class="mCS_img_loaded" src="images/resources/user1.jpg" alt=""></figure>
                     <div class="follow-meta">
@@ -829,7 +857,7 @@
                                                 alt=""> </a> <span><strong>You</strong>, <b>Sarah</b> and <a
                                                 title="" href="#">24+ more</a> liked</span></div>
                                 </div>
-                                <div class="new-comment" style="display: block;">
+                                <div class="new-comment" style="display: block;"> 
                                     <form method="post"> <input type="text" placeholder="write comment"> <button
                                             type="submit"><i class="icofont-paper-plane"></i></button></form>
                                     <div class="comments-area">
@@ -898,5 +926,3 @@
 <!-- Mirrored from wpkixx.com/html/socimo-dark/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 11:27:51 GMT -->
 
 </html>
-
-
