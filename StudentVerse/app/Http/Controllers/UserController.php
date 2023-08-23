@@ -10,6 +10,7 @@ use Illuminate\facades\hash;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use App\models\InterestBox;
+use App\Http\Middleware\Authenticate;
 use App\Models\UserProfileBox;
 
 class UserController extends Controller
@@ -53,12 +54,18 @@ class UserController extends Controller
             'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Adjust allowed image types and size
         ]);
 
+        
         // Handle file upload for profile image
         $imagePath = $request->file('Image')->store('user_profile_images', 'public');
 
+        
         // Create and save the user profile
         $userProfile = new UserProfileBox();
-        $userProfile->User_Id = auth()->user()->id;
+
+      
+    $userProfile->User_Id = auth()->user()->id;
+
+
         $userProfile->User_Name = $request->User_Name;
         $userProfile->Email = $request->Email;
         $userProfile->Current_work = $request->Current_work;
@@ -74,7 +81,7 @@ class UserController extends Controller
 
 
 
-    //profile home page 
+     
 
     function showUserProfile(Request $request) {
         $userProfile = UserProfileBox::where('User_Id', auth()->user()->id)->first();
@@ -89,9 +96,7 @@ class UserController extends Controller
 
 
     function User_Post_login(request $request){
-  
-   
-     $email = $request->email;
+ $email = $request->email;
      $password = $request->password;
 
      $login = DB::table("user_boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
@@ -100,17 +105,7 @@ class UserController extends Controller
 
      if($login && $loginPass){
          session(['email'=>$login->email,'password'=>$loginPass->password]);
-        
-
-         // check if profile is completed
-         $userProfile = UserProfileBox::where('email', $email)->first();
-         if ($userProfile && $userProfile->status == 1) {
-             return view('User_Dashboard.index');
-         } else {
-             return redirect('profile-setup')->with("msg", "Please complete profile setup.");
-         }
-
-
+         return redirect('profile-setup')->with("msg", "Please complete profile setup.");
      }
 
      else

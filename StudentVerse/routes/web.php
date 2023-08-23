@@ -21,9 +21,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/userRegister', [UserController::class, "show"]);
 
-Route::get('/Userlogin', [UserController::class, "signin"]);
-
-Route::post('/User_Post_login', [UserController::class, "User_Post_login"]);
 
 
 // Route::get('profile-setup', function () {
@@ -159,13 +156,9 @@ Route::get('maps', function () {
     return view('User_Dashboard.maps');
 });
 
-Route::get('login', function () {
-    return view('User_Dashboard.login');
-});
 
-Route::get('login-register', function () {
-    return view('User_Dashboard.login-register');
-});
+
+
 
 Route::get('location', function () {
     return view('User_Dashboard.location');
@@ -377,9 +370,7 @@ Route::get('blog', function () {
     return view('StudentVerse.blog');
 });
 
-Route::get('login', function () {
-    return view('StudentVerse.login');
-});
+
 
 Route::get('registerr', function () {
     return view('StudentVerse.register');
@@ -410,9 +401,7 @@ Route::get('index-2', function () {
 });
 
 
-Route::get('login', function () {
-    return view('StudentVerse.login');
-});
+
 
 
 Route::get('members', function () {
@@ -471,9 +460,6 @@ Route::get('pricing-main', function () {
 });
 
 
-Route::get('login-main', function () {
-    return view('index.login');
-});
 
 
 Route::get('signup-main', function () {
@@ -510,26 +496,7 @@ Route::get('signup-main', function () {
 // });
 
 
-//end admin routex
 
-// start adminControllerRoutes
-
-//Route::group(['middleware'=> 'adminGuard'],function(){
-  
-    Route::get('/register', [AdminController::class, "show"]);
-    
-    Route::post('/AdminSignupPost', [AdminController::class, "store"]);
-
-    Route::get('/login', [AdminController::class, "signin"]);
-    
-    Route::post('/Admin_Post_login', [AdminController::class, "Admin_Post_login"]);
-
-
-   // Route::get('/login', [AdminController::class, "store"]);
-
-
-    //});
-    
 //end admin controller 
 
 
@@ -555,10 +522,16 @@ Route::get('signup-main', function () {
 
 
 
-   
-       
-    // Your authenticated routes here
+
+
+Route::get('/login', [UserController::class, "signin"])->name('login');
+
+Route::middleware(['web','auth'])->group(function () {
+    
+    Route::post('/User_Post_login', [UserController::class, "User_Post_login"]);
     Route::get('/profile-setup', [UserController::class, "showUserProfileForm"]);
     Route::get('/user-home', [UserController::class, 'showUserProfile']);
     Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost']);
-  
+});
+
+ 

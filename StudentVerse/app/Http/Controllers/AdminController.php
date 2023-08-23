@@ -25,74 +25,74 @@ class AdminController extends Controller
 
     
 
-    function signin(){
-        return view ('admin.sign-in');
-    }
+    // function signin(){
+    //     return view ('admin.sign-in');
+    // }
 
 
 
-    function Admin_Post_login(request $request){
+    // function Admin_Post_login(request $request){
   
    
-     $email = $request->email;
-     $password = $request->password;
+    //  $email = $request->email;
+    //  $password = $request->password;
 
-     $login = DB::table("admin_boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
+    //  $login = DB::table("admin_boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
      
-     $loginPass = DB::table("admin_boxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
+    //  $loginPass = DB::table("admin_boxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
 
-     if($login && $loginPass){
-         session(['email'=>$login->email,'password'=>$loginPass->password]);
-         return view('admin.index');
+    //  if($login && $loginPass){
+    //      session(['email'=>$login->email,'password'=>$loginPass->password]);
+    //      return view('admin.index');
 
-     }
+    //  }
 
-     else
-     {
-        return redirect()->back()->with("message","Invalid Credentials");
-     }
+    //  else
+    //  {
+    //     return redirect()->back()->with("message","Invalid Credentials");
+    //  }
 
-    }
+    // }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
+    // /**
+    //  * Show the form for creating a new resource.
+    //  */
+    // public function create()
+    // {
         
-    }
+    // }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
+    // /**
+    //  * Store a newly created resource in storage.
+    //  */
+    // public function store(Request $request)
+    // {
          
-        $validate = Validator::make($request->all(),[
-            'username' => 'required',
-            'email' => 'required|email|unique:admin_boxes,email',
-            'password' => 'required|min:8',
-        ], [
-            'email.unique' => 'The email address is already taken.',
-        ]);
+    //     $validate = Validator::make($request->all(),[
+    //         'username' => 'required',
+    //         'email' => 'required|email|unique:admin_boxes,email',
+    //         'password' => 'required|min:8',
+    //     ], [
+    //         'email.unique' => 'The email address is already taken.',
+    //     ]);
 
 
     
-    if($validate->fails()){
-        return back()->withInput()->withErrors($validate);
-    }
-    else{
+    // if($validate->fails()){
+    //     return back()->withInput()->withErrors($validate);
+    // }
+    // else{
 
 
-        $admin = new AdminBox();
-        $admin->username = $request->username;
-        $admin->email = $request->email;
-        $admin->password = $request->password;
-        $admin->save();
+    //     $admin = new AdminBox();
+    //     $admin->username = $request->username;
+    //     $admin->email = $request->email;
+    //     $admin->password = $request->password;
+    //     $admin->save();
 
-        return redirect('login')->with("success","Successfully Registered! Please Enter Your Credenials To Login");
-    }
-    }
+    //     return redirect('login')->with("success","Successfully Registered! Please Enter Your Credenials To Login");
+    // }
+    // }
 
     /**
      * Display the specified resource.
