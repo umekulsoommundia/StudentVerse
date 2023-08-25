@@ -3,6 +3,9 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
+Auth::routes();
 
 /*
 |--------------------------------------------------------------------------
@@ -504,34 +507,40 @@ Route::get('signup-main', function () {
 // start adminControllerRoutes
 
 //Route::group(['middleware'=> 'adminGuard'],function(){
-  
-    // Route::get('/register', [UserController::class, "show"]);
 
-    // Route::post('/SignupPost', [UserController::class, "store"]);
+// Route::get('/register', [UserController::class, "show"]);
 
-    // Route::get('/signin', [UserController::class, "signin"]);
+// Route::post('/SignupPost', [UserController::class, "store"]);
 
-    // Route::post('/signinPost', [UserController::class, "User_Post_login"]);
+// Route::get('/signin', [UserController::class, "signin"]);
+
+// Route::post('/signinPost', [UserController::class, "User_Post_login"]);
 
 
-    //});
-    
+//});
+
 //end admin controller 
 
 
+Route::get('/login', [UserController::class, "show"])->name('login');
+
+
+//  Route::get('/profile-setup', [UserController::class, "showUserProfileForm"]);
+//  Route::get('/user-home', [UserController::class, 'showUserProfile']);
+//  Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost']);
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
+        Route::post('/User_Post_login', [UserController::class, "User_Post_login"]);
+        
+        Route::get('/profile-setup/{userid}', [UserController::class, "showUserProfileForm"]);
+        
+        Route::get('/user-home/{userid}', [UserController::class, 'showUserProfile']);
+        
+        Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost']);
 
-
-Route::get('/login', [UserController::class, "signin"])->name('login');
-
-Route::middleware(['web','auth'])->group(function () {
     
-    Route::post('/User_Post_login', [UserController::class, "User_Post_login"]);
-    Route::get('/profile-setup', [UserController::class, "showUserProfileForm"]);
-    Route::get('/user-home', [UserController::class, 'showUserProfile']);
-    Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost']);
-});
-
- 
