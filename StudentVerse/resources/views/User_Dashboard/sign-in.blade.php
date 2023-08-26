@@ -1,3 +1,7 @@
+{{-- @php
+dd(Session::all());
+@endphp --}}
+
 <!DOCTYPE html>
 <!--
 Author: Keenthemes
@@ -113,7 +117,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="w-lg-500px p-10">
                 
 <!--begin::Form-->
-<form class="form w-100"  method="POST" action="User_Post_login" >
+<form class="form w-100"  method="POST" action=" {{ url('/User_Post_login') }}" >
     @csrf
     <!--begin::Heading-->
     <div class="text-center mb-11">
@@ -122,7 +126,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 Log in        </h1>
         <!--end::Title-->
-
+        @if (Session::has('message'))
+        <div class="alert alert-danger">
+            {{ Session::get('message') }}
+        </div>
+    @endif
+    
         <!--begin::Subtitle-->
         <div class="text-gray-500 fw-semibold fs-6">
             Your Social Campaigns
@@ -167,14 +176,14 @@ Log in        </h1>
     <!--begin::Input group--->
     <div class="fv-row mb-8">
         <!--begin::Email-->
-        <input type="text" placeholder="Email" name="email" autocomplete="off" class="form-control bg-transparent"/> 
+        <input type="text" placeholder="Email" name="Email" autocomplete="off" class="form-control bg-transparent"/> 
         <!--end::Email-->
     </div>
 
     <!--end::Input group--->
     <div class="fv-row mb-3">    
         <!--begin::Password-->
-        <input type="password" placeholder="Password" name="password" autocomplete="off" class="form-control bg-transparent"/>
+        <input type="password" placeholder="Password" name="Password" autocomplete="off" class="form-control bg-transparent"/>
         <!--end::Password-->
     </div>
     <!--end::Input group--->
