@@ -7,11 +7,11 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <title>StudentVerse</title>
-    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="../../images/fav.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/color.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
 </head>
@@ -33,7 +33,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:  url(images/b1.jpg); 
+    background-image:  url(../images/b1.jpg); 
     background-size: cover; /* Adjust the background size */
     background-position: center center; /* Center the background image */
     opacity: 0.3;
@@ -152,7 +152,7 @@
    
 
 
-    <figure class="bottom-mockup"><img src="images/footer.png" alt=""></figure>
+    <figure class="bottom-mockup"><img src="../images/footer.png" alt=""></figure>
     <div class="bottombar">
         <div class="container">
             <div class="row">
@@ -216,27 +216,27 @@
                         title="New Message" data-toggle="tooltip"><i class="icofont-edit"></i></a>
                     <ul class="new-messages">
                         <li>
-                            <figure><img src="images/resources/user1.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user1.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Ibrahim Ahmed</span> <a href="#" title="">Helo dear i
                                     wanna talk to you</a></div>
                         </li>
                         <li>
-                            <figure><img src="images/resources/user2.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user2.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Fatima J.</span> <a href="#" title="">Helo dear i wanna
                                     talk to you</a></div>
                         </li>
                         <li>
-                            <figure><img src="images/resources/user3.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user3.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Fawad Ahmed</span> <a href="#" title="">Helo dear i wanna
                                     talk to you</a></div>
                         </li>
                         <li>
-                            <figure><img src="images/resources/user4.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user4.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Saim Turan</span> <a href="#" title="">Helo dear i wanna
                                     talk to you</a></div>
                         </li>
                         <li>
-                            <figure><img src="images/resources/user5.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user5.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Alis wells</span> <a href="#" title="">Helo dear i wanna
                                     talk to you</a></div>
                         </li>
@@ -246,27 +246,27 @@
                     <h4><i class="icofont-bell-alt"></i> notifications</h4>
                     <ul class="notificationz">
                         <li>
-                            <figure><img src="images/resources/user5.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user5.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Alis wells</span> <a href="#" title="">recommend your
                                     post</a></div>
                         </li>
                         <li>
-                            <figure><img src="images/resources/user4.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user4.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Alis wells</span> <a href="#" title="">share your post
                                     <strong>a good time today!</strong></a></div>
                         </li>
                         <li>
-                            <figure><img src="images/resources/user2.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user2.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Alis wells</span> <a href="#" title="">recommend your
                                     post</a></div>
                         </li>
                         <li>
-                            <figure><img src="images/resources/user1.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user1.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Alis wells</span> <a href="#" title="">share your post
                                     <strong>a good time today!</strong></a></div>
                         </li>
                         <li>
-                            <figure><img src="images/resources/user3.jpg" alt=""></figure>
+                            <figure><img src="../images/resources/user3.jpg" alt=""></figure>
                             <div class="mesg-info"> <span>Alis wells</span> <a href="#" title="">recommend your
                                     post</a></div>
                         </li>
@@ -335,7 +335,7 @@
                                         value="5" name="Ben" checked="checked" />
                                     <p class="select-box__input-text"><i class="icofont-users-alt-3"></i> Joined
                                         Groups</p>
-                                </div> <img class="select-box__icon" src="images/arrow-down.svg" alt="Arrow Icon"
+                                </div> <img class="select-box__icon" src="../images/arrow-down.svg" alt="Arrow Icon"
                                     aria-hidden="true" />
                             </div>
                             <ul class="select-box__list">
@@ -443,19 +443,19 @@
             </div>
             <div style="display: none;" class="friends-to"> 
                 <div class="follow-men">
-                    <figure><img class="mCS_img_loaded" src="images/resources/user1.jpg" alt=""></figure>
+                    <figure><img class="mCS_img_loaded" src="../images/resources/user1.jpg" alt=""></figure>
                     <div class="follow-meta">
                         <h5><a href="#" title="">Jack Carter</a></h5> <span>family member</span>
                     </div> <a href="#" title="">Share</a>
                 </div>
                 <div class="follow-men">
-                    <figure><img class="mCS_img_loaded" src="images/resources/user2.jpg" alt=""></figure>
+                    <figure><img class="mCS_img_loaded" src="../images/resources/user2.jpg" alt=""></figure>
                     <div class="follow-meta">
                         <h5><a href="#" title="">Xang Ching</a></h5> <span>Close Friend</span>
                     </div> <a href="#" title="">Share</a>
                 </div>
                 <div class="follow-men">
-                    <figure><img class="mCS_img_loaded" src="images/resources/user3.jpg" alt=""></figure>
+                    <figure><img class="mCS_img_loaded" src="../images/resources/user3.jpg" alt=""></figure>
                     <div class="follow-meta">
                         <h5><a href="#" title="">Emma Watson</a></h5> <span>Matul Friend</span>
                     </div> <a href="#" title="">Share</a>
@@ -481,62 +481,62 @@
             <div class="tab-content">
                 <div class="tab-pane active fade show " id="link1">
                     <div class="friend"> <a href="#" title="">
-                            <figure> <img src="images/resources/user1.jpg" alt=""> <span
+                            <figure> <img src="../images/resources/user1.jpg" alt=""> <span
                                     class="status online"></span> </figure> <span>Oliver</span> <i class=""><img
-                                    src="images/resources/user1.jpg" alt=""></i>
+                                    src="../images/resources/user1.jpg" alt=""></i>
                         </a> <a href="#" title="">
-                            <figure> <img src="images/resources/user2.jpg" alt=""> <span class="status away"></span>
+                            <figure> <img src="../images/resources/user2.jpg" alt=""> <span class="status away"></span>
                             </figure> <span>Amelia</span> <i class="icofont-check-circled"></i>
                         </a> <a href="#" title="">
-                            <figure> <img src="images/resources/user3.jpg" alt=""> <span
+                            <figure> <img src="../images/resources/user3.jpg" alt=""> <span
                                     class="status offline"></span> </figure> <span>George</span> <i class=""><img
-                                    src="images/resources/user3.jpg" alt=""></i>
+                                    src="../images/resources/user3.jpg" alt=""></i>
                         </a> <a href="#" title="">
-                            <figure> <img src="images/resources/user4.jpg" alt=""> <span
+                            <figure> <img src="../images/resources/user4.jpg" alt=""> <span
                                     class="status online"></span> </figure> <span>Jacob</span> <i
                                 class="icofont-check-circled"></i>
                         </a> <a href="#" title="">
-                            <figure> <img src="images/resources/user5.jpg" alt=""> <span class="status away"></span>
+                            <figure> <img src="../images/resources/user5.jpg" alt=""> <span class="status away"></span>
                             </figure> <span>Poppy</span> <i class="icofont-check-circled"></i>
                         </a> <a href="#" title="">
-                            <figure> <img src="images/resources/user6.jpg" alt=""> <span
+                            <figure> <img src="../images/resources/user6.jpg" alt=""> <span
                                     class="status online"></span> </figure> <span>Sophia</span> <i class=""><img
-                                    src="images/resources/user6.jpg" alt=""></i>
+                                    src="../images/resources/user6.jpg" alt=""></i>
                         </a> <a href="#" title="">
-                            <figure> <img src="images/resources/user7.jpg" alt=""> <span class="status away"></span>
-                            </figure> <span>Leo king</span> <i class=""><img src="images/resources/user7.jpg"
+                            <figure> <img src="../images/resources/user7.jpg" alt=""> <span class="status away"></span>
+                            </figure> <span>Leo king</span> <i class=""><img src="../images/resources/user7.jpg"
                                     alt=""></i>
                         </a></div>
                 </div>
                 <div class="tab-pane fade" id="link2">
                     <div class="friend"> <a href="#" title="">
-                            <figure> <img src="images/resources/user1.jpg" alt=""> <span
+                            <figure> <img src="../images/resources/user1.jpg" alt=""> <span
                                     class="status online"></span> </figure> <span>Samu Jane</span> <i class=""><img
-                                    src="images/resources/user1.jpg" alt=""></i>
+                                    src="../images/resources/user1.jpg" alt=""></i>
                         </a> <a href="#" title="">
-                            <figure> <img src="images/resources/user6.jpg" alt=""> <span
+                            <figure> <img src="../images/resources/user6.jpg" alt=""> <span
                                     class="status online"></span> </figure> <span>Tina Mark</span> <i class=""><img
-                                    src="images/resources/user6.jpg" alt=""></i>
+                                    src="../images/resources/user6.jpg" alt=""></i>
                         </a> <a href="#" title="">
-                            <figure> <img src="images/resources/user7.jpg" alt=""> <span
+                            <figure> <img src="../images/resources/user7.jpg" alt=""> <span
                                     class="status online"></span> </figure> <span>Ak William</span> <i class=""><img
-                                    src="images/resources/user7.jpg" alt=""></i>
+                                    src="../images/resources/user7.jpg" alt=""></i>
                         </a></div>
                 </div>
                 <div class="tab-pane fade" id="link3">
                     <div class="friend"> <a href="#" title="">
-                            <figure class="group-chat"> <img src="images/resources/user5.jpg" alt=""> <img
-                                    class="two" src="images/resources/user3.jpg" alt=""> <span
+                            <figure class="group-chat"> <img src="../images/resources/user5.jpg" alt=""> <img
+                                    class="two" src="../images/resources/user3.jpg" alt=""> <span
                                     class="status online"></span> </figure> <span>Boys World</span> <i
                                 class="icofont-check-circled"></i>
                         </a> <a href="#" title="">
-                            <figure class="group-chat"> <img src="images/resources/user2.jpg" alt=""> <img
-                                    class="two" src="images/resources/user3.jpg" alt=""> <span
+                            <figure class="group-chat"> <img src="../images/resources/user2.jpg" alt=""> <img
+                                    class="two" src="../images/resources/user3.jpg" alt=""> <span
                                     class="status online"></span> </figure> <span>KK university Fellows</span> <i
                                 class="icofont-check-circled"></i>
                         </a> <a href="#" title="">
-                            <figure class="group-chat"> <img src="images/resources/user3.jpg" alt=""> <img
-                                    class="two" src="images/resources/user2.jpg" alt=""> <span
+                            <figure class="group-chat"> <img src="../images/resources/user3.jpg" alt=""> <img
+                                    class="two" src="../images/resources/user2.jpg" alt=""> <span
                                     class="status away"></span> </figure> <span>Education World</span> <i
                                 class="icofont-check-circled"></i>
                         </a></div>
@@ -544,7 +544,7 @@
             </div>
         </div>
         <div class="chat-card">
-            <div class="chat-card-head"> <img src="images/resources/user13.jpg" alt="">
+            <div class="chat-card-head"> <img src="../images/resources/user13.jpg" alt="">
                 <h6>George Floyd</h6>
                 <div class="frnd-opt">
                     <div class="more">
@@ -571,54 +571,54 @@
             <div class="chat-list">
                 <ul>
                     <li class="me">
-                        <div class="chat-thumb"><img src="images/resources/chatlist1.jpg" alt=""></div>
+                        <div class="chat-thumb"><img src="../images/resources/chatlist1.jpg" alt=""></div>
                         <div class="notification-event">
                             <div class="chat-message-item">
-                                <figure><img src="images/resources/album5.jpg" alt=""></figure>
+                                <figure><img src="../images/resources/album5.jpg" alt=""></figure>
                                 <div class="caption">4.5kb <i class="icofont-download" title="Download"></i></div>
                             </div> <span class="notification-date"> <time datetime="2004-07-24T18:18"
                                     class="entry-date updated">Yesterday at 8:10pm</time> <i><img
-                                        src="images/d-tick.png" alt=""></i> </span>
+                                        src="../images/d-tick.png" alt=""></i> </span>
                         </div>
                     </li>
                     <li class="me">
-                        <div class="chat-thumb"><img src="images/resources/chatlist1.jpg" alt=""></div>
+                        <div class="chat-thumb"><img src="../images/resources/chatlist1.jpg" alt=""></div>
                         <div class="notification-event"> <span class="chat-message-item"> Hi James! Please remember
                                 to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get
                                 the drinks </span> <span class="notification-date"> <time
                                     datetime="2004-07-24T18:18" class="entry-date updated">Yesterday at
-                                    8:10pm</time> <i><img src="images/d-tick.png" alt=""></i> </span></div>
+                                    8:10pm</time> <i><img src="../images/d-tick.png" alt=""></i> </span></div>
                     </li>
                     <li class="you">
-                        <div class="chat-thumb"><img src="images/resources/chatlist2.jpg" alt=""></div>
+                        <div class="chat-thumb"><img src="../images/resources/chatlist2.jpg" alt=""></div>
                         <div class="notification-event"> <span class="chat-message-item"> Hi James! Please remember
                                 to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get
                                 the drinks </span> <span class="notification-date"> <time
                                     datetime="2004-07-24T18:18" class="entry-date updated">Yesterday at
-                                    8:10pm</time> <i><img src="images/d-tick.png" alt=""></i> </span></div>
+                                    8:10pm</time> <i><img src="../images/d-tick.png" alt=""></i> </span></div>
                     </li>
                     <li class="me">
-                        <div class="chat-thumb"><img src="images/resources/chatlist1.jpg" alt=""></div>
+                        <div class="chat-thumb"><img src="../images/resources/chatlist1.jpg" alt=""></div>
                         <div class="notification-event"> <span class="chat-message-item"> Hi James! Please remember
                                 to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get
                                 the drinks </span> <span class="notification-date"> <time
                                     datetime="2004-07-24T18:18" class="entry-date updated">Yesterday at
-                                    8:10pm</time> <i><img src="images/d-tick.png" alt=""></i> </span></div>
+                                    8:10pm</time> <i><img src="../images/d-tick.png" alt=""></i> </span></div>
                     </li>
                 </ul>
                 <form class="text-box"><textarea placeholder="Write Mesage..."></textarea>
-                    <div class="add-smiles"> <span><img src="images/smiles/happy-3.png" alt=""></span></div>
-                    <div class="smiles-bunch"> <i><img src="images/smiles/thumb.png" alt=""></i> <i><img
-                                src="images/smiles/angry-1.png" alt=""></i> <i><img src="images/smiles/angry.png"
-                                alt=""></i> <i><img src="images/smiles/bored-1.png" alt=""></i> <i><img
-                                src="images/smiles/confused-1.png" alt=""></i> <i><img src="images/smiles/wink.png"
-                                alt=""></i> <i><img src="images/smiles/weep.png" alt=""></i> <i><img
-                                src="images/smiles/tongue-out.png" alt=""></i> <i><img
-                                src="images/smiles/suspicious.png" alt=""></i> <i><img
-                                src="images/smiles/crying-1.png" alt=""></i> <i><img src="images/smiles/crying.png"
-                                alt=""></i> <i><img src="images/smiles/embarrassed.png" alt=""></i> <i><img
-                                src="images/smiles/emoticons.png" alt=""></i> <i><img
-                                src="images/smiles/happy-2.png" alt=""></i></div> <button type="submit"><i
+                    <div class="add-smiles"> <span><img src="../images/smiles/happy-3.png" alt=""></span></div>
+                    <div class="smiles-bunch"> <i><img src="../images/smiles/thumb.png" alt=""></i> <i><img
+                                src="../images/smiles/angry-1.png" alt=""></i> <i><img src="../images/smiles/angry.png"
+                                alt=""></i> <i><img src="../images/smiles/bored-1.png" alt=""></i> <i><img
+                                src="../images/smiles/confused-1.png" alt=""></i> <i><img src="../images/smiles/wink.png"
+                                alt=""></i> <i><img src="../images/smiles/weep.png" alt=""></i> <i><img
+                                src="../images/smiles/tongue-out.png" alt=""></i> <i><img
+                                src="../images/smiles/suspicious.png" alt=""></i> <i><img
+                                src="../images/smiles/crying-1.png" alt=""></i> <i><img src="../images/smiles/crying.png"
+                                alt=""></i> <i><img src="../images/smiles/embarrassed.png" alt=""></i> <i><img
+                                src="../images/smiles/emoticons.png" alt=""></i> <i><img
+                                src="../images/smiles/happy-2.png" alt=""></i></div> <button type="submit"><i
                             class="icofont-paper-plane"></i></button>
                 </form>
             </div>
@@ -700,7 +700,7 @@
                                                 <circle cx="12" cy="5" r="1" />
                                                 <circle cx="12" cy="19" r="1" />
                                             </svg> </a></div>
-                                    <figure><img src="images/resources/blog-detail.jpg" alt=""></figure>
+                                    <figure><img src="../images/resources/blog-detail.jpg" alt=""></figure>
                                     <div class="stat-tools">
                                         <div class="box">
                                             <div class="Like"><a class="Like__link"><i class="icofont-like"></i>
@@ -752,9 +752,9 @@
                                                 class="icofont-share-alt"></i> Share</a>
                                         <div class="emoji-state">
                                             <div class="popover_wrapper"> <a class="popover_title" href="#"
-                                                    title=""><img alt="" src="images/smiles/thumb.png"></a>
+                                                    title=""><img alt="" src="../images/smiles/thumb.png"></a>
                                                 <div class="popover_content"> <span><img alt=""
-                                                            src="images/smiles/thumb.png"> Likes</span>
+                                                            src="../images/smiles/thumb.png"> Likes</span>
                                                     <ul class="namelist">
                                                         <li>Jhon Doe</li>
                                                         <li>Amara Sin</li>
@@ -764,9 +764,9 @@
                                                 </div>
                                             </div>
                                             <div class="popover_wrapper"> <a class="popover_title" href="#"
-                                                    title=""><img alt="" src="images/smiles/heart.png"></a>
+                                                    title=""><img alt="" src="../images/smiles/heart.png"></a>
                                                 <div class="popover_content"> <span><img alt=""
-                                                            src="images/smiles/heart.png"> Love</span>
+                                                            src="../images/smiles/heart.png"> Love</span>
                                                     <ul class="namelist">
                                                         <li>Amara Sin</li>
                                                         <li>Jhon Doe</li>
@@ -775,9 +775,9 @@
                                                 </div>
                                             </div>
                                             <div class="popover_wrapper"> <a class="popover_title" href="#"
-                                                    title=""><img alt="" src="images/smiles/smile.png"></a>
+                                                    title=""><img alt="" src="../images/smiles/smile.png"></a>
                                                 <div class="popover_content"> <span><img alt=""
-                                                            src="images/smiles/smile.png"> Happy</span>
+                                                            src="../images/smiles/smile.png"> Happy</span>
                                                     <ul class="namelist">
                                                         <li>Sarah K.</li>
                                                         <li>Jhon Doe</li>
@@ -787,9 +787,9 @@
                                                 </div>
                                             </div>
                                             <div class="popover_wrapper"> <a class="popover_title" href="#"
-                                                    title=""><img alt="" src="images/smiles/weep.png"></a>
+                                                    title=""><img alt="" src="../images/smiles/weep.png"></a>
                                                 <div class="popover_content"> <span><img alt=""
-                                                            src="images/smiles/weep.png"> Dislike</span>
+                                                            src="../images/smiles/weep.png"> Dislike</span>
                                                     <ul class="namelist">
                                                         <li>Danial Carbal</li>
                                                         <li>Amara Sin</li>
@@ -807,7 +807,7 @@
                         <div class="col-lg-3">
                             <div class="commentbar">
                                 <div class="user">
-                                    <figure><img src="images/resources/user1.jpg" alt=""></figure>
+                                    <figure><img src="../images/resources/user1.jpg" alt=""></figure>
                                     <div class="user-information">
                                         <h4><a href="#" title="">Danile Walker</a></h4> <span>2 hours ago</span>
                                     </div> <a href="#" title="Follow" data-ripple="">Follow</a>
@@ -847,13 +847,13 @@
                                                         </svg></i> </a> <ins>20</ins> </span></li>
                                     </ul>
                                     <div class="users-thumb-list"> <a href="#" title="" data-toggle="tooltip"
-                                            data-original-title="Anderw"> <img src="images/resources/userlist-1.jpg"
+                                            data-original-title="Anderw"> <img src="../images/resources/userlist-1.jpg"
                                                 alt=""> </a> <a href="#" title="" data-toggle="tooltip"
-                                            data-original-title="frank"> <img src="images/resources/userlist-2.jpg"
+                                            data-original-title="frank"> <img src="../images/resources/userlist-2.jpg"
                                                 alt=""> </a> <a href="#" title="" data-toggle="tooltip"
-                                            data-original-title="Sara"> <img src="images/resources/userlist-1.jpg"
+                                            data-original-title="Sara"> <img src="../images/resources/userlist-1.jpg"
                                                 alt=""> </a> <a href="#" title="" data-toggle="tooltip"
-                                            data-original-title="Amy"> <img src="images/resources/userlist-2.jpg"
+                                            data-original-title="Amy"> <img src="../images/resources/userlist-2.jpg"
                                                 alt=""> </a> <span><strong>You</strong>, <b>Sarah</b> and <a
                                                 title="" href="#">24+ more</a> liked</span></div>
                                 </div>
@@ -863,7 +863,7 @@
                                     <div class="comments-area">
                                         <ul>
                                             <li>
-                                                <figure><img alt="" src="images/resources/user1.jpg"></figure>
+                                                <figure><img alt="" src="../images/resources/user1.jpg"></figure>
                                                 <div class="commenter">
                                                     <h5><a title="" href="#">Jack Carter</a></h5> <span>2 hours
                                                         ago</span>
@@ -876,7 +876,7 @@
                                                         class="icofont-reply"></i></a>
                                             </li>
                                             <li>
-                                                <figure><img alt="" src="images/resources/user2.jpg"></figure>
+                                                <figure><img alt="" src="../images/resources/user2.jpg"></figure>
                                                 <div class="commenter">
                                                     <h5><a title="" href="#">Ching xang</a></h5> <span>2 hours
                                                         ago</span>
@@ -887,7 +887,7 @@
                                                         class="icofont-reply"></i></a>
                                             </li>
                                             <li>
-                                                <figure><img alt="" src="images/resources/user3.jpg"></figure>
+                                                <figure><img alt="" src="../images/resources/user3.jpg"></figure>
                                                 <div class="commenter">
                                                     <h5><a title="" href="#">Danial Comb</a></h5> <span>2 hours
                                                         ago</span>
@@ -898,7 +898,7 @@
                                                         class="icofont-reply"></i></a>
                                             </li>
                                             <li>
-                                                <figure><img alt="" src="images/resources/user4.jpg"></figure>
+                                                <figure><img alt="" src="../images/resources/user4.jpg"></figure>
                                                 <div class="commenter">
                                                     <h5><a title="" href="#">Jack Carter</a></h5> <span>2 hours
                                                         ago</span>
@@ -919,9 +919,9 @@
         </div>
     </div>
 </div>
-<script src="js/main.min.js"></script>
-<script src="js/date-time.js"></script>
-<script src="js/script.js"></script>
+<script src="../js/main.min.js"></script>
+<script src="../js/date-time.js"></script>
+<script src="../js/script.js"></script>
 </body>
 <!-- Mirrored from wpkixx.com/html/socimo-dark/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 11:27:51 GMT -->
 

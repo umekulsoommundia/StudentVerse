@@ -39,29 +39,43 @@ class AdminController extends Controller
         return view ('admin.sign-in');
     }
 
-
-
     function Admin_Post_login(request $request){
-  
-   
-     $email = $request->email;
-     $password = $request->password;
-
-     $login = DB::table("admin_boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
+        $email = $request->email;
+        $password = $request->password;
+         $login = DB::table("admin_boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
      
-     $loginPass = DB::table("admin_boxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
+        $loginPass = DB::table("admin_boxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
 
-     if($login && $loginPass){
-         session(['email'=>$login->email,'password'=>$loginPass->password]);
-         return view('admin.index');
-     }
+        if($login && $loginPass){
+            session(['email'=>$login->email,'password'=>$loginPass->password]);
+            return view('admin.index');
+        }
 
-     else
-     {
-        return redirect()->back()->with("message","Invalid Credentials");
-     }
-
+        else
+        {
+            return redirect()->back()->with("message","Invalid Credentials");
+        }
     }
+
+    // function Admin_Post_login(request $request){
+    //  $email = $request->email;
+    //  $password = $request->password;
+
+    //  $login = DB::table("admin_boxes")->select('email')->where(['email'=>$email,'password'=>$password])->first();
+     
+    //  $loginPass = DB::table("admin_boxes")->select('password')->where(['email'=>$email,'password'=>$password])->first();
+
+    //  if($login && $loginPass){
+    //      session(['email'=>$login->email,'password'=>$loginPass->password]);
+    //      return view('admin.index');
+    //  }
+
+    //  else
+    //  {
+    //     return redirect()->back()->with("message","Invalid Credentials");
+    //  }
+
+    // }
 
     /**
      * Show the form for creating a new resource.

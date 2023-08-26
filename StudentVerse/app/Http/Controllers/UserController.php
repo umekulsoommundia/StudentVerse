@@ -35,11 +35,8 @@ class UserController extends Controller
     }
 
 
-
     function User_Post_login(Request $request)
     {
-
-
         $Email = $request->Email;
         $Password = $request->Password;
 
@@ -48,18 +45,39 @@ class UserController extends Controller
         $loginId = DB::table("user_boxes")->select('id')->where(['Email' => $Email, 'Password' => $Password])->first();
 
         if ($login && $loginPass) {
-            session(['Email' => $login->Email, 'userId' => $loginId->id]);
+            $id = $loginId->id;
 
-            return redirect()->route('profile-setup',['userid'])->with("message", "Please complete your profile first");
+            session(['Email' => $login->Email, 'userId' => $id]);
+
+            return redirect()->route('profile-setup', ['id' => $id])->with("message", "Please complete your profile first");
         } else {
             return redirect()->back()->with("message", "Invalid Credentials");
         }
     }
+    // function User_Post_login(Request $request)
+    // {
 
 
-    function showUserProfileForm($userid)
+    //     $Email = $request->Email;
+    //     $Password = $request->Password;
+
+    //     $login = DB::table("user_boxes")->select('Email')->where(['Email' => $Email, 'Password' => $Password])->first();
+    //     $loginPass = DB::table("user_boxes")->select('Password')->where(['Email' => $Email, 'Password' => $Password])->first();
+    //     $loginId = DB::table("user_boxes")->select('id')->where(['Email' => $Email, 'Password' => $Password])->first();
+    //     $id= $loginId->id;
+    //     if ($login && $loginPass) {
+    //         session(['Email' => $login->Email, 'userId' => $loginId->id]);
+
+    //         return redirect('profile-setup',['id' => $id])->with("message", "Please complete your profile first");
+    //     } else {
+    //         return redirect()->back()->with("message", "Invalid Credentials");
+    //     }
+    // }
+
+
+    function showUserProfileForm($id)
     {
-        $userid =$userid;
+        $userid =$id;
         session(['userId'=>$userid]);
         $interests = InterestBox::all();
         $msg = session('msg'); // Set the session message here

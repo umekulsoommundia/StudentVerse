@@ -499,26 +499,7 @@ Route::get('signup-main', function () {
 // });
 
 
-//end admin routex
 
-// start adminControllerRoutes
-
-//Route::group(['middleware'=> 'adminGuard'],function(){
-  
-    Route::get('/register', [AdminController::class, "show"]);
-    
-    Route::post('/AdminSignupPost', [AdminController::class, "store"]);
-
-    Route::get('/login', [AdminController::class, "signin"]);
-    
-    Route::post('/Admin', [AdminController::class, "Admin_Post_login"]);
-
-    Route::get('/Admin', [AdminController::class, "Admin"]);
-   // Route::get('/login', [AdminController::class, "store"]);
-
-
-    //});
-    
 //end admin controller 
 
 
@@ -535,7 +516,15 @@ Route::get('signup-main', function () {
 
 // Route::post('/signinPost', [UserController::class, "User_Post_login"]);
 
+Route::get('/register', [AdminController::class, "show"]);
+    
+    Route::post('/AdminSignupPost', [AdminController::class, "store"]);
 
+    Route::get('/login', [AdminController::class, "signin"]);
+    
+    Route::post('/Admin', [AdminController::class, "Admin_Post_login"]);
+
+    Route::get('/Admin', [AdminController::class, "Admin"]);
 //});
 
 //end admin controller 
@@ -556,7 +545,7 @@ Route::get('/login', [UserController::class, "show"])->name('login');
 
         Route::post('/User_Post_login', [UserController::class, "User_Post_login"]);
         
-        Route::get('/profile-setup/{userid}', [UserController::class, "showUserProfileForm"]);
+        Route::get('/profile-setup/{id}', [UserController::class, "showUserProfileForm"])->name("profile-setup");
         
         Route::get('/user-home/{userid}', [UserController::class, 'showUserProfile']);
         
