@@ -17,7 +17,7 @@ License: For each use you must have a valid license purchased only from above li
 <!-- Mirrored from preview.keenthemes.com/metronic8/demo2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 17:17:33 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-        <title>Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes</title>
+        <title>Student Verse - Dashboard</title>
         <meta charset="utf-8"/>
         <meta name="description" content="
             The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, 

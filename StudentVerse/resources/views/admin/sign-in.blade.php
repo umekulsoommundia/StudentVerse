@@ -101,7 +101,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="w-lg-500px p-10">
                 
 <!--begin::Form-->
-<form class="form w-100" method="POST" action="Admin_Post_login">
+<form class="form w-100" method="POST" action="Admin">
     @csrf
   
 

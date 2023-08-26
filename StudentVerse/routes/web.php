@@ -522,9 +522,9 @@ Route::get('signup-main', function () {
 
     Route::get('/login', [AdminController::class, "signin"]);
     
-    Route::post('/Admin_Post_login', [AdminController::class, "Admin_Post_login"]);
+    Route::post('/Admin', [AdminController::class, "Admin_Post_login"]);
 
-
+    Route::get('/Admin', [AdminController::class, "Admin"]);
    // Route::get('/login', [AdminController::class, "store"]);
 
 

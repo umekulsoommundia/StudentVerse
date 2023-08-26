@@ -23,7 +23,17 @@ class AdminController extends Controller
 
 
 
-    
+    function Admin(){
+        if (Session::has('email')){
+
+            return view('admin.index');
+            
+        }
+        else{
+            session(['message'=>'Please login to Access Dashboard']);
+            return view('admin.sign-in');
+        }
+    }
 
     function signin(){
         return view ('admin.sign-in');
@@ -44,7 +54,6 @@ class AdminController extends Controller
      if($login && $loginPass){
          session(['email'=>$login->email,'password'=>$loginPass->password]);
          return view('admin.index');
-
      }
 
      else
