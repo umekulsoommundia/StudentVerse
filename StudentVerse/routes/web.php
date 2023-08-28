@@ -547,7 +547,7 @@ Route::get('/login', [UserController::class, "show"])->name('login');
         
         Route::get('/profile-setup/{id}', [UserController::class, "showUserProfileForm"])->name("profile-setup");
         
-        Route::get('/user-home/{userid}', [UserController::class, 'showUserProfile']);
+        Route::get('/user-home/{id}', [UserController::class, 'showUserProfile'])->name('user-home');
         
         Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost']);
 
