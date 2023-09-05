@@ -35,25 +35,27 @@ class UserController extends Controller
     }
 
 
-    function User_Post_login(Request $request)
-    {
-        $Email = $request->Email;
-        $Password = $request->Password;
+   function User_Post_login(Request $request)
+{
+    $Email = $request->Email;
+    $Password = $request->Password;
 
-        $login = DB::table("user_boxes")->select('Email')->where(['Email' => $Email, 'Password' => $Password])->first();
-        $loginPass = DB::table("user_boxes")->select('Password')->where(['Email' => $Email, 'Password' => $Password])->first();
-        $loginId = DB::table("user_boxes")->select('id')->where(['Email' => $Email, 'Password' => $Password])->first();
+    $login = DB::table("user_boxes")->select('Email')->where(['Email' => $Email, 'Password' => $Password])->first();
+    $loginPass = DB::table("user_boxes")->select('Password')->where(['Email' => $Email, 'Password' => $Password])->first();
+    $loginId = DB::table("user_boxes")->select('id')->where(['Email' => $Email, 'Password' => $Password])->first();
 
-        if ($login && $loginPass) {
-            $id = $loginId->id;
+    if ($login && $loginPass) {
+        $id = $loginId->id;
 
-            session(['Email' => $login->Email, 'userId' => $id]);
+        session(['Email' => $login->Email, 'userId' => $id]);
 
-            return redirect()->route('profile-setup', ['id' => $id])->with("message", "Please complete your profile first");
-        } else {
-            return redirect()->back()->with("message", "Invalid Credentials");
-        }
+        // Redirect with a flash message
+        return redirect()->route('profile-setup', ['id' => $id])->with("message", "Please complete your profile first");
+    } else {
+        return redirect()->back()->with("message", "Invalid Credentials");
     }
+}
+
     // function User_Post_login(Request $request)
     // {
 
@@ -85,7 +87,7 @@ class UserController extends Controller
     }
 
 
-    function profileSetupPost(Request $request  )
+    function profileSetupPost(Request $request)
     {
         // Validate the form data
         $request->validate([
@@ -95,9 +97,8 @@ class UserController extends Controller
 
         $imagePath = $request->file('Image')->store('user_profile_images', 'public');
         $userProfile = new UserProfileBox();
-        // $userId = session('userId');
-        // $userProfile->id = $userId ;
-
+  
+        $userProfile->User_id = session('userId');
         $userProfile->User_Name = $request->User_Name;
         $userProfile->Email = $request->Email;
         $userProfile->Current_work = $request->Current_work;
@@ -116,15 +117,36 @@ class UserController extends Controller
     }
 
 
-    function showUserProfile(Request $request) {
-        $userProfile = UserProfileBox::where('User_Id', auth()->user()->id)->first();
 
-        if ($userProfile && $userProfile->status == 1) {
-            return view('User_Dashboard.index'); // Redirect to user profile page
+    function showUserProfile(Request $request) {
+        // Check if the user is authenticated
+        if (session()->has('userId')) {
+            $userId = session('userId');
+            
+            // Check the user's profile status
+            $userProfile = UserProfileBox::where('User_Id', $userId)->first();
+    
+            if ($userProfile && $userProfile->status == 1) {
+                // Redirect to user profile page
+                return view('User_Dashboard.index');
+            } else {
+                return view('user.profile-setup')->with("message", "Please complete profile setup first.");
+            }
         } else {
-            return view('user.profile-setup')->with("message", "Please complete profile setup first.");
+            // User is not authenticated, handle this case (e.g., redirect to login)
+            return redirect()->route('signin'); // You might need to adjust this route
         }
     }
+    
+    // function showUserProfile(Request $request) {
+    //     $userProfile = UserProfileBox::where('User_Id', auth()->user()->id)->first();
+
+    //     if ($userProfile && $userProfile->status == 1) {
+    //         return view('User_Dashboard.index'); // Redirect to user profile page
+    //     } else {
+    //         return view('user.profile-setup')->with("message", "Please complete profile setup first.");
+    //     }
+    // }
 
     public function show()
     {

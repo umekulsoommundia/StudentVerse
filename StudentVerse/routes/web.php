@@ -378,7 +378,7 @@ Route::get('blog', function () {
 Route::get('registerr', function () {
     return view('StudentVerse.register');
 });
-
+ 
 Route::get('activity', function () {
     return view('StudentVerse.activity');
 });
@@ -551,4 +551,4 @@ Route::get('/login', [UserController::class, "show"])->name('login');
         
         Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost']);
 
-    
+        
