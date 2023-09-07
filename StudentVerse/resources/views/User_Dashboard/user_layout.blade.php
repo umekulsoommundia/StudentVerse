@@ -673,7 +673,7 @@
                                 </svg></i> Ask Question</h5>
                     </div>
                     <div class="post-new">
-                        <form  action="/profileSetupPost" enctype="multipart/form-data" method="post" class="c-form"> 
+                        <form  action="/questionpost" enctype="multipart/form-data" method="post" class="c-form"> 
                             @csrf
                             <input type="text" placeholder="Subject"><textarea
                                 placeholder="body"></textarea>
