@@ -121,7 +121,7 @@
                             <div class="mb-4 col-lg-12">
                                 <label for="file5">Add Profile Photo</label>
                                 <div class="image-upload-wrap">
-                                    <input name="Image" type="file" id="file5" class="file-upload-input">
+                                    <input name="Image" type="file" id="file5" class="file-upload-input dropzone" action="https://wpkixx.com/upload-target">
                                     <div class="drag-text">
                                         <i class="icofont-cloud-upload"></i>
                                         <h4>Select Profile to upload</h4>

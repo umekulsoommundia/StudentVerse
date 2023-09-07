@@ -152,16 +152,16 @@ if ($.isFunction($.fn.dropzone)) {
 	});
 	
 // New Post Popup	
-	$('.create').on('click', function () {
-		$('.post-new-popup').addClass('active');
-		return false;
-	});
-	$('.new-post > form input').on('focus', function () {
-		$('.post-new-popup').addClass('active');
-	});
-	$('.popup-closed').on('click', function () {
-		$('.post-new-popup').removeClass('active');
-	});
+	// $('.create').on('click', function () {
+	// 	$('.post-new-popup').addClass('active');
+	// 	return false;
+	// });
+	// $('.new-post > form input').on('focus', function () {
+	// 	$('.post-new-popup').addClass('active');
+	// });
+	// $('.popup-closed').on('click', function () {
+	// 	$('.post-new-popup').removeClass('active');
+	// });
 	
 // New Post Popup	
 	$('.ask-qst').on('click', function () {
