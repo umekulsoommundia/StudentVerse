@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class question_box extends Model
 {
     use HasFactory;
+
 }

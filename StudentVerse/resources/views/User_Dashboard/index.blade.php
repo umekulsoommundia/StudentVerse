@@ -170,6 +170,18 @@
                            </ul>
                         </div>
                      </div>
+                     @if (session('message'))
+    <div class="alert alert-success">
+        {{ session('message') }}
+    </div>
+@endif
+
+@if (session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
+
                      <div class="story-card">
                         <div class="story-title">
                            <h5>Recent Stories</h5>

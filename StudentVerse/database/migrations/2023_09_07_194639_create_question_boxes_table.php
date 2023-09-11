@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('Image');
             $table->unsignedBigInteger('User_Id');
             $table->foreign('User_Id')->references('id')->on('user_boxes');
-            $table->unsignedBigInteger('Tagged_Id');
+            $table->unsignedBigInteger('Tagged_Id')->default(0);
             $table->foreign('Tagged_Id')->references('id')->on('tag_boxes');
             $table->timestamps();
         });

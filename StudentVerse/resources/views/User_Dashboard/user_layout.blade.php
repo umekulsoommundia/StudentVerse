@@ -673,25 +673,35 @@
                                 </svg></i> Ask Question</h5>
                     </div>
                     <div class="post-new">
-                        <form  action="/questionpost" enctype="multipart/form-data" method="post" class="c-form"> 
+                        <form action="/questionpost" enctype="multipart/form-data" method="post" class="c-form">
                             @csrf
-                            <input type="text" placeholder="Subject"><textarea
-                                placeholder="body"></textarea>
-                            
-                            <select name="tagId" required>
+                            <input name="Subject" type="text" placeholder="Subject">
+                            <textarea  name="Description" placeholder="body"></textarea>
+                    
+                            <select name="tagId[]" id="tag-select" required multiple>
+                                <!-- Use square brackets in the name attribute to indicate an array -->
                                 <option>Add Tags</option>
-                                @foreach($tags as $tags)
-                                <option value="{{ $tags->id }}">{{ $tags->Name }}</option>
-                            @endforeach
-                         
-                        
+                                @foreach($tags as $tag)
+                                    <option value="{{ $tag->id }}">{{ $tag->Name }}</option>
+                                @endforeach
                             </select>
-                            <div class="uploadimage"> <i class="icofont-eye-alt-alt"></i> <label class="fileContainer">
-                                    <input type="file">Upload File </label></div>
-                                     <button type="submit"
-                                class="main-btn">Post</button>
+                    
+                            <div class="selected-tags">
+                                <!-- This is where selected tags will be displayed -->
+                            </div>
+                    
+                            <div class="uploadimage">
+                                <i class="icofont-eye-alt-alt"></i>
+                                <label class="fileContainer">
+                                    <input name="Image" type="file">Upload File
+                                </label>
+                            </div>
+                            <button type="submit" class="main-btn">Post</button>
                         </form>
                     </div>
+                    
+                    
+                    
                 </div>
             </div>
         </div>
@@ -1222,6 +1232,21 @@
 <script src="../js/main.min.js"></script>
 <script src="../js/date-time.js"></script>
 <script src="../js/script.js"></script>
+<script>
+
+    const tagSelect = document.getElementById('tag-select');
+    const selectedTags = document.querySelector('.selected-tags');
+
+    tagSelect.addEventListener('change', () => {
+        selectedTags.innerHTML = ''; 
+        const selectedOptions = Array.from(tagSelect.selectedOptions);
+        selectedOptions.forEach((option) => {
+            const tag = document.createElement('span');
+            tag.textContent = option.textContent;
+            selectedTags.appendChild(tag);
+        });
+    });
+</script>
 </html>
 
 
