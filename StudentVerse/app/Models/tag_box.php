@@ -11,6 +11,7 @@ class tag_box extends Model
 
     public function questions()
     {
-        return $this->belongsToMany(question_box::class, 'question_tags', 'tag_id', 'question_id');
+        return $this->belongsToMany(QuestionBox::class, 'question_tags', 'tag_id', 'question_id');
     }
+    
 }

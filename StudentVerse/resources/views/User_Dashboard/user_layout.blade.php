@@ -678,7 +678,7 @@
                             <input name="Subject" type="text" placeholder="Subject">
                             <textarea  name="Description" placeholder="body"></textarea>
                     
-                            <select name="tagId[]" id="tag-select" required multiple>
+                            <select name="Tagged_Id[]" id="tag-select" required multiple>
                                 <!-- Use square brackets in the name attribute to indicate an array -->
                                 <option>Add Tags</option>
                                 @foreach($tags as $tag)
@@ -699,9 +699,6 @@
                             <button type="submit" class="main-btn">Post</button>
                         </form>
                     </div>
-                    
-                    
-                    
                 </div>
             </div>
         </div>

@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use App\models\InterestBox;
+use App\Models\question_box;
+use App\Models\question_tag;
 use App\Models\UserProfileBox;
 use App\Models\tag_box;
 
@@ -116,18 +118,28 @@ class UserController extends Controller
                 } elseif ($userProfile->status == 1) {
                     // Redirect to user profile page
                 
+                  
+                    $questionBoxes = question_box::with('user')->latest()->get();
+
+                    foreach ($questionBoxes as $questionBox) {
+                        if ($questionBox->user) {
+                            echo $questionBox->user->name;
+                        } else {
+                            echo "User not found";
+                        }
+
                     $tags = tag_box::all();
                     $msg = session('msg');
-                    return view('User_Dashboard.index', compact('tags', 'msg'));
+                    return view('User_Dashboard.index', compact('tags', 'msg','questionBoxes'));
                
                 }
             }
         }
-    
+    }
         // User is not authenticated or profile status not found, handle this case (e.g., redirect to login)
         return redirect()->route('signin'); // You might need to adjust this route
     }
-    
+
 
     // function showUserProfile(Request $request) {
     //     // Check if the user is authenticated
@@ -137,27 +149,26 @@ class UserController extends Controller
     //         // Check the user's profile status
     //         $userProfile = UserProfileBox::where('User_Id', $userId)->first();
     
-    //         if ($userProfile && $userProfile->status == 1) {
-    //             // Redirect to user profile page
-    //             return view('User_Dashboard.index');
-    //         } else {
-    //             return view('user.profile-setup')->with("message", "Please complete profile setup first.");
+    //         if ($userProfile) {
+    //             if ($userProfile->status == 0) {
+    //                 // Redirect to profile setup page
+    //                 return redirect()->route('profile-setup', ['id' => $userId]);
+    //             } elseif ($userProfile->status == 1) {
+    //                 // Redirect to user profile page
+                    
+    //                 $questionBoxes = question_box::with('user')->latest()->get();
+    //                 $tags = tag_box::all();
+    //                 $msg = session('msg');
+                    
+    //                 return view('User_Dashboard.index', compact('tags', 'msg', 'questionBoxes'));
+    //             }
     //         }
-    //     } else {
-    //         // User is not authenticated, handle this case (e.g., redirect to login)
-    //         return redirect()->route('signin'); // You might need to adjust this route
     //     }
+    
+    //     // User is not authenticated or profile status not found, handle this case (e.g., redirect to login)
+    //     return redirect()->route('signin'); // You might need to adjust this route
     // }
     
-    // function showUserProfile(Request $request) {
-    //     $userProfile = UserProfileBox::where('User_Id', auth()->user()->id)->first();
-
-    //     if ($userProfile && $userProfile->status == 1) {
-    //         return view('User_Dashboard.index'); // Redirect to user profile page
-    //     } else {
-    //         return view('user.profile-setup')->with("message", "Please complete profile setup first.");
-    //     }
-    // }
 
     public function show()
     {

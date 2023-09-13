@@ -67,7 +67,7 @@ create date: January-2021
 ***General Styling 
 ===============*/
 html,body{
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif
 }
 body {
     float: left;
@@ -25936,4 +25936,31 @@ body{margin-top:20px;
         transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    }
+
+    h1{
+        font-family: 'Open Sans', sans-serif; 
+    font: weight 1px; 
+font-style: normal;
+
+}
+
+    h1 span{
+        font-family: 'Open Sans', sans-serif;     padding-left: 12px;
+        text-decoration: none;
+        border-bottom: none;
+        font: weight 4px;
+        font-style: unset;
+    }
+
+    h3{
+        font-family: 'Open Sans', sans-serif;  }
+
+    h3 span{
+        font-family: 'Open Sans', sans-serif;
+        color:#0077b5;   }
+
+    .feature-meta h1 span{
+        border-bottom: none;
+      
     }
