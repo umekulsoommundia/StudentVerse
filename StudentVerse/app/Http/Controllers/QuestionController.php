@@ -169,12 +169,27 @@ public function questionpost(Request $request)
         'Tagged_Id' => 'required|array',
     ]);
 
-    // Check if a file was uploaded
+    // // Check if a file was uploaded
+    // if ($request->hasFile('Image')) {
+    //     $imagePath= $request->file("Image");
+    //     $image2= time().".".$imagePath->getClientOriginalName();
+    //     $imagePath->move("./question_images",$image2);
+    
+    // } else {
+    //     return redirect()->back()->with('error', 'Please upload an image.');
+    // }
+    
     if ($request->hasFile('Image')) {
-        $imagePath = $request->file('Image')->store('question_images', 'public');
+        $imagePath = $request->file("Image");
+        $imageFileName = time() . "." . $imagePath->getClientOriginalExtension();
+        $imagePath->move(public_path('question_images'), $imageFileName);
+        $imagePath = 'question_images/' . $imageFileName;
     } else {
         return redirect()->back()->with('error', 'Please upload an image.');
     }
+    
+    
+
 
    // Create a new question instance
 $question = new question_box();

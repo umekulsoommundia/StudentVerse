@@ -9,40 +9,37 @@
                   <div class="col-lg-3">
                      <aside class="sidebar static left">
                         <div class="widget whitish low-opacity">
-                           <img src="../images/time-clock.png"
-                              alt="">
-                           <div class="bg-image"
-                              style="background-image: url(../images/resources/time-bg.jpg)"></div>
+                           <img src="../images/time-clock.png" alt="">
+                           <div class="bg-image" style="background-image: url(../images/resources/time-bg.jpg)"></div>
                            <div class="date-time">
-                              <div class="realtime"> <span id="hours">00</span> <span
-                                 id="point">:</span> <span id="min">00</span></div>
-                              <span
-                                 id="date"></span>
+                              <div class="realtime"> <span id="hours">00</span> <span id="point">:</span> <span
+                                    id="min">00</span></div>
+                              <span id="date"></span>
                            </div>
                         </div>
                         <div class="widget">
                            <h4 class="widget-title">Complete Your Profile</h4>
                            <span>Your Profile is
-                           missing followings!</span>
+                              missing followings!</span>
                            <div data-progress="tip" class="progress__outer" data-value="0.67">
                               <div class="progress__inner">82%</div>
                            </div>
                            <ul class="prof-complete">
                               <li><i class="icofont-plus-square"></i> <a href="#" title="">Upload Your
-                                 Picture</a><em>10%</em>
+                                    Picture</a><em>10%</em>
                               </li>
                               <li><i class="icofont-plus-square"></i> <a href="#" title="">Your
-                                 University?</a><em>20%</em>
+                                    University?</a><em>20%</em>
                               </li>
                               <li><i class="icofont-plus-square"></i> <a href="#" title="">Add Payment
-                                 Method</a><em>20%</em>
+                                    Method</a><em>20%</em>
                               </li>
                            </ul>
                         </div>
                         <div class="advertisment-box">
                            <h4 class=""><i class="icofont-info-circle"></i> advertisment</h4>
-                           <figure> <a href="#" title="Advertisment"><img
-                              src="../images/resources/ad-widget2.gif" alt=""></a> </figure>
+                           <figure> <a href="#" title="Advertisment"><img src="../images/resources/ad-widget2.gif"
+                                    alt=""></a> </figure>
                         </div>
                         <div class="widget">
                            <h4 class="widget-title"><i class="icofont-flame-torch"></i> Popular Courses
@@ -50,20 +47,20 @@
                            <ul class="premium-course">
                               <li>
                                  <figure> <img src="../images/resources/course-5.jpg" alt=""> <span
-                                    class="tag">Free</span> </figure>
+                                       class="tag">Free</span> </figure>
                                  <div class="vid-course">
                                     <h5><a href="course-detail.html" title="">Wordpress Online video
-                                       course</a>
+                                          course</a>
                                     </h5>
                                     <ins class="price">$19/M</ins>
                                  </div>
                               </li>
                               <li>
                                  <figure> <img src="../images/resources/course-3.jpg" alt=""> <span
-                                    class="tag">Premium</span> </figure>
+                                       class="tag">Premium</span> </figure>
                                  <div class="vid-course">
                                     <h5><a href="course-detail.html" title="">Node JS Online video
-                                       course</a>
+                                          course</a>
                                     </h5>
                                     <ins class="price">$29/M</ins>
                                  </div>
@@ -71,8 +68,7 @@
                            </ul>
                         </div>
                         <div class="widget">
-                           <h4 class="widget-title">Recent Blogs <a class="see-all" href="#"
-                              title="">See All</a></h4>
+                           <h4 class="widget-title">Recent Blogs <a class="see-all" href="#" title="">See All</a></h4>
                            <ul class="recent-links">
                               <li>
                                  <figure><img alt="" src="../images/resources/recentlink-1.jpg">
@@ -88,7 +84,7 @@
                                  </figure>
                                  <div class="re-links-meta">
                                     <h6><a title="" href="#">Daniel asks The voice of
-                                       doomfist...</a>
+                                          doomfist...</a>
                                     </h6>
                                     <span>3 months ago </span>
                                  </div>
@@ -110,35 +106,32 @@
                               employers and collaborators find and contact you about career
                               opportunities.
                            </p>
-                           <a class="main-btn" href="profile.html" title=""
-                              data-ripple="">view profile</a>
+                           <a class="main-btn" href="profile.html" title="" data-ripple="">view profile</a>
                         </div>
                         <div class="widget web-links stick-widget">
-                           <h4 class="widget-title">Useful Links <a title="" href="#"
-                              class="see-all">See All</a></h4>
+                           <h4 class="widget-title">Useful Links <a title="" href="#" class="see-all">See All</a></h4>
                            <ul>
                               <li><i class="icofont-dotted-right"></i> <a title="" href="#">about</a>
                               </li>
                               <li><i class="icofont-dotted-right"></i> <a title="" href="#">career</a>
                               </li>
-                              <li><i class="icofont-dotted-right"></i> <a title=""
-                                 href="#">advertise</a></li>
+                              <li><i class="icofont-dotted-right"></i> <a title="" href="#">advertise</a></li>
                               <li><i class="icofont-dotted-right"></i> <a title="" href="#">socimo
-                                 Apps</a>
+                                    Apps</a>
                               </li>
                               <li><i class="icofont-dotted-right"></i> <a title="" href="#">socimo
-                                 Blog</a>
+                                    Blog</a>
                               </li>
                               <li><i class="icofont-dotted-right"></i> <a title="" href="#">Help</a>
                               </li>
                               <li><i class="icofont-dotted-right"></i> <a title="" href="#">socimo
-                                 Gifts</a>
+                                    Gifts</a>
                               </li>
                               <li><i class="icofont-dotted-right"></i> <a title="" href="#">content
-                                 policy</a>
+                                    policy</a>
                               </li>
                               <li><i class="icofont-dotted-right"></i> <a title="" href="#">User
-                                 Policy</a>
+                                    Policy</a>
                               </li>
                            </ul>
                            <p>&copy; Socimo 2020. All Rights Reserved.</p>
@@ -146,21 +139,20 @@
                      </aside>
                   </div>
 
-                  
+
                   <div class="col-lg-6">
                      <div class="main-wraper">
                         <div class="chatroom-title">
                            <i>
-                              <svg xmlns="http://www.w3.org/2000/svg"
-                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                  stroke-linejoin="round" class="feather feather-tv">
                                  <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
                                  <polyline points="17 2 12 7 7 2"></polyline>
                               </svg>
                            </i>
-                           <span>Chat Rooms <em>Video chat with friends</em></span> <a
-                              class="create-newroom" href="#" title="">Create Room</a>
+                           <span>Chat Rooms <em>Video chat with friends</em></span> <a class="create-newroom" href="#"
+                              title="">Create Room</a>
                         </div>
                         <ul class="chat-rooms">
                            <li>
@@ -168,191 +160,200 @@
                                  <span class="status online"></span>
                               </div>
                               <span>Sara's Room</span>
-                              <a class="join" href="#" title="Join Room">Join</a> <a
-                                 class="say-hi send-mesg" href="#" title="Send Message"><i
-                                 class="icofont-facebook-messenger"></i></a>
+                              <a class="join" href="#" title="Join Room">Join</a> <a class="say-hi send-mesg" href="#"
+                                 title="Send Message"><i class="icofont-facebook-messenger"></i></a>
                            </li>
                            <li>
                               <div class="room-avatar"> <img src="../images/resources/user3.jpg" alt="">
                                  <span class="status offline"></span>
                               </div>
                               <span>jawad's Room</span>
-                              <a class="join" href="#" title="Join Room">Join</a> <a
-                                 class="say-hi send-mesg" href="#" title="Send Message"><i
-                                 class="icofont-facebook-messenger"></i></a>
+                              <a class="join" href="#" title="Join Room">Join</a> <a class="say-hi send-mesg" href="#"
+                                 title="Send Message"><i class="icofont-facebook-messenger"></i></a>
                            </li>
                            <li>
                               <div class="room-avatar"> <img src="../images/resources/user4.jpg" alt="">
                                  <span class="status away"></span>
                               </div>
-                              <span>Jack's Room</span> <a
-                                 class="join" href="#" title="Join Room">Join</a> <a
+                              <span>Jack's Room</span> <a class="join" href="#" title="Join Room">Join</a> <a
                                  class="say-hi send-mesg" href="#" title="Send Message"><i
-                                 class="icofont-facebook-messenger"></i></a>
+                                    class="icofont-facebook-messenger"></i></a>
                            </li>
                            <li>
                               <div class="room-avatar"> <img src="../images/resources/user5.jpg" alt="">
                                  <span class="status online"></span>
                               </div>
                               <span>jobidn's Room</span>
-                              <a class="join" href="#" title="Join Room">Join</a> <a
-                                 class="say-hi send-mesg" href="#" title="Send Message"><i
-                                 class="icofont-facebook-messenger"></i></a>
+                              <a class="join" href="#" title="Join Room">Join</a> <a class="say-hi send-mesg" href="#"
+                                 title="Send Message"><i class="icofont-facebook-messenger"></i></a>
                            </li>
                            <li>
                               <div class="room-avatar"> <img src="../images/resources/user6.jpg" alt="">
                                  <span class="status offline"></span>
                               </div>
                               <span>Emily's Room</span>
-                              <a class="join" href="#" title="Join Room">Join</a> <a
-                                 class="say-hi send-mesg" href="#" title="Send Message"><i
-                                 class="icofont-facebook-messenger"></i></a>
+                              <a class="join" href="#" title="Join Room">Join</a> <a class="say-hi send-mesg" href="#"
+                                 title="Send Message"><i class="icofont-facebook-messenger"></i></a>
                            </li>
                         </ul>
                      </div>
-                     
+
                      <ul class="filtr-tabs">
                         <li><a class="active" href="#" title="">Home</a></li>
                         <li><a href="#" title="">Recent</a></li>
                         <li><a href="#" title="">Favourit</a></li>
                      </ul>
                      <div class="main-wraper">
-                        <span class="new-title">Ask a Question?  </span>
+                        <span class="new-title">Ask a Question? </span>
                         <div class="new-post ask-qst">
-                           <form  method="post"> <i class="icofont-pen-alt-1"></i> <input type="text"
-                              placeholder="Create New Post"></form>
+                           <form method="post"> <i class="icofont-pen-alt-1"></i> <input type="text"
+                                 placeholder="Create New Post"></form>
                            <ul class="upload-media">
                               <li> <a href="#" title=""> <i><img src="../images/image.png" alt=""></i>
-                                 <span>Photo/Video</span> </a>
+                                    <span>Photo/Video</span> </a>
                               </li>
                               <li> <a href="#" title=""> <i><img src="../images/activity.png" alt=""></i>
-                                 <span>Feeling/Activity</span> </a>
+                                    <span>Feeling/Activity</span> </a>
                               </li>
-                              <li> <a href="live-stream.html" title=""> <i><img
-                                 src="../images/live-stream.png" alt=""></i> <span>Live
-                                 Stream</span> </a>
+                              <li> <a href="live-stream.html" title=""> <i><img src="../images/live-stream.png"
+                                          alt=""></i> <span>Live
+                                       Stream</span> </a>
                               </li>
                            </ul>
                         </div>
                      </div>
                      @if (session('message'))
-    <div class="alert alert-success">
-        {{ session('message') }}
-    </div>
-@endif
+                     <div class="alert alert-success">
+                        {{ session('message') }}
+                     </div>
+                     @endif
 
-@if (session('error'))
-    <div class="alert alert-danger">
-        {{ session('error') }}
-    </div>
-@endif
+                     @if (session('error'))
+                     <div class="alert alert-danger">
+                        {{ session('error') }}
+                     </div>
+                     @endif
 
-              
-                 
+
+
                      <div class="main-wraper">
                         <div class="user-post">
                            <div class="friend-info">
                               <figure> <i class="icofont-learn"></i> </figure>
-                              <div class="friend-name"> <ins><a title=""
-                                 href="time-line.html">Suggested</a></ins> <span><i
-                                 class="icofont-runner-alt-1"></i> Follow similar
-                                 People</span>
+                              <div class="friend-name"> <ins><a title="" href="time-line.html">Suggested</a></ins>
+                                 <span><i class="icofont-runner-alt-1"></i> Follow similar
+                                    People</span>
                               </div>
                               <ul class="suggested-caro">
                                  <li>
                                     <figure><img src="../images/resources/speak-1.jpg" alt=""></figure>
-                                    <span>Amy Watson</span> <ins>Department of Socilolgy</ins> <a
-                                       href="#" title="" data-ripple=""><i
-                                       class="icofont-star"></i> Follow</a>
+                                    <span>Amy Watson</span> <ins>Department of Socilolgy</ins> <a href="#" title=""
+                                       data-ripple=""><i class="icofont-star"></i> Follow</a>
                                  </li>
                                  <li>
                                     <figure><img src="../images/resources/speak-2.jpg" alt=""></figure>
-                                    <span>Muhammad Khan</span> <ins>Department of Socilolgy</ins> <a
-                                       href="#" title="" data-ripple=""><i
-                                       class="icofont-star"></i> Follow</a>
+                                    <span>Muhammad Khan</span> <ins>Department of Socilolgy</ins> <a href="#" title=""
+                                       data-ripple=""><i class="icofont-star"></i> Follow</a>
                                  </li>
                                  <li>
                                     <figure><img src="../images/resources/speak-3.jpg" alt=""></figure>
-                                    <span>Sadia Gill</span> <ins>Department of Socilolgy</ins> <a
-                                       href="#" title="" data-ripple=""><i
-                                       class="icofont-star"></i> Follow</a>
+                                    <span>Sadia Gill</span> <ins>Department of Socilolgy</ins> <a href="#" title=""
+                                       data-ripple=""><i class="icofont-star"></i> Follow</a>
                                  </li>
                               </ul>
                            </div>
                         </div>
                      </div>
-                
+
                      <!-- resources/views/questions.blade.php -->
                      <div class="main-wraper">
                         @foreach ($questionBoxes as $questionBox)
                         <div class="user-post">
-                            <div class="friend-info">
-                                <figure>
-                                    <em>
-                                        <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
-                                            <path fill="#7fba00" stroke="#7fba00" d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"></path>
-                                        </svg>
-                                    </em>
-                                    <img alt="" src="../images/resources/user3.jpg">
-                                </figure>
-                                <div class="friend-name">
-                                    <!-- Check if the 'user' relationship exists -->
-                                    @if ($questionBox->user)
-                                        <ins><a title="" href="time-line.html">{{ $questionBox->user->User_Name}}</a> Create Post</ins>
-                                    @else
-                                        <ins>User not found</ins>
-                                    @endif
-                                    <span><i class="icofont-globe"></i> published: {{ $questionBox->created_at->format('M d, Y') }}</span>
-                                </div>
-                                <div class="post-meta">
-                                    <figure> <a data-toggle="modal" data-target="#img-comt" href="../images/resources/album1.jpg"> <img src="{{ asset($questionBox->Image) }}" alt=""> </a> </figure>
-                                    <a href="post-detail.html" class="post-title">{{ $questionBox->subject }}</a>
-                                    <p>{{ $questionBox->description }}</p>
-                                    <!-- Add more post meta information here as needed -->
-                                </div>
-                            </div>
+                           <div class="friend-info">
+                              <figure>
+                                 <em>
+                                    <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="15"
+                                       height="15" viewBox="0 0 24 24">
+                                       <path fill="#7fba00" stroke="#7fba00"
+                                          d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z">
+                                       </path>
+                                    </svg>
+                                 </em>
+                                 <img alt="" src="../images/resources/user3.jpg">
+                              </figure>
+                              <div class="friend-name">
+
+                                 <!-- Check if the 'user' relationship exists -->
+                                 @if ($questionBox->user)
+                                 <ins><a title="" href="time-line.html">{{ $questionBox->user->First_Name}}</a> Created
+                                    new post</ins>
+                                 @else
+                                 <ins>User not found</ins>
+                                 @endif
+                                 <span><i class="icofont-globe"></i> published: {{ $questionBox->created_at->format('M
+                                    d, Y') }}</span>
+                              </div>
+
+                              <div class="post-meta">
+                                 <figure>
+                                    <a data-toggle="modal" data-target="#img-comt" href="#">
+                                       <img src="{{ asset($questionBox->Image) }}" alt="">
+                                    </a>
+                                 </figure>
+
+                                 <a href="post-detail.html" class="post-title">{{ $questionBox->Subject }}</a>
+                                 <p>{{ $questionBox->Description }}</p>
+                                 <!-- Add more post meta information here as needed -->
+                              </div>
+
+                           </div>
                         </div>
                         @endforeach
                      </div>
-                     
-{{-- <div class="main-wraper">
-   @foreach ($questionBoxes as $questionBoxes)
-   <div class="user-post">
-       <div class="friend-info">
-           <figure>
-               <em>
-                   <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
-                       <path fill="#7fba00" stroke="#7fba00" d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"></path>
-                   </svg>
-               </em>
-               <img alt="" src="../images/resources/user3.jpg">
-           </figure>
-           <div class="friend-name">
-               <!-- Display user information who posted the question -->
-               <ins><a title="" href="time-line.html">{{ $questionBoxes->user->name }}
-</a> Create Post</ins>
-               <span><i class="icofont-globe"></i> published: {{ $questionBoxes->created_at->format('M d, Y') }}</span>
-           </div>
-           <div class="post-meta">
-               <figure> <a data-toggle="modal" data-target="#img-comt" href="../images/resources/album1.jpg"> <img src="../images/resources/study.jpg" alt=""> </a> </figure>
-               <a href="post-detail.html" class="post-title">{{ $questionBoxes->subject }}</a>
-               <p>{{ $questionBoxes->description }}</p>
-               <!-- Add more post meta information here as needed -->
-           </div>
-       </div>
-   </div>
-   @endforeach
-</div> --}}
-
 
                      {{-- <div class="main-wraper">
+                        @foreach ($questionBoxes as $questionBoxes)
                         <div class="user-post">
                            <div class="friend-info">
                               <figure>
                                  <em>
-                                    <svg style="vertical-align: middle;"
-                                       xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                                       viewBox="0 0 24 24">
+                                    <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="15"
+                                       height="15" viewBox="0 0 24 24">
+                                       <path fill="#7fba00" stroke="#7fba00"
+                                          d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z">
+                                       </path>
+                                    </svg>
+                                 </em>
+                                 <img alt="" src="../images/resources/user3.jpg">
+                              </figure>
+                              <div class="friend-name">
+                                 <!-- Display user information who posted the question -->
+                                 <ins><a title="" href="time-line.html">{{ $questionBoxes->user->name }}
+                                    </a> Create Post</ins>
+                                 <span><i class="icofont-globe"></i> published: {{ $questionBoxes->created_at->format('M
+                                    d, Y') }}</span>
+                              </div>
+                              <div class="post-meta">
+                                 <figure> <a data-toggle="modal" data-target="#img-comt"
+                                       href="../images/resources/album1.jpg"> <img src="../images/resources/study.jpg"
+                                          alt=""> </a> </figure>
+                                 <a href="post-detail.html" class="post-title">{{ $questionBoxes->subject }}</a>
+                                 <p>{{ $questionBoxes->description }}</p>
+                                 <!-- Add more post meta information here as needed -->
+                              </div>
+                           </div>
+                        </div>
+                        @endforeach
+                     </div> --}}
+
+
+                     <div class="main-wraper">
+                        <div class="user-post">
+                           <div class="friend-info">
+                              <figure>
+                                 <em>
+                                    <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="15"
+                                       height="15" viewBox="0 0 24 24">
                                        <path fill="#7fba00" stroke="#7fba00"
                                           d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z">
                                        </path>
@@ -364,10 +365,8 @@
                                  <div class="more">
                                     <div class="more-post-optns">
                                        <i class="">
-                                          <svg
-                                             xmlns="http://www.w3.org/2000/svg" width="24"
-                                             height="24" viewBox="0 0 24 24" fill="none"
-                                             stroke="currentColor" stroke-width="2"
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                              stroke-linecap="round" stroke-linejoin="round"
                                              class="feather feather-more-horizontal">
                                              <circle cx="12" cy="12" r="1"></circle>
@@ -380,7 +379,7 @@
                                              <span>Edit This Post within a Hour</span>
                                           </li>
                                           <li> <i class="icofont-ban"></i>Hide Post <span>Hide
-                                             This Post</span>
+                                                This Post</span>
                                           </li>
                                           <li> <i class="icofont-ui-delete"></i>Delete Post
                                              <span>If inappropriate Post By Mistake</span>
@@ -392,13 +391,12 @@
                                     </div>
                                  </div>
                                  <ins> <a title="verified" href="time-line.html">Jack
-                                 Carter</a> Share Post</ins> <span><i
-                                    class="icofont-globe"></i> published: Sep,15 2020</span>
+                                       Carter</a> Share Post</ins> <span><i class="icofont-globe"></i> published: Sep,15
+                                    2020</span>
                               </div>
                               <div class="post-meta">
-                                 <a href="post-detail.html"
-                                    class="post-title">Supervision as a Personnel Development
-                                 Device</a>
+                                 <a href="post-detail.html" class="post-title">Supervision as a Personnel Development
+                                    Device</a>
                                  <p> Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
                                     condimentum rhoncus, sem quam semper libero.
                                  </p>
@@ -407,88 +405,72 @@
                                        <li>
                                           <span title="views" class="views">
                                              <i>
-                                                <svg
-                                                   xmlns="http://www.w3.org/2000/svg"
-                                                   width="16" height="16" viewBox="0 0 24 24"
-                                                   fill="none" stroke="currentColor"
-                                                   stroke-width="2" stroke-linecap="round"
-                                                   stroke-linejoin="round"
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                                    class="feather feather-eye">
-                                                   <path
-                                                      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
                                                    </path>
                                                    <circle cx="12" cy="12" r="3"></circle>
                                                 </svg>
                                              </i>
-                                             <ins>1.2k</ins> 
+                                             <ins>1.2k</ins>
                                           </span>
                                        </li>
                                        <li>
                                           <span title="Comments" class="Recommend">
                                              <i>
-                                                <svg
-                                                   class="feather feather-message-square"
-                                                   stroke-linejoin="round"
-                                                   stroke-linecap="round" stroke-width="2"
-                                                   stroke="currentColor" fill="none"
-                                                   viewBox="0 0 24 24" height="16" width="16"
+                                                <svg class="feather feather-message-square" stroke-linejoin="round"
+                                                   stroke-linecap="round" stroke-width="2" stroke="currentColor"
+                                                   fill="none" viewBox="0 0 24 24" height="16" width="16"
                                                    xmlns="http://www.w3.org/2000/svg">
                                                    <path
                                                       d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                                 </svg>
                                              </i>
-                                             <ins>54</ins> 
+                                             <ins>54</ins>
                                           </span>
                                        </li>
                                        <li>
                                           <span title="follow" class="Follow">
                                              <i>
-                                                <svg
-                                                   xmlns="http://www.w3.org/2000/svg"
-                                                   width="16" height="16" viewBox="0 0 24 24"
-                                                   fill="none" stroke="currentColor"
-                                                   stroke-width="2" stroke-linecap="round"
-                                                   stroke-linejoin="round"
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                                    class="feather feather-star">
                                                    <polygon
                                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                                    </polygon>
                                                 </svg>
                                              </i>
-                                             <ins>5k</ins> 
+                                             <ins>5k</ins>
                                           </span>
                                        </li>
                                        <li>
                                           <span class="share-pst" title="Share">
                                              <i>
-                                                <svg
-                                                   xmlns="http://www.w3.org/2000/svg"
-                                                   width="16" height="16" viewBox="0 0 24 24"
-                                                   fill="none" stroke="currentColor"
-                                                   stroke-width="2" stroke-linecap="round"
-                                                   stroke-linejoin="round"
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                                    class="feather feather-share-2">
                                                    <circle cx="18" cy="5" r="3"></circle>
                                                    <circle cx="6" cy="12" r="3"></circle>
                                                    <circle cx="18" cy="19" r="3"></circle>
-                                                   <line x1="8.59" y1="13.51" x2="15.42"
-                                                      y2="17.49"></line>
-                                                   <line x1="15.41" y1="6.51" x2="8.59"
-                                                      y2="10.49"></line>
+                                                   <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                                   <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                                                 </svg>
                                              </i>
-                                             <ins>205</ins> 
+                                             <ins>205</ins>
                                           </span>
                                        </li>
                                     </ul>
                                     <a href="post-detail.html" title="" class="reply">Reply <i
-                                       class="icofont-reply"></i></a>
+                                          class="icofont-reply"></i></a>
                                  </div>
                                  <div class="stat-tools">
                                     <div class="box">
                                        <div class="Like">
-                                          <a class="Like__link"><i
-                                             class="icofont-like"></i> Like</a>
+                                          <a class="Like__link"><i class="icofont-like"></i> Like</a>
                                           <div class="Emojis">
                                              <div class="Emoji Emoji--like">
                                                 <div class="icon icon--like"></div>
@@ -533,18 +515,15 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <a title="" href="#" class="comment-to"><i
-                                       class="icofont-comment"></i> Comment</a> <a title=""
-                                       href="#" class="share-to"><i class="icofont-share-alt"></i>
-                                    Share</a>
+                                    <a title="" href="#" class="comment-to"><i class="icofont-comment"></i> Comment</a>
+                                    <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                       Share</a>
                                     <div class="emoji-state">
                                        <div class="popover_wrapper">
-                                          <a class="popover_title"
-                                             href="#" title=""><img alt=""
-                                             src="../images/smiles/thumb.png"></a>
+                                          <a class="popover_title" href="#" title=""><img alt=""
+                                                src="../images/smiles/thumb.png"></a>
                                           <div class="popover_content">
-                                             <span><img alt=""
-                                                src="../images/smiles/thumb.png"> Likes</span>
+                                             <span><img alt="" src="../images/smiles/thumb.png"> Likes</span>
                                              <ul class="namelist">
                                                 <li>Jhon Doe</li>
                                                 <li>Amara Sin</li>
@@ -554,12 +533,10 @@
                                           </div>
                                        </div>
                                        <div class="popover_wrapper">
-                                          <a class="popover_title"
-                                             href="#" title=""><img alt=""
-                                             src="../images/smiles/heart.png"></a>
+                                          <a class="popover_title" href="#" title=""><img alt=""
+                                                src="../images/smiles/heart.png"></a>
                                           <div class="popover_content">
-                                             <span><img alt=""
-                                                src="../images/smiles/heart.png"> Love</span>
+                                             <span><img alt="" src="../images/smiles/heart.png"> Love</span>
                                              <ul class="namelist">
                                                 <li>Amara Sin</li>
                                                 <li>Jhon Doe</li>
@@ -568,12 +545,10 @@
                                           </div>
                                        </div>
                                        <div class="popover_wrapper">
-                                          <a class="popover_title"
-                                             href="#" title=""><img alt=""
-                                             src="../images/smiles/smile.png"></a>
+                                          <a class="popover_title" href="#" title=""><img alt=""
+                                                src="../images/smiles/smile.png"></a>
                                           <div class="popover_content">
-                                             <span><img alt=""
-                                                src="../images/smiles/smile.png"> Happy</span>
+                                             <span><img alt="" src="../images/smiles/smile.png"> Happy</span>
                                              <ul class="namelist">
                                                 <li>Sarah K.</li>
                                                 <li>Jhon Doe</li>
@@ -583,12 +558,10 @@
                                           </div>
                                        </div>
                                        <div class="popover_wrapper">
-                                          <a class="popover_title"
-                                             href="#" title=""><img alt=""
-                                             src="../images/smiles/weep.png"></a>
+                                          <a class="popover_title" href="#" title=""><img alt=""
+                                                src="../images/smiles/weep.png"></a>
                                           <div class="popover_content">
-                                             <span><img alt=""
-                                                src="../images/smiles/weep.png"> Dislike</span>
+                                             <span><img alt="" src="../images/smiles/weep.png"> Dislike</span>
                                              <ul class="namelist">
                                                 <li>Danial Carbal</li>
                                                 <li>Amara Sin</li>
@@ -600,15 +573,12 @@
                                        <p>10+</p>
                                     </div>
                                     <div class="new-comment" style="display: none;">
-                                       <form method="post"> <input type="text"
-                                          placeholder="write comment"> <button
-                                          type="submit"><i
-                                          class="icofont-paper-plane"></i></button></form>
+                                       <form method="post"> <input type="text" placeholder="write comment"> <button
+                                             type="submit"><i class="icofont-paper-plane"></i></button></form>
                                        <div class="comments-area">
                                           <ul>
                                              <li>
-                                                <figure><img alt=""
-                                                   src="../images/resources/user1.jpg">
+                                                <figure><img alt="" src="../images/resources/user1.jpg">
                                                 </figure>
                                                 <div class="commenter">
                                                    <h5><a title="" href="#">Jack Carter</a>
@@ -619,20 +589,16 @@
                                                       decision, great post!
                                                    </p>
                                                    <span>you can
-                                                   view the more detail via link</span> <a
-                                                      title=""
+                                                      view the more detail via link</span> <a title=""
                                                       href="https://www.youtube.com/watch?v=HpZgwHU1GcI"
                                                       target="_blank">https://www.youtube.com/watch?v=HpZgwHU1GcI</a>
                                                 </div>
-                                                <a title="Like" href="#"><i
-                                                   class="icofont-heart"></i></a> <a
-                                                   title="Reply" href="#"
-                                                   class="reply-coment"><i
-                                                   class="icofont-reply"></i></a>
+                                                <a title="Like" href="#"><i class="icofont-heart"></i></a> <a
+                                                   title="Reply" href="#" class="reply-coment"><i
+                                                      class="icofont-reply"></i></a>
                                              </li>
                                              <li>
-                                                <figure><img alt=""
-                                                   src="../images/resources/user2.jpg">
+                                                <figure><img alt="" src="../images/resources/user2.jpg">
                                                 </figure>
                                                 <div class="commenter">
                                                    <h5><a title="" href="#">Ching xang</a></h5>
@@ -642,11 +608,9 @@
                                                       decision, great post!
                                                    </p>
                                                 </div>
-                                                <a title="Like" href="#"><i
-                                                   class="icofont-heart"></i></a> <a
-                                                   title="Reply" href="#"
-                                                   class="reply-coment"><i
-                                                   class="icofont-reply"></i></a>
+                                                <a title="Like" href="#"><i class="icofont-heart"></i></a> <a
+                                                   title="Reply" href="#" class="reply-coment"><i
+                                                      class="icofont-reply"></i></a>
                                              </li>
                                           </ul>
                                        </div>
@@ -656,16 +620,15 @@
                            </div>
                         </div>
                      </div>
-                   --}}
-            
-                     {{-- <div class="main-wraper">
+                    
+
+                     <div class="main-wraper">
                         <div class="user-post">
                            <div class="friend-info">
                               <figure>
                                  <em>
-                                    <svg style="vertical-align: middle;"
-                                       xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                                       viewBox="0 0 24 24">
+                                    <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="15"
+                                       height="15" viewBox="0 0 24 24">
                                        <path fill="#7fba00" stroke="#7fba00"
                                           d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z">
                                        </path>
@@ -677,10 +640,8 @@
                                  <div class="more">
                                     <div class="more-post-optns">
                                        <i class="">
-                                          <svg
-                                             xmlns="http://www.w3.org/2000/svg" width="24"
-                                             height="24" viewBox="0 0 24 24" fill="none"
-                                             stroke="currentColor" stroke-width="2"
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                              stroke-linecap="round" stroke-linejoin="round"
                                              class="feather feather-more-horizontal">
                                              <circle cx="12" cy="12" r="1"></circle>
@@ -693,7 +654,7 @@
                                              <span>Edit This Post within a Hour</span>
                                           </li>
                                           <li> <i class="icofont-ban"></i>Hide Post <span>Hide
-                                             This Post</span>
+                                                This Post</span>
                                           </li>
                                           <li> <i class="icofont-ui-delete"></i>Delete Post
                                              <span>If inappropriate Post By Mistake</span>
@@ -705,15 +666,15 @@
                                     </div>
                                  </div>
                                  <ins><a title="" href="time-line.html">Turgut Alp</a> Create
-                                 Post</ins> <span><i class="icofont-globe"></i> published: Sep,15
-                                 2020</span>
+                                    Post</ins> <span><i class="icofont-globe"></i> published: Sep,15
+                                    2020</span>
                               </div>
                               <div class="post-meta">
                                  <figure> <a data-toggle="modal" data-target="#img-comt"
-                                    href="../images/resources/album1.jpg"> <img
-                                    src="../images/resources/study.jpg" alt=""> </a> </figure>
+                                       href="../images/resources/album1.jpg"> <img src="../images/resources/study.jpg"
+                                          alt=""> </a> </figure>
                                  <a href="post-detail.html" class="post-title">Supervision as a
-                                 Personnel Development Device</a>
+                                    Personnel Development Device</a>
                                  <p> Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
                                     condimentum rhoncus, sem quam semper libero.
                                  </p>
@@ -722,88 +683,72 @@
                                        <li>
                                           <span title="views" class="views">
                                              <i>
-                                                <svg
-                                                   xmlns="http://www.w3.org/2000/svg"
-                                                   width="16" height="16" viewBox="0 0 24 24"
-                                                   fill="none" stroke="currentColor"
-                                                   stroke-width="2" stroke-linecap="round"
-                                                   stroke-linejoin="round"
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                                    class="feather feather-eye">
-                                                   <path
-                                                      d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
                                                    </path>
                                                    <circle cx="12" cy="12" r="3"></circle>
                                                 </svg>
                                              </i>
-                                             <ins>1.2k</ins> 
+                                             <ins>1.2k</ins>
                                           </span>
                                        </li>
                                        <li>
                                           <span title="Comments" class="Recommend">
                                              <i>
-                                                <svg
-                                                   class="feather feather-message-square"
-                                                   stroke-linejoin="round"
-                                                   stroke-linecap="round" stroke-width="2"
-                                                   stroke="currentColor" fill="none"
-                                                   viewBox="0 0 24 24" height="16" width="16"
+                                                <svg class="feather feather-message-square" stroke-linejoin="round"
+                                                   stroke-linecap="round" stroke-width="2" stroke="currentColor"
+                                                   fill="none" viewBox="0 0 24 24" height="16" width="16"
                                                    xmlns="http://www.w3.org/2000/svg">
                                                    <path
                                                       d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                                 </svg>
                                              </i>
-                                             <ins>54</ins> 
+                                             <ins>54</ins>
                                           </span>
                                        </li>
                                        <li>
                                           <span title="follow" class="Follow">
                                              <i>
-                                                <svg
-                                                   xmlns="http://www.w3.org/2000/svg"
-                                                   width="16" height="16" viewBox="0 0 24 24"
-                                                   fill="none" stroke="currentColor"
-                                                   stroke-width="2" stroke-linecap="round"
-                                                   stroke-linejoin="round"
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                                    class="feather feather-star">
                                                    <polygon
                                                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                                    </polygon>
                                                 </svg>
                                              </i>
-                                             <ins>5k</ins> 
+                                             <ins>5k</ins>
                                           </span>
                                        </li>
                                        <li>
                                           <span class="share-pst" title="Share">
                                              <i>
-                                                <svg
-                                                   xmlns="http://www.w3.org/2000/svg"
-                                                   width="16" height="16" viewBox="0 0 24 24"
-                                                   fill="none" stroke="currentColor"
-                                                   stroke-width="2" stroke-linecap="round"
-                                                   stroke-linejoin="round"
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                                    class="feather feather-share-2">
                                                    <circle cx="18" cy="5" r="3"></circle>
                                                    <circle cx="6" cy="12" r="3"></circle>
                                                    <circle cx="18" cy="19" r="3"></circle>
-                                                   <line x1="8.59" y1="13.51" x2="15.42"
-                                                      y2="17.49"></line>
-                                                   <line x1="15.41" y1="6.51" x2="8.59"
-                                                      y2="10.49"></line>
+                                                   <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                                   <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                                                 </svg>
                                              </i>
-                                             <ins>205</ins> 
+                                             <ins>205</ins>
                                           </span>
                                        </li>
                                     </ul>
                                     <a href="post-detail.html" title="" class="reply">Reply <i
-                                       class="icofont-reply"></i></a>
+                                          class="icofont-reply"></i></a>
                                  </div>
                                  <div class="stat-tools">
                                     <div class="box">
                                        <div class="Like">
-                                          <a class="Like__link"><i
-                                             class="icofont-like"></i> Like</a>
+                                          <a class="Like__link"><i class="icofont-like"></i> Like</a>
                                           <div class="Emojis">
                                              <div class="Emoji Emoji--like">
                                                 <div class="icon icon--like"></div>
@@ -848,18 +793,15 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <a title="" href="#" class="comment-to"><i
-                                       class="icofont-comment"></i> Comment</a> <a title=""
-                                       href="#" class="share-to"><i class="icofont-share-alt"></i>
-                                    Share</a>
+                                    <a title="" href="#" class="comment-to"><i class="icofont-comment"></i> Comment</a>
+                                    <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                       Share</a>
                                     <div class="emoji-state">
                                        <div class="popover_wrapper">
-                                          <a class="popover_title"
-                                             href="#" title=""><img alt=""
-                                             src="../images/smiles/thumb.png"></a>
+                                          <a class="popover_title" href="#" title=""><img alt=""
+                                                src="../images/smiles/thumb.png"></a>
                                           <div class="popover_content">
-                                             <span><img alt=""
-                                                src="../images/smiles/thumb.png"> Likes</span>
+                                             <span><img alt="" src="../images/smiles/thumb.png"> Likes</span>
                                              <ul class="namelist">
                                                 <li>Jhon Doe</li>
                                                 <li>Amara Sin</li>
@@ -869,12 +811,10 @@
                                           </div>
                                        </div>
                                        <div class="popover_wrapper">
-                                          <a class="popover_title"
-                                             href="#" title=""><img alt=""
-                                             src="../images/smiles/heart.png"></a>
+                                          <a class="popover_title" href="#" title=""><img alt=""
+                                                src="../images/smiles/heart.png"></a>
                                           <div class="popover_content">
-                                             <span><img alt=""
-                                                src="../images/smiles/heart.png"> Love</span>
+                                             <span><img alt="" src="../images/smiles/heart.png"> Love</span>
                                              <ul class="namelist">
                                                 <li>Amara Sin</li>
                                                 <li>Jhon Doe</li>
@@ -883,12 +823,10 @@
                                           </div>
                                        </div>
                                        <div class="popover_wrapper">
-                                          <a class="popover_title"
-                                             href="#" title=""><img alt=""
-                                             src="../images/smiles/smile.png"></a>
+                                          <a class="popover_title" href="#" title=""><img alt=""
+                                                src="../images/smiles/smile.png"></a>
                                           <div class="popover_content">
-                                             <span><img alt=""
-                                                src="../images/smiles/smile.png"> Happy</span>
+                                             <span><img alt="" src="../images/smiles/smile.png"> Happy</span>
                                              <ul class="namelist">
                                                 <li>Sarah K.</li>
                                                 <li>Jhon Doe</li>
@@ -898,12 +836,10 @@
                                           </div>
                                        </div>
                                        <div class="popover_wrapper">
-                                          <a class="popover_title"
-                                             href="#" title=""><img alt=""
-                                             src="../images/smiles/weep.png"></a>
+                                          <a class="popover_title" href="#" title=""><img alt=""
+                                                src="../images/smiles/weep.png"></a>
                                           <div class="popover_content">
-                                             <span><img alt=""
-                                                src="../images/smiles/weep.png"> Dislike</span>
+                                             <span><img alt="" src="../images/smiles/weep.png"> Dislike</span>
                                              <ul class="namelist">
                                                 <li>Danial Carbal</li>
                                                 <li>Amara Sin</li>
@@ -915,15 +851,12 @@
                                        <p>30+</p>
                                     </div>
                                     <div class="new-comment" style="display: none;">
-                                       <form method="post"> <input type="text"
-                                          placeholder="write comment"> <button
-                                          type="submit"><i
-                                          class="icofont-paper-plane"></i></button></form>
+                                       <form method="post"> <input type="text" placeholder="write comment"> <button
+                                             type="submit"><i class="icofont-paper-plane"></i></button></form>
                                        <div class="comments-area">
                                           <ul>
                                              <li>
-                                                <figure><img alt=""
-                                                   src="../images/resources/user1.jpg">
+                                                <figure><img alt="" src="../images/resources/user1.jpg">
                                                 </figure>
                                                 <div class="commenter">
                                                    <h5><a title="" href="#">Jack Carter</a>
@@ -934,19 +867,15 @@
                                                       decision, great post!
                                                    </p>
                                                    <span>you can
-                                                   view the more detail via link</span> <a
-                                                      title=""
+                                                      view the more detail via link</span> <a title=""
                                                       href="#">https://www.youtube.com/watch?v=HpZgwHU1GcI</a>
                                                 </div>
-                                                <a title="Like" href="#"><i
-                                                   class="icofont-heart"></i></a> <a
-                                                   title="Reply" href="#"
-                                                   class="reply-coment"><i
-                                                   class="icofont-reply"></i></a>
+                                                <a title="Like" href="#"><i class="icofont-heart"></i></a> <a
+                                                   title="Reply" href="#" class="reply-coment"><i
+                                                      class="icofont-reply"></i></a>
                                              </li>
                                              <li>
-                                                <figure><img alt=""
-                                                   src="../images/resources/user2.jpg">
+                                                <figure><img alt="" src="../images/resources/user2.jpg">
                                                 </figure>
                                                 <div class="commenter">
                                                    <h5><a title="" href="#">Ching xang</a></h5>
@@ -956,11 +885,9 @@
                                                       decision, great post!
                                                    </p>
                                                 </div>
-                                                <a title="Like" href="#"><i
-                                                   class="icofont-heart"></i></a> <a
-                                                   title="Reply" href="#"
-                                                   class="reply-coment"><i
-                                                   class="icofont-reply"></i></a>
+                                                <a title="Like" href="#"><i class="icofont-heart"></i></a> <a
+                                                   title="Reply" href="#" class="reply-coment"><i
+                                                      class="icofont-reply"></i></a>
                                              </li>
                                           </ul>
                                        </div>
@@ -970,8 +897,8 @@
                            </div>
                         </div>
                      </div>
-                   --}}
-         
+                    
+
                      <div class="main-wraper">
                         <div class="user-post">
                            <div class="friend-info">
@@ -980,10 +907,8 @@
                                  <div class="more">
                                     <div class="more-post-optns">
                                        <i class="">
-                                          <svg
-                                             xmlns="http://www.w3.org/2000/svg" width="24"
-                                             height="24" viewBox="0 0 24 24" fill="none"
-                                             stroke="currentColor" stroke-width="2"
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                              stroke-linecap="round" stroke-linejoin="round"
                                              class="feather feather-more-horizontal">
                                              <circle cx="12" cy="12" r="1"></circle>
@@ -996,7 +921,7 @@
                                              <span>Edit This Post within a Hour</span>
                                           </li>
                                           <li> <i class="icofont-ban"></i>Hide Post <span>Hide
-                                             This Post</span>
+                                                This Post</span>
                                           </li>
                                           <li> <i class="icofont-ui-delete"></i>Delete Post
                                              <span>If inappropriate Post By Mistake</span>
@@ -1013,20 +938,18 @@
                               <div class="post-meta">
                                  <ul class="sponsored-caro">
                                     <li>
-                                       <figure><img src="../images/resources/sponsor-prod1.jpg"
-                                          alt=""></figure>
-                                       <div class="sponsor-prod-name"> <a href="#"
-                                          title="">Aloevera Juice 1 liter</a> <span>$24</span>
+                                       <figure><img src="../images/resources/sponsor-prod1.jpg" alt=""></figure>
+                                       <div class="sponsor-prod-name"> <a href="#" title="">Aloevera Juice 1 liter</a>
+                                          <span>$24</span>
                                        </div>
                                        <a href="#" title="" class="shop-btn">Shop Now</a>
                                        <div class="share-info"> <span>50 shares</span> <span>20k
-                                          Likes</span>
+                                             Likes</span>
                                        </div>
                                        <div class="stat-tools">
                                           <div class="box">
                                              <div class="Like">
-                                                <a class="Like__link"><i
-                                                   class="icofont-like"></i> Like</a>
+                                                <a class="Like__link"><i class="icofont-like"></i> Like</a>
                                                 <div class="Emojis">
                                                    <div class="Emoji Emoji--like">
                                                       <div class="icon icon--like"></div>
@@ -1047,64 +970,23 @@
                                                 </div>
                                              </div>
                                           </div>
-                                          <a title="" href="#" class="share-to"><i
-                                             class="icofont-share-alt"></i> Share</a>
+                                          <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                             Share</a>
                                        </div>
                                     </li>
                                     <li>
-                                       <figure><img src="../images/resources/sponsor-prod5.jpg"
-                                          alt=""></figure>
+                                       <figure><img src="../images/resources/sponsor-prod5.jpg" alt=""></figure>
                                        <div class="sponsor-prod-name"> <a href="#" title="">Beauty
-                                          Cosmetics</a> <span>$24</span>
+                                             Cosmetics</a> <span>$24</span>
                                        </div>
-                                       <a href="#"
-                                          title="" class="shop-btn">Shop Now</a>
-                                       <div class="share-info"> <span>50 shares</span> <span>20k
-                                          Likes</span>
-                                       </div>
-                                       <div class="stat-tools">
-                                          <div class="box">
-                                             <div class="Like">
-                                                <a class="Like__link"><i
-                                                   class="icofont-like"></i> Like</a>
-                                                <div class="Emojis">
-                                                   <div class="Emoji Emoji--like">
-                                                      <div class="icon icon--like"></div>
-                                                   </div>
-                                                   <div class="Emoji Emoji--love">
-                                                      <div class="icon icon--heart"></div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="box">
-                                             <div class="Emojis">
-                                                <div class="Emoji Emoji--like">
-                                                   <div class="icon icon--like"></div>
-                                                </div>
-                                                <div class="Emoji Emoji--love">
-                                                   <div class="icon icon--heart"></div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <a title="" href="#" class="share-to"><i
-                                             class="icofont-share-alt"></i> Share</a>
-                                       </div>
-                                    </li>
-                                    <li>
-                                       <figure><img src="../images/resources/sponsor-prod4.jpg"
-                                          alt=""></figure>
-                                       <div class="sponsor-prod-name"> <a href="#"
-                                          title="">Overtime For Men</a> <span>$24</span></div>
                                        <a href="#" title="" class="shop-btn">Shop Now</a>
                                        <div class="share-info"> <span>50 shares</span> <span>20k
-                                          Likes</span>
+                                             Likes</span>
                                        </div>
                                        <div class="stat-tools">
                                           <div class="box">
                                              <div class="Like">
-                                                <a class="Like__link"><i
-                                                   class="icofont-like"></i> Like</a>
+                                                <a class="Like__link"><i class="icofont-like"></i> Like</a>
                                                 <div class="Emojis">
                                                    <div class="Emoji Emoji--like">
                                                       <div class="icon icon--like"></div>
@@ -1125,26 +1007,59 @@
                                                 </div>
                                              </div>
                                           </div>
-                                          <a title="" href="#" class="share-to"><i
-                                             class="icofont-share-alt"></i> Share</a>
+                                          <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                             Share</a>
                                        </div>
                                     </li>
                                     <li>
-                                       <figure><img src="../images/resources/sponsor-prod3.jpg"
-                                          alt=""></figure>
+                                       <figure><img src="../images/resources/sponsor-prod4.jpg" alt=""></figure>
+                                       <div class="sponsor-prod-name"> <a href="#" title="">Overtime For Men</a>
+                                          <span>$24</span></div>
+                                       <a href="#" title="" class="shop-btn">Shop Now</a>
+                                       <div class="share-info"> <span>50 shares</span> <span>20k
+                                             Likes</span>
+                                       </div>
+                                       <div class="stat-tools">
+                                          <div class="box">
+                                             <div class="Like">
+                                                <a class="Like__link"><i class="icofont-like"></i> Like</a>
+                                                <div class="Emojis">
+                                                   <div class="Emoji Emoji--like">
+                                                      <div class="icon icon--like"></div>
+                                                   </div>
+                                                   <div class="Emoji Emoji--love">
+                                                      <div class="icon icon--heart"></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="box">
+                                             <div class="Emojis">
+                                                <div class="Emoji Emoji--like">
+                                                   <div class="icon icon--like"></div>
+                                                </div>
+                                                <div class="Emoji Emoji--love">
+                                                   <div class="icon icon--heart"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                             Share</a>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <figure><img src="../images/resources/sponsor-prod3.jpg" alt=""></figure>
                                        <div class="sponsor-prod-name"> <a href="#" title="">Redish
-                                          Baby Items</a> <span>$24</span>
+                                             Baby Items</a> <span>$24</span>
                                        </div>
-                                       <a href="#"
-                                          title="" class="shop-btn">Shop Now</a>
+                                       <a href="#" title="" class="shop-btn">Shop Now</a>
                                        <div class="share-info"> <span>50 shares</span> <span>20k
-                                          Likes</span>
+                                             Likes</span>
                                        </div>
                                        <div class="stat-tools">
                                           <div class="box">
                                              <div class="Like">
-                                                <a class="Like__link"><i
-                                                   class="icofont-like"></i> Like</a>
+                                                <a class="Like__link"><i class="icofont-like"></i> Like</a>
                                                 <div class="Emojis">
                                                    <div class="Emoji Emoji--like">
                                                       <div class="icon icon--like"></div>
@@ -1165,26 +1080,23 @@
                                                 </div>
                                              </div>
                                           </div>
-                                          <a title="" href="#" class="share-to"><i
-                                             class="icofont-share-alt"></i> Share</a>
+                                          <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                             Share</a>
                                        </div>
                                     </li>
                                     <li>
-                                       <figure><img src="../images/resources/sponsor-prod2.jpg"
-                                          alt=""></figure>
+                                       <figure><img src="../images/resources/sponsor-prod2.jpg" alt=""></figure>
                                        <div class="sponsor-prod-name"> <a href="#" title="">Potato
-                                          Baby Fider</a> <span>$24</span>
+                                             Baby Fider</a> <span>$24</span>
                                        </div>
-                                       <a href="#"
-                                          title="" class="shop-btn">Shop Now</a>
+                                       <a href="#" title="" class="shop-btn">Shop Now</a>
                                        <div class="share-info"> <span>50 shares</span> <span>20k
-                                          Likes</span>
+                                             Likes</span>
                                        </div>
                                        <div class="stat-tools">
                                           <div class="box">
                                              <div class="Like">
-                                                <a class="Like__link"><i
-                                                   class="icofont-like"></i> Like</a>
+                                                <a class="Like__link"><i class="icofont-like"></i> Like</a>
                                                 <div class="Emojis">
                                                    <div class="Emoji Emoji--like">
                                                       <div class="icon icon--like"></div>
@@ -1205,26 +1117,23 @@
                                                 </div>
                                              </div>
                                           </div>
-                                          <a title="" href="#" class="share-to"><i
-                                             class="icofont-share-alt"></i> Share</a>
+                                          <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                             Share</a>
                                        </div>
                                     </li>
                                     <li>
-                                       <figure><img src="../images/resources/sponsor-prod3.jpg"
-                                          alt=""></figure>
+                                       <figure><img src="../images/resources/sponsor-prod3.jpg" alt=""></figure>
                                        <div class="sponsor-prod-name"> <a href="#" title="">Baby
-                                          items fider</a> <span>$24</span>
+                                             items fider</a> <span>$24</span>
                                        </div>
-                                       <a href="#"
-                                          title="" class="shop-btn">Shop Now</a>
+                                       <a href="#" title="" class="shop-btn">Shop Now</a>
                                        <div class="share-info"> <span>50 shares</span> <span>20k
-                                          Likes</span>
+                                             Likes</span>
                                        </div>
                                        <div class="stat-tools">
                                           <div class="box">
                                              <div class="Like">
-                                                <a class="Like__link"><i
-                                                   class="icofont-like"></i> Like</a>
+                                                <a class="Like__link"><i class="icofont-like"></i> Like</a>
                                                 <div class="Emojis">
                                                    <div class="Emoji Emoji--like">
                                                       <div class="icon icon--like"></div>
@@ -1245,8 +1154,8 @@
                                                 </div>
                                              </div>
                                           </div>
-                                          <a title="" href="#" class="share-to"><i
-                                             class="icofont-share-alt"></i> Share</a>
+                                          <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                             Share</a>
                                        </div>
                                     </li>
                                  </ul>
@@ -1257,7 +1166,7 @@
                      <div class="loadmore">
                         <div class="sp sp-bars"></div>
                         <a href="#" title="" data-ripple="">Load
-                        More..</a>
+                           More..</a>
                      </div>
                   </div>
                   <div class="col-lg-3">
@@ -1269,21 +1178,18 @@
                                  <figure><img src="../images/resources/your-group1.jpg" alt=""></figure>
                                  <div class="your-grp">
                                     <h5><a href="group-detail.html" title="">Good Group</a></h5>
-                                    <a
-                                       href="#" title=""><i
-                                       class="icofont-bell-alt"></i>Notifilactions
-                                    <span>13</span></a> <a href="group-feed.html" title=""
-                                       class="promote">view feed</a>
+                                    <a href="#" title=""><i class="icofont-bell-alt"></i>Notifilactions
+                                       <span>13</span></a> <a href="group-feed.html" title="" class="promote">view
+                                       feed</a>
                                  </div>
                               </li>
                               <li>
                                  <figure><img src="../images/resources/your-group2.jpg" alt=""></figure>
                                  <div class="your-grp">
                                     <h5><a href="group-detail.html" title="">E-course Group</a></h5>
-                                    <a href="#" title=""><i
-                                       class="icofont-bell-alt"></i>Notifilactions
-                                    <span>13</span></a> <a href="group-feed.html" title=""
-                                       class="promote">view feed</a>
+                                    <a href="#" title=""><i class="icofont-bell-alt"></i>Notifilactions
+                                       <span>13</span></a> <a href="group-feed.html" title="" class="promote">view
+                                       feed</a>
                                  </div>
                               </li>
                            </ul>
@@ -1293,30 +1199,26 @@
                            <div class="sug-caro">
                               <div class="friend-box">
                                  <figure> <img alt="" src="../images/resources/sidebar-info.jpg">
-                                    <span>Members: 505K</span> 
+                                    <span>Members: 505K</span>
                                  </figure>
                                  <div class="frnd-meta">
-                                    <img alt=""
-                                       src="../images/resources/frnd-figure2.jpg">
+                                    <img alt="" src="../images/resources/frnd-figure2.jpg">
                                     <div class="frnd-name"> <a title="" href="#">Social Research</a>
                                        <span>@biolabest</span>
                                     </div>
-                                    <a class="main-btn2" href="#"
-                                       title="">Join Community</a>
+                                    <a class="main-btn2" href="#" title="">Join Community</a>
                                  </div>
                               </div>
                               <div class="friend-box">
                                  <figure> <img alt="" src="../images/resources/sidebar-info2.jpg">
-                                    <span>Members: 505K</span> 
+                                    <span>Members: 505K</span>
                                  </figure>
                                  <div class="frnd-meta">
-                                    <img alt=""
-                                       src="../images/resources/frnd-figure3.jpg">
+                                    <img alt="" src="../images/resources/frnd-figure3.jpg">
                                     <div class="frnd-name"> <a title="" href="#">Bio Labest
-                                       Group</a> <span>@biolabest</span>
+                                          Group</a> <span>@biolabest</span>
                                     </div>
-                                    <a
-                                       class="main-btn2" href="#" title="">Join Community</a>
+                                    <a class="main-btn2" href="#" title="">Join Community</a>
                                  </div>
                               </div>
                            </div>
@@ -1326,13 +1228,11 @@
                            <div class="ask-question">
                               <i class="icofont-question-circle"></i>
                               <h6>Ask questions in Q&A to get help from experts in your field.</h6>
-                              <a
-                                 class="ask-qst" href="#" title="">Ask a question</a>
+                              <a class="ask-qst" href="#" title="">Ask a question</a>
                            </div>
                         </div>
                         <div class="widget">
-                           <h4 class="widget-title">Explor Events <a class="see-all" href="#"
-                              title="">See All</a></h4>
+                           <h4 class="widget-title">Explor Events <a class="see-all" href="#" title="">See All</a></h4>
                            <div class="rec-events bg-purple">
                               <i class="icofont-gift"></i>
                               <h6><a title="" href="#">BZ University good night event in columbia</a>
@@ -1352,16 +1252,14 @@
                                  <figure><img src="../images/resources/sponsor.jpg" alt=""></figure>
                                  <div class="sponsor-meta">
                                     <h5><a href="#" title="">IQ Options Broker</a></h5>
-                                    <a href="#"
-                                       title="" target="_blank">www.iqvie.com</a>
+                                    <a href="#" title="" target="_blank">www.iqvie.com</a>
                                  </div>
                               </li>
                               <li>
                                  <figure><img src="../images/resources/sponsor2.jpg" alt=""></figure>
                                  <div class="sponsor-meta">
                                     <h5><a href="#" title="">BM Fashion Designer</a></h5>
-                                    <a
-                                       href="#" title="" target="_blank">www.abcd.com</a>
+                                    <a href="#" title="" target="_blank">www.abcd.com</a>
                                  </div>
                               </li>
                            </ul>
@@ -1374,10 +1272,9 @@
                                  </figure>
                                  <div class="friend-meta">
                                     <h4> <a title="" href="time-line.html">Kelly Bill</a> <span>Dept
-                                       colleague</span>
+                                          colleague</span>
                                     </h4>
-                                    <a class="underline" title=""
-                                       href="#">Follow</a>
+                                    <a class="underline" title="" href="#">Follow</a>
                                  </div>
                               </li>
                               <li>
@@ -1385,10 +1282,9 @@
                                  </figure>
                                  <div class="friend-meta">
                                     <h4> <a title="" href="time-line.html">Issabel</a> <span>Dept
-                                       colleague</span>
+                                          colleague</span>
                                     </h4>
-                                    <a class="underline" title=""
-                                       href="#">Follow</a>
+                                    <a class="underline" title="" href="#">Follow</a>
                                  </div>
                               </li>
                               <li>
@@ -1396,10 +1292,9 @@
                                  </figure>
                                  <div class="friend-meta">
                                     <h4> <a title="" href="time-line.html">Andrew</a> <span>Dept
-                                       colleague</span>
+                                          colleague</span>
                                     </h4>
-                                    <a class="underline" title=""
-                                       href="#">Follow</a>
+                                    <a class="underline" title="" href="#">Follow</a>
                                  </div>
                               </li>
                               <li>
@@ -1407,10 +1302,9 @@
                                  </figure>
                                  <div class="friend-meta">
                                     <h4> <a title="" href="time-line.html">Sophia</a> <span>Dept
-                                       colleague</span>
+                                          colleague</span>
                                     </h4>
-                                    <a class="underline" title=""
-                                       href="#">Follow</a>
+                                    <a class="underline" title="" href="#">Follow</a>
                                  </div>
                               </li>
                               <li>
@@ -1418,10 +1312,9 @@
                                  </figure>
                                  <div class="friend-meta">
                                     <h4> <a title="" href="time-line.html">Allen</a> <span>Dept
-                                       colleague</span>
+                                          colleague</span>
                                     </h4>
-                                    <a class="underline" title=""
-                                       href="#">Follow</a>
+                                    <a class="underline" title="" href="#">Follow</a>
                                  </div>
                               </li>
                            </ul>

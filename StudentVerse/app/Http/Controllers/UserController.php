@@ -103,6 +103,7 @@ class UserController extends Controller
         return redirect()->route('user-home', ['id' => $id])->with("message", "Profile setup successfully!");
     }
 
+
     function showUserProfile(Request $request) {
         // Check if the user is authenticated
         if (session()->has('userId')) {
@@ -137,7 +138,7 @@ class UserController extends Controller
         }
     }
         // User is not authenticated or profile status not found, handle this case (e.g., redirect to login)
-        return redirect()->route('signin'); // You might need to adjust this route
+        return redirect()->route('login'); // You might need to adjust this route
     }
 
 
