@@ -678,11 +678,11 @@
                             <input name="Subject" type="text" placeholder="Subject">
                             <textarea  name="Description" placeholder="body"></textarea>
                     
-                            <select name="Tagged_Id[]" id="tag-select" required multiple>
+                            <select   class="uk-select" name="Tagged_Id[]" id="tag-select" required multiple>
                                 <!-- Use square brackets in the name attribute to indicate an array -->
-                                <option>Add Tags</option>
+                                <option  class="uk-select" disabled>Add Tags</option>
                                 @foreach($tags as $tag)
-                                    <option value="{{ $tag->id }}">{{ $tag->Name }}</option>
+                                    <option  class="uk-select" value="{{ $tag->id }}">{{ $tag->Name }}</option>
                                 @endforeach
                             </select>
                     

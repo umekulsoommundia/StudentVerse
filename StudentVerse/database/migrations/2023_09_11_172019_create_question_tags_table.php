@@ -14,10 +14,10 @@ return new class extends Migration
         $table->id();
       
         $table->unsignedBigInteger('question_id');
-        $table->foreign('question_id')->references('id')->on('question_boxes')->onDelete('cascade');
+        $table->foreign('question_id')->references('id')->on('question_boxes');
 
-        $table->unsignedBigInteger('tag_id');
-        $table->foreign('tag_id')->references('id')->on('tag_boxes')->onDelete('cascade');
+        $table->unsignedBigInteger('tag_id')->default(0);
+        $table->foreign('tag_id')->references('id')->on('tag_boxes');
 
 
         $table->timestamps();

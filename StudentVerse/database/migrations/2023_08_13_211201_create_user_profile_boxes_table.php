@@ -22,7 +22,7 @@ return new class extends Migration
             $table->unsignedBigInteger('User_Id');
             $table->unsignedBigInteger('Badge_Id')->default(0);
             $table->unsignedBigInteger('Mail_Id')->default(0);
-            $table->unsignedBigInteger('Interest_Id');
+            $table->unsignedBigInteger('Interest_Id')->default(0);
             $table->integer('status')->default(0);
 
             $table->timestamps();

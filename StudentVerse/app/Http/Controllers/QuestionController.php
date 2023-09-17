@@ -15,218 +15,49 @@ use App\Models\question_tag;
 use App\Models\tag_box;
 use App\Models\UserProfileBox;
 
+
 class QuestionController extends Controller
 {
-    
-    // function userhome()
-    // {
-    //     return view('User_Dashboard.index');
-    // }
-    // public function questionpost(Request $request)
-    // {
+    public function questionpost(Request $request)
+    {
+        $request->validate([
+            'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'Subject' => 'required|string',
+            'Description' => 'required|string',
+            'Tagged_Id' => 'required|array',
+        ]);
 
-    //     // // Validation rules
-    //     // $request->validate([
-    //     //     'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-    //     //     'Subject' => 'required|string',
-    //     //     'Description' => 'required|string',
-    //     //     'tagId' => 'required|array',
-    //     // ]);
-    
-    //     if ($request->hasFile('Image')) {
-    //         $imagePath = $request->file('Image')->store('question_images', 'public');
-    //     } else {
-    //         return redirect()->back()->with('error', 'Please upload an image.');
-    //     }
-        
-    //     // Create a new question instance
-    //     $question = new question_box();
-    //     $question->Subject = $request->input('Subject');
-    //     $question->Description = $request->input('Description');
-    //     $question->Image = $imagePath; 
-    //     $question->Tagged_Id = $request->input('Tagged_Id'); 
-    //     $question->User_id = session('userId');
-    //     $question->save();
-    
-    //     foreach ($request->input('tagId') as $tagId) {
-    //         $questionTag = new question_tag();
-    //         $questionTag->question_id = $question->id; 
-    //         $questionTag->tag_id = $tagId;
-    //         $questionTag->save();
-    //     }
-    
-    //     // Rest of your code...
-    
-    //     return redirect()->back()->with("message", "Question posted");
-    // }
-    // public function questionpost(Request $request)
-    // {
-    //     // Validation rules (uncomment if needed)
-    //     // $request->validate([
-    //     //     'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-    //     //     'Subject' => 'required|string',
-    //     //     'Description' => 'required|string',
-    //     //     'Tagged_Id' => 'required|array',
-    //     // ]);
-        
-    //     if ($request->hasFile('Image')) {
-    //         $imagePath = $request->file('Image')->store('question_images', 'public');
-    //     } else {
-    //         return redirect()->back()->with('error', 'Please upload an image.');
-    //     }
-        
-    //     // Create a new question instance
-    //     $question = new question_box();
-    //     $question->Subject = $request->input('Subject');
-    //     $question->Description = $request->input('Description');
-    //     $question->Image = $imagePath; 
-    //     $question->User_id = session('userId');
-    //     $question->save();
-    
-    //     // Get the selected tag IDs from the input
-    //     $tagIds = $request->input('Tagged_Id');
-        
-    //     // Attach the selected tag IDs to the question
-    //     $question->tags()->attach($tagIds);
-        
-    //     // Rest of your code...
-        
-    //     return redirect()->back()->with("message", "Question posted");
-    // }
-    
-    // public function questionpost(Request $request)
-    // {
-    //     // Validation rules
-    //     $request->validate([
-    //         'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-    //         'Subject' => 'required|string',
-    //         'Description' => 'required|string',
-    //         'Tagged_Id' => 'required|array', // Note: I changed 'tagId' to 'Tagged_Id'
-    //     ]);
-    
-    //     // Check if a file was uploaded
-    //     if ($request->hasFile('Image')) {
-    //         $imagePath = $request->file('Image')->store('question_images', 'public');
-    //     } else {
-    //         return redirect()->back()->with('error', 'Please upload an image.');
-    //     }
-    
-    //     // Create a new question instance
-    //     $question = new question_box();
-    //     $question->Subject = $request->input('Subject');
-    //     $question->Description = $request->input('Description');
-    //     $question->Image = $imagePath;
-    //     $question->User_Id = session('userId'); // Make sure this is correctly set
-    //     $question->save();
-    
-    //     // Sync the tags associated with the question
-    //     $question->tags()->sync($request->input('Tagged_Id'));
-    
-    //     return redirect()->back()->with("message", "Question posted");
-    // }
-    
-//     public function questionpost(Request $request)
-//     {
-//         // Validation rules
-//         $request->validate([
-//             'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-//             'Subject' => 'required|string',
-//             'Description' => 'required|string',
-//             'Tagged_Id' => 'required|array', // Note: I changed 'tagId' to 'Tagged_Id'
-//         ]);
-    
-//         // Check if a file was uploaded
-//         if ($request->hasFile('Image')) {
-//             $imagePath = $request->file('Image')->store('question_images', 'public');
-//         } else {
-//             return redirect()->back()->with('error', 'Please upload an image.');
-//         }
-    
-//         // Create a new question instance
-//         $question = new question_box();
-//         $question->Subject = $request->input('Subject');
-//         $question->Description = $request->input('Description');
-//         $question->Image = $imagePath;
-//         $question->User_Id = session('userId');
-//         $question->Tagged_Id = $request->input('Tagged_Id'); 
-//  // Make sure this is correctly set
-//         $question->save();
-    
-//         // Attach the tags associated with the question
-//         $question->tags()->attach($request->input('Tagged_Id'));
-    
-//         return redirect()->back()->with("message", "Question posted");
-//     }
-    
+        if ($request->hasFile('Image')) {
+            $imagePath = $request->file("Image");
+            $imageFileName = time() . "." . $imagePath->getClientOriginalExtension();
+            $imagePath->move(public_path('question_images'), $imageFileName);
+            $imagePath = 'question_images/' . $imageFileName;
+        } else {
+            return redirect()->back()->with('error', 'Please upload an image.');
+        }
 
-public function questionpost(Request $request)
-{
-    // Validation rules
-    $request->validate([
-        'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-        'Subject' => 'required|string',
-        'Description' => 'required|string',
-        'Tagged_Id' => 'required|array',
-    ]);
+        if (session()->has('userId')) {
+            $userId = session('userId');
+            $user = UserBox::find($userId);
 
-    // // Check if a file was uploaded
-    // if ($request->hasFile('Image')) {
-    //     $imagePath= $request->file("Image");
-    //     $image2= time().".".$imagePath->getClientOriginalName();
-    //     $imagePath->move("./question_images",$image2);
-    
-    // } else {
-    //     return redirect()->back()->with('error', 'Please upload an image.');
-    // }
-    
-    if ($request->hasFile('Image')) {
-        $imagePath = $request->file("Image");
-        $imageFileName = time() . "." . $imagePath->getClientOriginalExtension();
-        $imagePath->move(public_path('question_images'), $imageFileName);
-        $imagePath = 'question_images/' . $imageFileName;
-    } else {
-        return redirect()->back()->with('error', 'Please upload an image.');
+            if ($user) {
+                $question = new question_box();
+                $question->Subject = $request->input('Subject');
+                $question->Description = $request->input('Description');
+                $question->Image = $imagePath;
+                $question->User_Id = $userId;
+                $question->save();
+
+                $question->tags()->sync($request->input('Tagged_Id'));
+
+                return redirect()->back()->with("message", "Question posted");
+            } else {
+                // Handle the case where the user doesn't exist
+                return redirect()->route('login');
+            }
+        } else {
+            // Handle the case where the user is not authenticated
+            return redirect()->route('login');
+        }
     }
-    
-    
-
-
-   // Create a new question instance
-$question = new question_box();
-$question->Subject = $request->input('Subject');
-$question->Description = $request->input('Description');
-$question->Image = $imagePath;
-$question->User_Id = session('userId');
-$question->save();
-
-// Attach the tags associated with the question
-$question->tags()->sync($request->input('Tagged_Id')); // Use sync instead of attach
-
-
-    return redirect()->back()->with("message", "Question posted");
-}
-
-    // function questionpost(Request $request)
-    // {
-
-    //     $request->validate([
-    //         'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-    //         'Subject' => 'required|string',
-    //         'Description' => 'required|string',
-    //         'tagId' => 'required|array', // Ensure tagId is an array
-    //     ]);
-    
-    //     $imagePath = $request->file('Image')->store('question_images', 'public');
-        
-    //     $question = new question_box();
-    //     $question->Subject = $request->input('Subject');
-    //     $question->Description = $request->input('Description');
-    //     $question->Tagged_Id = $request->input('Tagged_Id'); // This will be an array of selected tag IDs
-    //     $question->Image = $imagePath;
-    //     $question->User_id = session('userId');
-    //     $question->save();
-    
-    //     return redirect()->back()->with("message", "Question posted");
-    // }
-
 }

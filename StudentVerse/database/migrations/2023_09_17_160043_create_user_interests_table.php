@@ -11,16 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('question_boxes', function (Blueprint $table) {
+        Schema::create('user_interests', function (Blueprint $table) {
             $table->id();
-            $table->string('Subject');
-            $table->string('Description');
-            $table->string('Image');
-            $table->unsignedBigInteger('User_Id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('interest_id')->default(0);
+    
+            // Define foreign keys
             $table->foreign('User_Id')->references('id')->on('user_boxes');
-            $table->unsignedBigInteger('Tagged_Id')->default(0);
-            $table->foreign('Tagged_Id')->references('id')->on('tag_boxes');
-            
+            $table->foreign('Interest_Id')->references('id')->on('interest_boxes');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('question_boxes');
+        Schema::dropIfExists('user_interests');
     }
 };

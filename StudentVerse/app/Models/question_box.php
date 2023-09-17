@@ -20,9 +20,13 @@ class question_box extends Model
     {
         return $this->belongsTo(UserBox::class, 'User_Id'); // Assuming 'User_Id' is the correct foreign key in your question_boxes table
     }
+    
     protected $casts = [
         'Image' => 'string',
     ];
-    
+    public function userProfile()
+    {
+        return $this->belongsTo(UserProfileBox::class, 'User_Id');
+    }
     
 }

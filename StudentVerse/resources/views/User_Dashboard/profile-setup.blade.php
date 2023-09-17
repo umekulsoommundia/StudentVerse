@@ -12,36 +12,36 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/color.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 </head>
 <style>
     .center-form {
-            margin: 0 auto;
-            max-width: 400px; /* Optional: Set a maximum width for the form */
-        }
+        margin: 0 auto;
+        max-width: 400px;
+        /* Optional: Set a maximum width for the form */
+    }
 
-        .c-form {
-            text-align: center;
-            padding: 20px;
-        
-        }
+    .c-form {
+        text-align: center;
+        padding: 20px;
+    }
 
-        .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:  url(../images/b1.jpg); 
-    background-size: cover; /* Adjust the background size */
-    background-position: center center; /* Center the background image */
-    opacity: 0.3;
-    z-index: -1;
-  }
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/b1.jpg);
+        background-size: cover;
+        /* Adjust the background size */
+        background-position: center center;
+        /* Center the background image */
+        opacity: 0.3;
+        z-index: -1;
+    }
 </style>
-
-
 
 <body class="nightview">
     {{-- <div class="page-loader" id="page-loader">
@@ -50,108 +50,103 @@
                 class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
                 class="loader-item"></span><span class="loader-item"></span></div>
     </div> --}}
-
-
-    <section >
-        <div class="gap" >
-          <div class="container">
-            <div class="row justify-content-md-center">
-              <div class="col-lg-6">
-                <div class="main-wraper" style="background-color: rgb(26, 12, 69)">
-                  <div class="feedback-form">
-                  
-
-<!-- Your profile setup form goes here -->
-
-                    <h4 class="text-center"><i class="icofont-comment"></i> Complete Profile Setup</h4>
-              
-                        
-
-
-                    <form class="mt-4" method="POST" action="/profileSetupPost" enctype="multipart/form-data">
-                        @csrf
-                        @if(isset($msg))
-                            <div class="alert alert-warning">
-                                {{ $msg }}
-                            </div>
-                        @endif
-                    
-                        @csrf
-                    
-                        <fieldset class="row">
-                            <!-- Other form fields -->
-                            <div class="mb-4 col-lg-12">
-                            <input name="User_Name" class="uk-input" type="text" placeholder="User Name">
-                        </div>
-                            <!-- Other fields -->
-                            <div class="mb-4 col-lg-6">
-                                <input name="Email" class="uk-input" type="text" placeholder="Email Address">
-                            </div>
-                            @error('Email')
-<span class="text-danger">{{ $message }}</span>
-@enderror
-
-                            <div class="mb-4 col-lg-6">
-                                <input name="Current_work" class="uk-input" type="text" placeholder="Current designation">
-                            </div>
-                            @error('Current_work')
-                            <span class="text-danger">{{ $message }}</span>
-                        @enderror
-                        
-                            <div class="mb-4 uk-margin col-lg-12">
-                                <select class="uk-select" name="interestId" required>
-                                    <option value="">Select Interest</option>
-                                    @foreach($interests as $interest)
-                                        <option value="{{ $interest->id }}">{{ $interest->Name }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            
-                            @error('interestId')
-                            <span class="text-danger">{{ $message }}</span>
-                        @enderror
-                            
-                            <div class="mb-4 col-lg-12">
-                                <textarea name="Bio" class="uk-textarea" rows="2" placeholder="bio"></textarea>
-                            </div>
-                            @error('Bio')
-                            <span class="text-danger">{{ $message }}</span>
-                        @enderror
-                            <!-- Image upload field -->
-                            <div class="mb-4 col-lg-12">
-                                <label for="file5">Add Profile Photo</label>
-                                <div class="image-upload-wrap">
-                                    <input name="Image" type="file" id="file5" class="file-upload-input dropzone" action="https://wpkixx.com/upload-target">
-                                    <div class="drag-text">
-                                        <i class="icofont-cloud-upload"></i>
-                                        <h4>Select Profile to upload</h4>
-                                        <p>or drag and drop image</p>
+    <section>
+        <div class="gap">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-6">
+                        <div class="main-wraper" style="background-color: rgb(26, 12, 69)">
+                            <div class="feedback-form">
+                                <!-- Your profile setup form goes here -->
+                                <h4 class="text-center"><i class="icofont-comment"></i> Complete Profile Setup</h4>
+                                <form class="mt-4" method="POST" action="/profileSetupPost" enctype="multipart/form-data">
+                                    @csrf
+                                    @if(isset($msg))
+                                    <div class="alert alert-warning">
+                                        {{ $msg }}
                                     </div>
-                                </div>
+                                    @endif
+                                    <fieldset class="row">
+                                        <!-- Other form fields -->
+                                        <div class="mb-4 col-lg-12">
+                                            <input name="User_Name" class="uk-input" type="text" placeholder="User Name">
+                                        </div>
+                                        <!-- Other fields -->
+                                        <div class="mb-4 col-lg-6">
+                                            <input name="Email" class="uk-input" type="text" value="{{ $user->Email }}" readonly>
+                                        </div>
+                                        
+                                        @error('Email')
+                                        <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                        <div class="mb-4 col-lg-6">
+                                            <input name="Current_work" class="uk-input" type="text" placeholder="Current designation">
+                                        </div>
+                                        @error('Current_work')
+                                        <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                
+   
+                                        {{-- <div class="mb-4 uk-margin col-lg-12">
+                                            <select class="uk-select" name="interestId[]" required multiple>
+                                                <option value="">Select Interests (1-3)</option>
+                                                @foreach($interests as $interest)
+                                                    <option value="{{ $interest->id }}">{{ $interest->Name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div> --}}
+                                        <div class="mb-4 uk-margin col-lg-12">
+                                            <select class="uk-select" name="interestId[]" required multiple>
+                                                <option value="">Select Interests (1-3)</option>
+                                                @foreach($interests as $interest)
+                                                    <option value="{{ $interest->id }}">{{ $interest->Name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        
+
+                                        @error('interestId')
+                                        <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                        <div class="mb-4 col-lg-12">
+                                            <textarea name="Bio" class="uk-textarea" rows="2" placeholder="bio"></textarea>
+                                        </div>
+                                        @error('Bio')
+                                        <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                
+                                        <input type="hidden" name="imageAspectRatio" id="imageAspectRatio" value="">
+                                
+                                        <!-- Profile photo upload field -->
+                                        <div class="mb-4 col-lg-12">
+                                            <div class="image-upload-wrap">
+                                                <input name="Image" type="file" id="file5" class="file-upload-input dropzone"
+                                                    action="https://wpkixx.com/upload-target" onchange="previewAndCheckImage(this);">
+                                                <div class="drag-text">
+                                                    <i class="icofont-cloud-upload"></i>
+                                                    <h4>Select Profile to upload</h4>
+                                                </div>
+                                                <!-- Image preview field (inside the same div) -->
+                                                <img id="imagePreview" src="" alt="Image Preview" style="max-width: 100%; display: none;">
+                                            </div>
+                                        </div>
+                                
+                                        <!-- Submit button -->
+                                        <div class="mb-0 col-lg-12 text-center">
+                                            <button type="submit" class="main-btn">Complete</button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                
+                                
                             </div>
-                    
-                            <!-- Submit button -->
-                            <div class="mb-0 col-lg-12 text-center">
-                                <button type="submit" class="main-btn">Complete</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                    
-                  </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
         <div class="background-image"></div> <!-- Add the background image overlay here -->
-      </section>
-	
-
-	
-	
-   
-
-
+    </section>
     <figure class="bottom-mockup"><img src="../images/footer.png" alt=""></figure>
     <div class="bottombar">
         <div class="container">
@@ -168,8 +163,7 @@
                     <h5><i> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-mail">
-                                <path
-                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                                 </path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg></i> Invite Colleagues</h5>
@@ -187,9 +181,9 @@
         <div class="popup"> <span class="popup-closed"><i class="icofont-close"></i></span>
             <div class="popup-meta">
                 <div class="popup-head">
-                    <h5><i> <svg class="feather feather-message-square" stroke-linejoin="round"
-                                stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none"
-                                viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <h5><i> <svg class="feather feather-message-square" stroke-linejoin="round" stroke-linecap="round"
+                                stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24"
+                                width="24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                             </svg></i> Send Message</h5>
                 </div>
@@ -212,8 +206,8 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active fade show" id="messages">
-                    <h4><i class="icofont-envelope"></i> messages</h4> <a href="#" class="send-mesg"
-                        title="New Message" data-toggle="tooltip"><i class="icofont-edit"></i></a>
+                    <h4><i class="icofont-envelope"></i> messages</h4> <a href="#" class="send-mesg" title="New Message"
+                        data-toggle="tooltip"><i class="icofont-edit"></i></a>
                     <ul class="new-messages">
                         <li>
                             <figure><img src="../images/resources/user1.jpg" alt=""></figure>
@@ -350,9 +344,9 @@
                                 <li><label class="select-box__option" for="4"><i class="icofont-users-alt-3"></i>
                                         Joined Groups</label></li>
                             </ul>
-                        </div> <input class="schedule-btn" type="text" id="datetimepicker" readonly> <input
-                            type="text" placeholder="https://www.youtube.com/watch?v=vgvsuiFlA-Y&amp;t=56s"> <button
-                            type="submit" class="main-btn">Publish</button>
+                        </div> <input class="schedule-btn" type="text" id="datetimepicker" readonly> <input type="text"
+                            placeholder="https://www.youtube.com/watch?v=vgvsuiFlA-Y&amp;t=56s"> <button type="submit"
+                            class="main-btn">Publish</button>
                     </form>
                 </div>
             </div>
@@ -405,8 +399,8 @@
             <div class="popup-meta"> <span>What are you struggling with right now? what we can help you with?</span>
                 <form method="post" class="inquiry-about"> <input type="text" placeholder="Your Answer">
                     <h5>How did you hear about us?</h5> <label><input type="radio" name="hear"> Facebook</label>
-                    <label><input type="radio" name="hear"> instagram</label> <label><input type="radio"
-                            name="hear"> Google Search</label> <label><input type="radio" name="hear">
+                    <label><input type="radio" name="hear"> instagram</label> <label><input type="radio" name="hear">
+                        Google Search</label> <label><input type="radio" name="hear">
                         Twitter</label> <label><input type="radio" name="hear"> Whatsapp</label> <label><input
                             type="radio" name="hear"> Other</label> <input type="text" placeholder="Writh Other">
                     <button type="submit" class="primary button">Submit</button> <button
@@ -441,7 +435,7 @@
                     <li><a title="" href="#" class="behance"><i class="icofont-behance-original"></i></a></li>
                 </ul>
             </div>
-            <div style="display: none;" class="friends-to"> 
+            <div style="display: none;" class="friends-to">
                 <div class="follow-men">
                     <figure><img class="mCS_img_loaded" src="../images/resources/user1.jpg" alt=""></figure>
                     <div class="follow-meta">
@@ -548,9 +542,9 @@
                 <h6>George Floyd</h6>
                 <div class="frnd-opt">
                     <div class="more">
-                        <div class="more-post-optns"> <i class=""> <svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        <div class="more-post-optns"> <i class=""> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
                                     class="feather feather-more-horizontal">
                                     <circle cx="12" cy="12" r="1"></circle>
                                     <circle cx="19" cy="12" r="1"></circle>
@@ -585,24 +579,24 @@
                         <div class="chat-thumb"><img src="../images/resources/chatlist1.jpg" alt=""></div>
                         <div class="notification-event"> <span class="chat-message-item"> Hi James! Please remember
                                 to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get
-                                the drinks </span> <span class="notification-date"> <time
-                                    datetime="2004-07-24T18:18" class="entry-date updated">Yesterday at
+                                the drinks </span> <span class="notification-date"> <time datetime="2004-07-24T18:18"
+                                    class="entry-date updated">Yesterday at
                                     8:10pm</time> <i><img src="../images/d-tick.png" alt=""></i> </span></div>
                     </li>
                     <li class="you">
                         <div class="chat-thumb"><img src="../images/resources/chatlist2.jpg" alt=""></div>
                         <div class="notification-event"> <span class="chat-message-item"> Hi James! Please remember
                                 to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get
-                                the drinks </span> <span class="notification-date"> <time
-                                    datetime="2004-07-24T18:18" class="entry-date updated">Yesterday at
+                                the drinks </span> <span class="notification-date"> <time datetime="2004-07-24T18:18"
+                                    class="entry-date updated">Yesterday at
                                     8:10pm</time> <i><img src="../images/d-tick.png" alt=""></i> </span></div>
                     </li>
                     <li class="me">
                         <div class="chat-thumb"><img src="../images/resources/chatlist1.jpg" alt=""></div>
                         <div class="notification-event"> <span class="chat-message-item"> Hi James! Please remember
                                 to buy the food for tomorrow! I’m gonna be handling the gifts and Jake’s gonna get
-                                the drinks </span> <span class="notification-date"> <time
-                                    datetime="2004-07-24T18:18" class="entry-date updated">Yesterday at
+                                the drinks </span> <span class="notification-date"> <time datetime="2004-07-24T18:18"
+                                    class="entry-date updated">Yesterday at
                                     8:10pm</time> <i><img src="../images/d-tick.png" alt=""></i> </span></div>
                     </li>
                 </ul>
@@ -611,12 +605,13 @@
                     <div class="smiles-bunch"> <i><img src="../images/smiles/thumb.png" alt=""></i> <i><img
                                 src="../images/smiles/angry-1.png" alt=""></i> <i><img src="../images/smiles/angry.png"
                                 alt=""></i> <i><img src="../images/smiles/bored-1.png" alt=""></i> <i><img
-                                src="../images/smiles/confused-1.png" alt=""></i> <i><img src="../images/smiles/wink.png"
-                                alt=""></i> <i><img src="../images/smiles/weep.png" alt=""></i> <i><img
-                                src="../images/smiles/tongue-out.png" alt=""></i> <i><img
+                                src="../images/smiles/confused-1.png" alt=""></i> <i><img
+                                src="../images/smiles/wink.png" alt=""></i> <i><img src="../images/smiles/weep.png"
+                                alt=""></i> <i><img src="../images/smiles/tongue-out.png" alt=""></i> <i><img
                                 src="../images/smiles/suspicious.png" alt=""></i> <i><img
-                                src="../images/smiles/crying-1.png" alt=""></i> <i><img src="../images/smiles/crying.png"
-                                alt=""></i> <i><img src="../images/smiles/embarrassed.png" alt=""></i> <i><img
+                                src="../images/smiles/crying-1.png" alt=""></i> <i><img
+                                src="../images/smiles/crying.png" alt=""></i> <i><img
+                                src="../images/smiles/embarrassed.png" alt=""></i> <i><img
                                 src="../images/smiles/emoticons.png" alt=""></i> <i><img
                                 src="../images/smiles/happy-2.png" alt=""></i></div> <button type="submit"><i
                             class="icofont-paper-plane"></i></button>
@@ -671,30 +666,30 @@
                                 <div class="pop-item">
                                     <div class="action-block"> <a class="action-button"> <svg
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="feather feather-tag">
                                                 <path
                                                     d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
                                                 <line x1="7" y1="7" x2="7.01" y2="7" />
                                             </svg> </a> <a class="action-button"> <svg
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="feather feather-map-pin">
                                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                                 <circle cx="12" cy="10" r="3" />
                                             </svg> </a> <a class="action-button"> <svg
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="feather feather-arrow-down">
                                                 <line x1="12" y1="5" x2="12" y2="19" />
                                                 <polyline points="19 12 12 19 5 12" />
                                             </svg> </a> <a class="action-button"> <svg
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="feather feather-more-vertical">
                                                 <circle cx="12" cy="12" r="1" />
                                                 <circle cx="12" cy="5" r="1" />
@@ -748,8 +743,8 @@
                                                     <div class="icon icon--angry"></div>
                                                 </div>
                                             </div>
-                                        </div> <a title="" href="#" class="share-to"><i
-                                                class="icofont-share-alt"></i> Share</a>
+                                        </div> <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i>
+                                            Share</a>
                                         <div class="emoji-state">
                                             <div class="popover_wrapper"> <a class="popover_title" href="#"
                                                     title=""><img alt="" src="../images/smiles/thumb.png"></a>
@@ -817,8 +812,8 @@
                                         <li> <span title="Comments" class="liked"> <i> <svg
                                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" class="feather feather-thumbs-up">
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-thumbs-up">
                                                         <path
                                                             d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
                                                         </path>
@@ -826,19 +821,17 @@
                                         <li> <span title="Comments" class="comment"> <i> <svg
                                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                                         class="feather feather-message-square">
                                                         <path
                                                             d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
                                                         </path>
                                                     </svg></i> <ins>52</ins> </span></li>
                                         <li> <span> <a title="Share" href="#" class=""> <i> <svg
-                                                            xmlns="http://www.w3.org/2000/svg" width="16"
-                                                            height="16" viewBox="0 0 24 24" fill="none"
-                                                            stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round"
-                                                            class="feather feather-share-2">
+                                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="feather feather-share-2">
                                                             <circle cx="18" cy="5" r="3"></circle>
                                                             <circle cx="6" cy="12" r="3"></circle>
                                                             <circle cx="18" cy="19" r="3"></circle>
@@ -854,10 +847,10 @@
                                             data-original-title="Sara"> <img src="../images/resources/userlist-1.jpg"
                                                 alt=""> </a> <a href="#" title="" data-toggle="tooltip"
                                             data-original-title="Amy"> <img src="../images/resources/userlist-2.jpg"
-                                                alt=""> </a> <span><strong>You</strong>, <b>Sarah</b> and <a
-                                                title="" href="#">24+ more</a> liked</span></div>
+                                                alt=""> </a> <span><strong>You</strong>, <b>Sarah</b> and <a title=""
+                                                href="#">24+ more</a> liked</span></div>
                                 </div>
-                                <div class="new-comment" style="display: block;"> 
+                                <div class="new-comment" style="display: block;">
                                     <form method="post"> <input type="text" placeholder="write comment"> <button
                                             type="submit"><i class="icofont-paper-plane"></i></button></form>
                                     <div class="comments-area">
@@ -918,10 +911,90 @@
             </div>
         </div>
     </div>
-</div>
-<script src="../js/main.min.js"></script>
-<script src="../js/date-time.js"></script>
-<script src="../js/script.js"></script>
+    </div>
+    <script src="../js/main.min.js"></script>
+
+    {{--
+    <script src="../js/main.min.js"></script> --}}
+    <script src="../js/date-time.js"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        function previewAndCheckImage(input) {
+            var imagePreview = document.getElementById('imagePreview');
+            var dragText = document.querySelector('.drag-text');
+            var imageAspectRatioInput = document.getElementById('imageAspectRatio');
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    var img = new Image();
+                    img.src = e.target.result;
+
+                    img.onload = function () {
+                        var width = img.width;
+                        var height = img.height;
+                        var aspectRatio = width / height;
+
+                        // Define an acceptable aspect ratio range (e.g., between 0.5 and 2)
+                        var minAspectRatio = 1;
+                        var maxAspectRatio = 1.5;
+
+                        if (aspectRatio < minAspectRatio || aspectRatio > maxAspectRatio) {
+                            // Aspect ratio is outside the acceptable range, inform the user
+                            alert('Please upload an image with a more balanced aspect ratio.');
+                            // Clear the file input
+                            input.value = '';
+                            // Hide the image preview
+                            imagePreview.style.display = 'none';
+                            // Show the drag-and-drop text
+                            dragText.style.display = 'block';
+                            // Clear the aspect ratio input
+                            imageAspectRatioInput.value = '';
+                        } else {
+                            // Aspect ratio is within the acceptable range, proceed with the upload
+                            imageAspectRatioInput.value = aspectRatio;
+                            imagePreview.src = e.target.result;
+                            imagePreview.style.display = 'block';
+                            dragText.style.display = 'none'; // Hide the drag-and-drop text
+                        }
+                    };
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                // No image selected
+                imagePreview.style.display = 'none';
+                dragText.style.display = 'block'; // Show the drag-and-drop text
+                // Clear the aspect ratio input
+                imageAspectRatioInput.value = '';
+            }
+        }
+    </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const selectElement = document.querySelector('select[name="interestId[]"]');
+        
+        selectElement.addEventListener("change", function() {
+            const selectedOptions = Array.from(this.selectedOptions);
+            if (selectedOptions.length < 1 || selectedOptions.length > 3) {
+                alert("Please select 1 to 3 interests.");
+                // Clear the selected options
+                selectedOptions.forEach(option => option.selected = false);
+            }
+        });
+    });
+</script>
+
+
+
+
+    
+
+    
 </body>
 <!-- Mirrored from wpkixx.com/html/socimo-dark/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2023 11:27:51 GMT -->
 
