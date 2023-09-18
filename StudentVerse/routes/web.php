@@ -548,10 +548,10 @@ Route::get('/login', [UserController::class, "show"])->name('login');
         
         Route::get('/profile-setup/{id}', [UserController::class, "showUserProfileForm"])->name("profile-setup");
         
-        Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost']);
+        Route::post('/profileSetupPost', [UserController::class, 'profileSetupPost'])->name('profileSetupPost');
 
         Route::get('/user-home/{id}', [UserController::class, 'showUserProfile'])->name('user-home');
 
         Route::post('/questionpost', [QuestionController::class, 'questionpost'])->name('question-post');
 
-        
+         Route::get('/editpost/{id}', [QuestionController::class, 'editPost'])->name('edit-post');

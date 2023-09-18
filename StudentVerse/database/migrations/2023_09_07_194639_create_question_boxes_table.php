@@ -20,7 +20,8 @@ return new class extends Migration
             $table->foreign('User_Id')->references('id')->on('user_boxes');
             $table->unsignedBigInteger('Tagged_Id')->default(0);
             $table->foreign('Tagged_Id')->references('id')->on('tag_boxes');
-            
+            $table->boolean('Is_Anonymous')->default(false);
+
             $table->timestamps();
         });
     }

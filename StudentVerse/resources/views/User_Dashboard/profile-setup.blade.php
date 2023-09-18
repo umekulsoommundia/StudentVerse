@@ -59,7 +59,7 @@
                             <div class="feedback-form">
                                 <!-- Your profile setup form goes here -->
                                 <h4 class="text-center"><i class="icofont-comment"></i> Complete Profile Setup</h4>
-                                <form class="mt-4" method="POST" action="/profileSetupPost" enctype="multipart/form-data">
+                                <form class="mt-4" method="POST" action="{{ route('profileSetupPost') }}" enctype="multipart/form-data">
                                     @csrf
                                     @if(isset($msg))
                                     <div class="alert alert-warning">
@@ -85,7 +85,17 @@
                                         @error('Current_work')
                                         <span class="text-danger">{{ $message }}</span>
                                         @enderror
-                                
+                                        
+                                        <div class="mb-4 uk-margin col-lg-12">
+                                            <select class="uk-select" name="interestId" required>
+                                                <option value="">Select Interest</option>
+                                                @foreach($interests as $interest)
+                                                    <option value="{{ $interest->id }}">{{ $interest->Name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        
+                                        
    
                                         {{-- <div class="mb-4 uk-margin col-lg-12">
                                             <select class="uk-select" name="interestId[]" required multiple>
@@ -94,7 +104,6 @@
                                                     <option value="{{ $interest->id }}">{{ $interest->Name }}</option>
                                                 @endforeach
                                             </select>
-                                        </div> --}}
                                         <div class="mb-4 uk-margin col-lg-12">
                                             <select class="uk-select" name="interestId[]" required multiple>
                                                 <option value="">Select Interests (1-3)</option>
@@ -104,10 +113,11 @@
                                             </select>
                                         </div>
                                         
-
+--}}
                                         @error('interestId')
                                         <span class="text-danger">{{ $message }}</span>
-                                        @enderror
+                                        @enderror     </div> 
+                                   
                                         <div class="mb-4 col-lg-12">
                                             <textarea name="Bio" class="uk-textarea" rows="2" placeholder="bio"></textarea>
                                         </div>

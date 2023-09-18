@@ -141,7 +141,20 @@
 
 
                   <div class="col-lg-6">
+                     @if (session('message'))
+                     <div class="alert alert-success">
+                        {{ session('message') }}
+                     </div>
+                     @endif
+
+                     @if (session('error'))
+                     <div class="alert alert-danger">
+                        {{ session('error') }}
+                     </div>
+                     @endif
+
                      <div class="main-wraper">
+                        
                         <div class="chatroom-title">
                            <i>
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -222,18 +235,7 @@
                            </ul>
                         </div>
                      </div>
-                     @if (session('message'))
-                     <div class="alert alert-success">
-                        {{ session('message') }}
-                     </div>
-                     @endif
-
-                     @if (session('error'))
-                     <div class="alert alert-danger">
-                        {{ session('error') }}
-                     </div>
-                     @endif
-
+                    
 
 
                      <div class="main-wraper">
@@ -265,7 +267,7 @@
                         </div>
                      </div>
 
-             
+{{--              
                      @foreach ($questionBoxes as $questionBox)
                      <div class="main-wraper">
                     
@@ -533,7 +535,178 @@
                 
 
                      </div>
-                     @endforeach
+                     @endforeach --}}
+
+
+                     @foreach ($questionBoxes as $questionBox)
+<div class="main-wraper">
+    <div class="user-post">
+        <div class="friend-info">
+            <figure>
+                <em>
+                    <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                        <path fill="#7fba00" stroke="#7fba00" d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"></path>
+                    </svg>
+                </em>
+                {{-- @if ($questionBox->user && $questionBox->user->userProfile)
+                <img alt="" src="{{ asset($questionBox->user->userProfile->Image) }}">
+                @else
+                <img alt="" src="{{ asset('default_profile_image.jpg') }}">
+                @endif --}}
+
+                {{-- <img alt="" src="{{ asset($questionBox->Is_Anonymous ? 'anonymous_profile_image.jpg' : ($questionBox->user->userProfile ? $questionBox->user->userProfile->Image : 'default_profile_image.jpg')) }}"> --}}
+
+            
+                @if ($user->isStudent() && $questionBox->Is_Anonymous)
+                <img alt="" src="{{ asset('default_profile_image.jpg') }}">
+            @else
+                <img alt="" src="{{ asset($questionBox->user->userProfile ? asset($questionBox->user->userProfile->Image) : 'default_profile_image.jpg') }}">
+            @endif
+            
+               </figure>
+            <div class="friend-name">
+               <div class="more">
+                  <div class="more-post-optns">
+                      <i class="">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal">
+                              <circle cx="12" cy="12" r="1"></circle>
+                              <circle cx="19" cy="12" r="1"></circle>
+                              <circle cx="5" cy="12" r="1"></circle>
+                          </svg>
+                      </i>
+                      <ul>
+              
+                    
+
+                        @if ($user->id == $questionBox->User_Id)
+                            <li> 
+                                <i class="icofont-pen-alt-1"></i>Edit Post 
+                                <span>Edit This Post within an Hour</span>
+                            </li>
+                            <li> 
+                                <i class="icofont-ui-delete"></i>Delete Post 
+                                <span>If inappropriate Post By Mistake</span>
+                            </li>
+                        @else
+                            <li> 
+                                <i class="icofont-flag"></i>Report 
+                                <span>Inappropriate content</span>
+                            </li>
+                        @endif
+                    </ul>
+                    
+                    
+                       
+                    </div>
+                </div>
+                @if ($user->isStudent() && $questionBox->Is_Anonymous)
+                <ins>Anonymous Created a post</ins>
+            @else
+                <ins><a title="" href="time-line.html">{{ $questionBox->user->userProfile->User_Name }}</a> Created a post</ins>
+            @endif
+            
+            
+            
+
+                <span><i class="icofont-globe"></i> published: {{ $questionBox->created_at->format('M d, Y') }}</span>
+            </div>
+            <div class="post-meta">
+                <figure>
+                    <a data-toggle="modal" data-target="#img-comt" href="#">
+                        <img src="{{ asset($questionBox->Image) }}" alt="">
+                    </a>
+                </figure>
+                <a href="post-detail.html" class="post-title">{{ $questionBox->Subject }}</a>
+                <p> {{ $questionBox->Description }}</p>
+                <div class="we-video-info">
+                    <ul>
+                        <li>
+                            <span title="views" class="views">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </i>
+                                <ins>1.2k</ins>
+                            </span>
+                        </li>
+                        <li>
+                            <span title="Comments" class="Recommend">
+                                <i>
+                                    <svg class="feather feather-message-square" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </i>
+                                <ins>54</ins>
+                            </span>
+                        </li>
+                        <li>
+                            <span title="follow" class="Follow">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                </i>
+                                <ins>5k</ins>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="share-pst" title="Share">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2">
+                                        <circle cx="18" cy="5" r="3"></circle>
+                                        <circle cx="6" cy="12" r="3"></circle>
+                                        <circle cx="18" cy="19" r="3"></circle>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                    </svg>
+                                </i>
+                                <ins>205</ins>
+                            </span>
+                        </li>
+                    </ul>
+                    <a href="post-detail.html" title="" class="reply">Reply <i class="icofont-reply"></i></a>
+                </div>
+                <div class="stat-tools">
+                  
+                    <a title="" href="#" class="comment-to"><i class="icofont-comment"></i> answer</a>
+                    <a title="" href="#" class="share-to"><i class="icofont-share-alt"></i> Share</a>
+                   
+                    <div class="new-comment" style="display: none;">
+                        <form method="post"> <input type="text" placeholder="write comment"> <button type="submit"><i class="icofont-paper-plane"></i></button></form>
+                        <div class="comments-area">
+                            <ul>
+                                <li>
+                                    <figure><img alt="" src="../images/resources/user1.jpg"></figure>
+                                    <div class="commenter">
+                                        <h5><a title="" href="#">Jack Carter</a></h5>
+                                        <span>2 hours ago</span>
+                                        <p> i think that some how, we learn who we really are and then live with that decision, great post!</p>
+                                        <span>you can view the more detail via link</span> <a title="" href="#">https://www.youtube.com/watch?v=HpZgwHU1GcI</a>
+                                    </div>
+                                    <a title="Like" href="#"><i class="icofont-heart"></i></a> <a title="Reply" href="#" class="reply-coment"><i class="icofont-reply"></i></a>
+                                </li>
+                                <li>
+                                    <figure><img alt="" src="../images/resources/user2.jpg"></figure>
+                                    <div class="commenter">
+                                        <h5><a title="" href="#">Ching xang</a></h5>
+                                        <span>2 hours ago</span>
+                                        <p> i think that some how, we learn who we really are and then live with that decision, great post!</p>
+                                    </div>
+                                    <a title="Like" href="#"><i class="icofont-heart"></i></a> <a title="Reply" href="#" class="reply-coment"><i class="icofont-reply"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endforeach
+
+
 
                      <div class="main-wraper">
                         <div class="user-post">

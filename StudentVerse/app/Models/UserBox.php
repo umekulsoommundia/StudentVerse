@@ -14,6 +14,19 @@ class UserBox extends Model
         return $this->hasOne(UserProfileBox::class, 'User_Id'); // Make sure 'User_Id' matches the actual foreign key in the table
     }
     
+// In your UserBox model (UserBox.php)
+
+public function isStudent()
+{
+    // Assuming you have a 'user_type' column in your users table
+    return $this->User_Type === 'student';
+}
+
+public function isTeacher()
+{
+    // Assuming you have a 'user_type' column in your users table
+    return $this->User_Type === 'teacher';
+}
 
 
 

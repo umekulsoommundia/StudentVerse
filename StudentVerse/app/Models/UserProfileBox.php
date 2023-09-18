@@ -10,9 +10,9 @@ class UserProfileBox extends Model
     use HasFactory;
 
 // User.php
-public function interests()
+public function interest()
 {
-    return $this->belongsToMany(Interest::class, 'user_interests', 'user_id', 'interest_id');
+    return $this->belongsTo(InterestBox::class, 'Interest_Id');
 }
 
 }

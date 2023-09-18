@@ -696,12 +696,41 @@
                                     <input name="Image" type="file">Upload File
                                 </label>
                             </div>
+                            <input type="checkbox" name="Anonymous" id="anonymous" value="1">
+    <label for="anonymous">Post Anonymously</label>
                             <button type="submit" class="main-btn">Post</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="editPostModal" tabindex="-1" role="dialog" aria-labelledby="editPostModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editPostModalLabel">Edit Post</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="{{ route('update-post', ['id' => $post->id]) }}" method="post" class="c-form">
+                            @csrf
+                            @method('PUT')
+        
+                            <input name="Subject" type="text" placeholder="Subject" value="{{ $post->Subject }}">
+                            <textarea name="Description" placeholder="Body">{{ $post->Description }}</textarea>
+        
+                            <!-- Other form fields for updating tags, image, etc. -->
+        
+                            <button type="submit" class="main-btn">Update Post</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="auto-popup">
             <div class="popup-innner">
                 <div class="popup-head">

@@ -12,6 +12,8 @@ use App\Models\question_box;
 use App\Models\question_tag;
 use App\Models\UserProfileBox;
 use App\Models\tag_box;
+use Illuminate\Support\Facades\Log;
+
 
  
 class UserController extends Controller
@@ -120,8 +122,7 @@ class UserController extends Controller
             'Image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'User_Name' => 'required|string|max:16|unique:user_profile_boxes,User_Name',
             'Current_work' => 'nullable|string|max:55',
-            'interestId' => 'required|array|min:1|max:3',
-            'interestId.*' => 'integer|exists:interest_boxes,id',
+            'interestId' => 'required|integer',
             'Bio' => 'nullable|string|max:1000',
         ]);
     
@@ -149,23 +150,11 @@ class UserController extends Controller
             $userProfile->User_id = session('userId');
             $userProfile->Badge_Id = 0;
             $userProfile->Mail_Id = 0;
-    
+            $userProfile->Interest_Id = $request->interestId; // Save the single interest ID
+            
             $userProfile->save();
-    
-            $selectedInterests = $request->input('interestId');
-    
-            // Debugging: Log the selected interests
-            \Log::info('Selected Interests: ' . json_encode($selectedInterests));
-    
-            // Sync interests only if $selectedInterests contains valid interest IDs
-            if (!empty($selectedInterests)) {
-                $userProfile->interests()->sync($selectedInterests);
-            }
-    
-            // Debugging: Log the SQL queries
-            \DB::listen(function($query) {
-                \Log::info('SQL Query: ' . $query->sql);
-            });
+
+            
     
             $id = session('userId');
             return redirect()->route('user-home', ['id' => $id])->with("message", "Profile setup successfully!");
@@ -174,6 +163,7 @@ class UserController extends Controller
     }
     
 
+    
 
     function showUserProfile(Request $request)
     {
